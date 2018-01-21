@@ -1,25 +1,19 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Component, OnInit } from '@angular/core';
+import { NavParams } from 'ionic-angular/navigation/nav-params';
+import { ShopList } from '../../models/shop-list.model';
 
-/**
- * Generated class for the ListPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
-@IonicPage()
 @Component({
   selector: 'page-list',
   templateUrl: 'list.html',
 })
-export class ListPage {
+export class ListPage implements OnInit {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+  shopList: ShopList;
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad ListPage');
+  constructor(public navParams: NavParams) {}
+
+  ngOnInit(){
+    this.shopList = this.navParams.data;
   }
 
 }

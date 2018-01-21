@@ -26,7 +26,7 @@
     <ion-item-sliding *ngFor="let list of lists; let i=index">
       <button
         [navPush]="listPage"
-        [navParams]="i"
+        [navParams]="list"
         ion-item>
         <h2>{{ list.name }}</h2>
         <p>$0.00</p>
