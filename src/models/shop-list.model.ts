@@ -1,7 +1,14 @@
 import { Item } from "./item.model";
 
 export class ShopList{
+
   private items: Item[];
+
+  constructor(
+    public name: string,
+    public total: number,
+    public estimate: number
+  ){}
 
   addItem(name: string, amount: number){
     this.items.push( new Item(name, amount) );
