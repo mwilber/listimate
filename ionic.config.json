@@ -1,0 +1,8 @@
+{
+  "name": "listimate",
+  "app_id": "7821d305",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
