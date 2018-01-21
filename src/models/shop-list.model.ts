@@ -11,7 +11,7 @@ export class ShopList{
   ){}
 
   addItem(name: string, amount: number){
-    this.items.push( new Item(name, amount) );
+    this.items.push( new Item(name, amount, 0) );
     console.log(this.items);
   }
 

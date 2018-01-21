@@ -1,14 +1,42 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Lists
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content>
+  <form [formGroup]="addListForm" (ngSubmit)="onAddList()">
+      <ion-item color="floater">
+          <ion-input
+            formControlName="title"
+            type="text"
+            placeholder="New List Name"></ion-input>
+          <button
+            ion-button
+            icon-only
+            clear
+            item-right
+            color="primary"
+            type="submit"><ion-icon name="add"></ion-icon></button>
+      </ion-item>
+  </form>
+  <ion-list>
+    <ion-item-sliding *ngFor="let list of lists; let i=index">
+      <button
+        [navPush]="listPage"
+        [navParams]="i"
+        ion-item>
+        <h2>{{ list.name }}</h2>
+        <p>$0.00</p>
+      </button>
+      <ion-item-options>
+        <button ion-button color="danger" (click)="onRemoveFromLists(list)">
+          <ion-icon name="trash"></ion-icon>
+          Delete
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
 </ion-content>
