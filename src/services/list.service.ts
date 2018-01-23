@@ -25,7 +25,7 @@ export class ListService{
   }
 
   RemoveListFromLists(list: ShopList){
-    const position = this.lists.findIndex((listEl: List)=>{
+    const position = this.lists.findIndex((listEl: ShopList)=>{
       return listEl.name === list.name;
     });
     this.lists.splice(position, 1);
