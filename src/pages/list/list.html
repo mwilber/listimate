@@ -1,13 +1,36 @@
-
 <ion-header>
-
-  <ion-navbar>
+  <ion-navbar color="primary">
     <ion-title>{{shopList.name}}</ion-title>
   </ion-navbar>
-
 </ion-header>
 
-
-<ion-content padding>
-
+<ion-content>
+  <form [formGroup]="addItemForm" (ngSubmit)="onAddItem()">
+      <ion-item color="floater">
+          <ion-input
+            formControlName="title"
+            type="text"
+            placeholder="New List Name"></ion-input>
+          <button
+            ion-button
+            icon-only
+            clear
+            item-right
+            color="primary"
+            type="submit"><ion-icon name="add"></ion-icon></button>
+      </ion-item>
+  </form>
+  <ion-list>
+    <ion-item-sliding *ngFor="let item of shopList.getItems(); let i=index">
+      <ion-item>
+        <h2>{{ item.name }}</h2>
+      </ion-item>
+      <ion-item-options>
+        <button ion-button color="danger" (click)="onRemoveFromList(item)">
+          <ion-icon name="trash"></ion-icon>
+          Delete
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
 </ion-content>

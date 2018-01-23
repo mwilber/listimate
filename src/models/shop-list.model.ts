@@ -8,7 +8,9 @@ export class ShopList{
     public name: string,
     public total: number,
     public estimate: number
-  ){}
+  ){
+    this.items = [];
+  }
 
   addItem(name: string, amount: number){
     this.items.push( new Item(name, amount, 0) );
