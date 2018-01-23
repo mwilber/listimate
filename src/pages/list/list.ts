@@ -37,7 +37,7 @@ export class ListPage implements OnInit {
   }
 
   onRemoveFromList(item: Item){
-    //this.listSrv.RemoveListFromLists(list);
+    this.shopList.removeItem(item);
     this.RefreshItems();
   }
 
