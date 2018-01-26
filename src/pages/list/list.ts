@@ -41,4 +41,19 @@ export class ListPage implements OnInit {
     this.RefreshItems();
   }
 
+  onPriceSelect(index:number){
+    this.shopList.updateItemPrice(3.69, index);
+    this.RefreshItems();
+  }
+
+  onQtyUpdate(index: number){
+    this.shopList.bumpItemQty(index);
+    this.RefreshItems();
+  }
+
+  onQtyClear(index: number){
+    this.shopList.updateItemQty(0,index);
+    this.RefreshItems();
+  }
+
 }

@@ -10,7 +10,7 @@
           <ion-input
             formControlName="title"
             type="text"
-            placeholder="New List Name"></ion-input>
+            placeholder="Item Name"></ion-input>
           <button
             ion-button
             icon-only
@@ -20,10 +20,18 @@
             type="submit"><ion-icon name="add"></ion-icon></button>
       </ion-item>
   </form>
+  <ion-item color="primary">
+      {{ shopList.estimate | currency:"$":0 }} ({{ shopList.total | currency:"$":0 }})
+  </ion-item>
   <ion-list>
     <ion-item-sliding *ngFor="let item of shopList.getItems(); let i=index">
       <ion-item>
         <h2>{{ item.name }}</h2>
+        <div item-end>
+          <button ion-button outline (tap)="onQtyUpdate(i)" (press)="onQtyClear(i)">{{ item.qty }}</button>
+          <ion-icon name="close"></ion-icon>
+          <button ion-button outline (click)="onPriceSelect(i)">{{ item.price | currency:"$":0 }}</button>
+        </div>
       </ion-item>
       <ion-item-options>
         <button ion-button color="danger" (click)="onRemoveFromList(item)">

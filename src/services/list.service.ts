@@ -1,10 +1,17 @@
 import { ShopList } from "../models/shop-list.model";
+import { Item } from "../models/item.model";
 
 export class ListService{
   private lists: ShopList[];
 
   constructor(){
-    this.lists = [];
+    this.lists = [new ShopList('Grocery',0,0)];
+    this.lists[0].addItems([
+      new Item('Bread', 1, 0),
+      new Item('Eggs',4,0),
+      new Item('Milk',2,0)
+    ]);
+    console.log(this.lists);
   }
 
   addList(name: string){
