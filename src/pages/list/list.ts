@@ -45,11 +45,11 @@ export class ListPage implements OnInit {
 
   onPriceSelect(index:number){
     //this.shopList.UpdateItemPrice(3.69, index);
-    this.CreateNewPriceAlert().present();
+    this.CreateNewPriceAlert(index).present();
     this.RefreshItems();
   }
 
-  private CreateNewPriceAlert(){
+  private CreateNewPriceAlert(index:number){
     return this.alertCtrl.create({
       'title': 'Enter Price',
       inputs: [
@@ -76,7 +76,7 @@ export class ListPage implements OnInit {
               toast.present();
               return;
             }
-            this.shopList.UpdateItemPrice(data.price,0);
+            this.shopList.UpdateItemPrice(data.price,index);
             //(<FormArray>this.recipeForm.get('ingredients')).push(new FormControl(data.name, Validators.required));
             // const toast = this.toastCtrl.create({
             //   message: 'Item Added!',

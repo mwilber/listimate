@@ -43,12 +43,12 @@ export class ShopList{
 
   UpdateItemPrice(price:number, index:number){
     this.items[index].price = price;
-    this.RefreshList();
+    this.RefreshList(index);
   }
 
   UpdateItemQty(qty:number, index:number){
     this.items[index].qty = qty;
-    this.RefreshList();
+    this.RefreshList(index);
   }
 
   BumpItemQty(index:number){
@@ -56,22 +56,24 @@ export class ShopList{
     this.RefreshList();
   }
 
-  UpdateTotal(){
+  RefreshList(index:number=-1){
     this.total = 0;
-    for(let item of this.items){
-      this.total += item.price*item.qty;
-    }
-  }
-
-  UpdateEstimate(){
     this.estimate = 0;
     for(let item of this.items){
+      this.total += item.price*item.qty;
       this.estimate += Math.ceil(item.price)*item.qty;
+      if(item.price > 0 && item.qty > 0){
+        item.complete = true;
+      }else if(item.complete){
+        item.complete = false;
+      }
     }
-  }
 
-  RefreshList(){
-    this.UpdateTotal();
-    this.UpdateEstimate();
+    this.items.sort((item)=>{
+      if(item.complete) return 1; else return 0;
+    });
+    // if(index > -1){
+    //   if(this.items[index].complete) this.items.push(this.items.splice(index, 1)[0]);
+    // }
   }
 }
