@@ -1,10 +1,12 @@
-import { FormArray, FormGroup, FormControl, Validators } from '@angular/forms';
+import { ListService } from './../../services/list.service';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 import { NavParams } from 'ionic-angular/navigation/nav-params';
 import { ShopList } from '../../models/shop-list.model';
 import { Item } from '../../models/item.model';
 import { AlertController } from 'ionic-angular/components/alert/alert-controller';
 import { ToastController } from 'ionic-angular/components/toast/toast-controller';
+import { ActionSheetController } from 'ionic-angular/components/action-sheet/action-sheet-controller';
 
 @Component({
   selector: 'page-list',
@@ -13,12 +15,20 @@ import { ToastController } from 'ionic-angular/components/toast/toast-controller
 export class ListPage implements OnInit {
 
   shopList: ShopList;
+  shopListIdx: number;
   public addItemForm: FormGroup;
 
-  constructor(public navParams: NavParams, private alertCtrl: AlertController, private toastCtrl: ToastController) {}
+  constructor(
+    public navParams: NavParams,
+    private alertCtrl: AlertController,
+    private toastCtrl: ToastController,
+    private listSrv: ListService
+  ) {}
 
   ngOnInit(){
-    this.shopList = this.navParams.data;
+    console.log('params:',this.navParams.data);
+    this.shopList = this.navParams.get('list');
+    this.shopListIdx = this.navParams.get('index');
     this.InitAddItemForm();
   }
 
@@ -41,6 +51,49 @@ export class ListPage implements OnInit {
   onRemoveFromList(item: Item){
     this.shopList.RemoveItem(item);
     this.RefreshItems();
+  }
+
+  onMoveToList(item: Item){
+    this.CreateMoveListAlert(item).present();
+  }
+
+  private CreateMoveListAlert(item: Item){
+
+    let listlist = [];
+
+    this.listSrv.GetLists().forEach((list, idx)=>{
+      listlist.push({
+        type: 'radio',
+        label: list.name,
+        value: idx,
+        checked: false
+      });
+    });
+
+    return this.alertCtrl.create({
+      'title': 'Move To List',
+      inputs: listlist,
+      buttons: [
+        {
+          text: 'Cancel',
+          role: 'cancel'
+        },
+        {
+          text: 'Move',
+          handler: data => {
+            console.log('move '+item.name+' to', data);
+            this.listSrv.AddItemToList(data, item);
+            this.shopList.RemoveItem(item);
+            const toast = this.toastCtrl.create({
+              message: item.name+' moved to '+this.listSrv.GetList(data).name,
+              duration: 2000,
+              position: 'bottom'
+            });
+            toast.present();
+          }
+        }
+      ]
+    });
   }
 
   onPriceSelect(index:number){

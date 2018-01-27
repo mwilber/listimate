@@ -1,8 +1,10 @@
 import { Item } from "./item.model";
+import { Subject } from "rxjs/Subject";
 
 export class ShopList{
 
   private items: Item[];
+  public listChanged: Subject<boolean>;
 
   constructor(
     public name: string,
@@ -10,7 +12,8 @@ export class ShopList{
     public estimate: number
   ){
     this.items = [];
-    this.RefreshList();
+    //this.RefreshList();
+    this.listChanged = new Subject<boolean>();
   }
 
   AddItem(name: string, amount: number){
@@ -75,5 +78,6 @@ export class ShopList{
     // if(index > -1){
     //   if(this.items[index].complete) this.items.push(this.items.splice(index, 1)[0]);
     // }
+    this.listChanged.next(true);
   }
 }
