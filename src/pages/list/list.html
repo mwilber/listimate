@@ -24,14 +24,14 @@
       {{ shopList.estimate | currency:"$":0 }} ({{ shopList.total | currency:"$":0 }})
   </ion-item>
   <ion-list>
-    <ion-item-sliding *ngFor="let item of shopList.getItems(); let i=index">
+    <ion-item-sliding *ngFor="let item of shopList.GetItems(); let i=index">
       <ion-item>
         <h2>{{ item.name }}</h2>
-        <div item-end>
+        <ion-buttons item-end>
           <button ion-button outline (tap)="onQtyUpdate(i)" (press)="onQtyClear(i)">{{ item.qty }}</button>
           <ion-icon name="close"></ion-icon>
           <button ion-button outline (click)="onPriceSelect(i)">{{ item.price | currency:"$":0 }}</button>
-        </div>
+        </ion-buttons>
       </ion-item>
       <ion-item-options>
         <button ion-button color="danger" (click)="onRemoveFromList(item)">

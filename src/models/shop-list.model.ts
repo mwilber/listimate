@@ -10,56 +10,68 @@ export class ShopList{
     public estimate: number
   ){
     this.items = [];
-    this.updateTotal();
+    this.RefreshList();
   }
 
-  addItem(name: string, amount: number){
+  AddItem(name: string, amount: number){
     this.items.push( new Item(name, amount, 0) );
     console.log(this.items);
-    this.updateTotal();
+    this.RefreshList();
   }
 
-  addItems(items: Item[]){
+  AddItems(items: Item[]){
     this.items.push(...items);
-    this.updateTotal();
+    this.RefreshList();
   }
 
-  getItems(){
+  GetItems(){
     return this.items.slice();
   }
 
-  removeItemByIndex(index: number){
+  RemoveItemByIndex(index: number){
     this.items.splice(index, 1);
-    this.updateTotal();
+    this.RefreshList();
   }
 
-  removeItem(pItem: Item){
+  RemoveItem(pItem: Item){
     const position = this.items.findIndex((itemEl: Item)=>{
       return itemEl.name === pItem.name;
     });
     this.items.splice(position, 1);
-    this.updateTotal();
+    this.RefreshList();
   }
 
-  updateItemPrice(price:number, index:number){
+  UpdateItemPrice(price:number, index:number){
     this.items[index].price = price;
-    this.updateTotal();
+    this.RefreshList();
   }
 
-  updateItemQty(qty:number, index:number){
+  UpdateItemQty(qty:number, index:number){
     this.items[index].qty = qty;
-    this.updateTotal();
+    this.RefreshList();
   }
 
-  bumpItemQty(index:number){
+  BumpItemQty(index:number){
     this.items[index].qty++;
-    this.updateTotal();
+    this.RefreshList();
   }
 
-  updateTotal(){
+  UpdateTotal(){
     this.total = 0;
     for(let item of this.items){
       this.total += item.price*item.qty;
     }
+  }
+
+  UpdateEstimate(){
+    this.estimate = 0;
+    for(let item of this.items){
+      this.estimate += Math.ceil(item.price)*item.qty;
+    }
+  }
+
+  RefreshList(){
+    this.UpdateTotal();
+    this.UpdateEstimate();
   }
 }

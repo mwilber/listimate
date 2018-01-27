@@ -34,13 +34,13 @@ export class HomePage implements OnInit {
   }
 
   onAddList(){
-    this.listSrv.addList(this.addListForm.get('title').value);
+    this.listSrv.AddList(this.addListForm.get('title').value);
     this.addListForm.reset();
     this.RefreshLists();
   }
 
   RefreshLists(){
-    this.lists = this.listSrv.getLists();
+    this.lists = this.listSrv.GetLists();
   }
 
   onRemoveFromLists(list: ShopList){
