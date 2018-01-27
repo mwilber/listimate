@@ -68,7 +68,7 @@ export class ShopList{
         item.complete = false;
       }
     }
-
+    // Move completed to bottom of the list
     this.items.sort((item)=>{
       if(item.complete) return 1; else return 0;
     });
