@@ -37,6 +37,7 @@ export class ListService implements OnInit{
     // });
     console.log(this.lists);
     this.SaveLists();
+    return this.lists.length-1;
   }
 
   AddItemToList(listIdx: number, item: Item){

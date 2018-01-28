@@ -33,7 +33,7 @@ export class ListPage implements OnInit {
     this.InitAddItemForm();
 
     this.shopList.listChanged.subscribe((data)=>{
-      var cache = [];
+      let cache = [];
       this.listSrv.UpdateList(JSON.stringify(this.shopList, function(key, value) {
           if (typeof value === 'object' && value !== null) {
               if (cache.indexOf(value) !== -1) {
@@ -100,10 +100,6 @@ export class ListPage implements OnInit {
       inputs: listlist,
       buttons: [
         {
-          text: 'Cancel',
-          role: 'cancel'
-        },
-        {
           text: 'Move',
           handler: data => {
             console.log('move '+item.name+' to', data);
@@ -115,6 +111,53 @@ export class ListPage implements OnInit {
               position: 'bottom'
             });
             toast.present();
+          }
+        },
+        {
+          text: 'New List',
+          handler: data => {
+            this.CreateNewListAlert(item).present();
+          }
+        },
+        {
+          text: 'Cancel',
+          role: 'cancel'
+        }
+      ]
+    });
+  }
+
+  private CreateNewListAlert(item: Item){
+    return this.alertCtrl.create({
+      'title': 'Enter Price',
+      inputs: [
+        {
+          name: 'name',
+          placeholder: 'List Name',
+          type: 'text'
+        }
+      ],
+      buttons: [
+        {
+          text: 'Cancel',
+          role: 'cancel'
+        },
+        {
+          text: 'Create',
+          handler: data => {
+            if( data.name.trim() == '' || data.name == null){
+              const toast = this.toastCtrl.create({
+                message: 'Please enter a valid name!',
+                duration: 2000,
+                position: 'bottom'
+              });
+              toast.present();
+              return;
+            }
+            //this.shopList.UpdateItemPrice(data.price,index);
+            let newListIdx = this.listSrv.AddList(data.name);
+            this.listSrv.AddItemToList(newListIdx, item);
+            this.shopList.RemoveItem(item);
           }
         }
       ]
