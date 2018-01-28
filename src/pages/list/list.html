@@ -20,8 +20,9 @@
             type="submit"><ion-icon name="add"></ion-icon></button>
       </ion-item>
   </form>
-  <ion-item color="dark">
-      {{ shopList.estimate | currency:"$":0 }} ({{ shopList.total | currency:"$":0 }})
+  <ion-item color="dark" (touchstart)="onTotalPress()" (touchend)="onTotalRelease()">
+    <h1 *ngIf="showTotal">{{ shopList.total | currency:"$":0 }}</h1>
+    <h1 *ngIf="!showTotal">{{ shopList.estimate | currency:"$":0 }}</h1>
   </ion-item>
   <ion-list>
     <ion-item-sliding *ngFor="let item of shopList.GetItems(); let i=index">

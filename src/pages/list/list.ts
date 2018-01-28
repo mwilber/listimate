@@ -14,6 +14,7 @@ import { ActionSheetController } from 'ionic-angular/components/action-sheet/act
 })
 export class ListPage implements OnInit {
 
+  public showTotal = false;
   shopList: ShopList;
   shopListIdx: number;
   public addItemForm: FormGroup;
@@ -30,6 +31,14 @@ export class ListPage implements OnInit {
     this.shopList = this.navParams.get('list');
     this.shopListIdx = this.navParams.get('index');
     this.InitAddItemForm();
+  }
+
+  onTotalPress(){
+    this.showTotal = true;
+  }
+
+  onTotalRelease(){
+    this.showTotal = false;
   }
 
   InitAddItemForm(){
