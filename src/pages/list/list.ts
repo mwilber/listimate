@@ -31,6 +31,22 @@ export class ListPage implements OnInit {
     this.shopList = this.navParams.get('list');
     this.shopListIdx = this.navParams.get('index');
     this.InitAddItemForm();
+
+    this.shopList.listChanged.subscribe((data)=>{
+      var cache = [];
+      this.listSrv.UpdateList(JSON.stringify(this.shopList, function(key, value) {
+          if (typeof value === 'object' && value !== null) {
+              if (cache.indexOf(value) !== -1) {
+                  // Circular reference found, discard key
+                  return;
+              }
+              // Store value in our collection
+              cache.push(value);
+          }
+          return value;
+      }), this.shopListIdx);
+      cache = null;
+    });
   }
 
   onTotalPress(){

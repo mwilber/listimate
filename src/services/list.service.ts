@@ -20,10 +20,10 @@ export class ListService{
 
   AddList(name: string){
     this.lists.push( new ShopList(name, 0, 0) );
-    this.lists[this.lists.length-1].listChanged.subscribe((data)=>{
-      console.log("list change detected");
-      this.SaveLists();
-    });
+    // this.lists[this.lists.length-1].listChanged.subscribe((data)=>{
+    //   console.log("list change detected");
+    //   this.SaveLists();
+    // });
     console.log(this.lists);
     this.SaveLists();
   }
@@ -51,6 +51,13 @@ export class ListService{
       return listEl.name === list.name;
     });
     this.lists.splice(position, 1);
+    this.SaveLists();
+  }
+
+  UpdateList(listJSON:string, listIdx:number){
+
+    this.lists[listIdx] = new ShopList('',0,0);
+    this.lists[listIdx].LoadJson(listJSON);
     this.SaveLists();
   }
 

@@ -4,8 +4,13 @@ export class Item{
   constructor(
     public name: string,
     public qty: number,
-    public price: number
+    public price: number,
+    complete?
   ){
-    this.complete = false;
+    if( typeof complete !== 'undefined'){
+      this.complete = complete;
+    }else{
+      this.complete = false;
+    }
   }
 }

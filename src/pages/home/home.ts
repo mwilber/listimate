@@ -27,6 +27,10 @@ export class HomePage implements OnInit {
     this.RefreshLists();
   }
 
+  ionViewDidEnter(){
+    this.RefreshLists();
+  }
+
   InitAddListForm(){
     this.addListForm = new FormGroup({
       'title': new FormControl(null, Validators.required)

@@ -16,6 +16,18 @@ export class ShopList{
     this.listChanged = new Subject<boolean>();
   }
 
+  LoadJson(jsonData: string){
+    let rawData = JSON.parse(jsonData);
+
+    this.name = rawData.name;
+    this.total = rawData.total;
+    this.estimate = rawData.estimate;
+
+    rawData.items.forEach((item)=>{
+      this.items.push(new Item(item.name, item.qty, item.price, item.complete));
+    });
+  }
+
   AddItem(name: string, amount: number){
     this.items.push( new Item(name, amount, 0) );
     console.log(this.items);
