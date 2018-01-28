@@ -64,7 +64,7 @@ export class ListPage implements OnInit {
   }
 
   onAddItem(){
-    this.shopList.AddItem(this.addItemForm.get('title').value, 0);
+    this.shopList.AddItem(this.addItemForm.get('title').value, 1);
     this.addItemForm.reset();
     this.RefreshItems();
   }
