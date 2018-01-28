@@ -217,8 +217,48 @@ export class ListPage implements OnInit {
   }
 
   onQtyClear(index: number){
-    this.shopList.UpdateItemQty(0,index);
+    this.CreateNewQtyAlert(index).present();
     this.RefreshItems();
+  }
+
+  private CreateNewQtyAlert(index:number){
+    return this.alertCtrl.create({
+      'title': 'Enter Quantity',
+      inputs: [
+        {
+          name: 'qty',
+          placeholder: '',
+          type: 'number'
+        }
+      ],
+      buttons: [
+        {
+          text: 'Cancel',
+          role: 'cancel'
+        },
+        {
+          text: 'Zero',
+          handler: data => {
+            this.shopList.UpdateItemQty(0,index);
+          }
+        },
+        {
+          text: 'Add',
+          handler: data => {
+            if( data.qty.trim() == '' || data.qty == null){
+              const toast = this.toastCtrl.create({
+                message: 'Please enter a number greater than zero.',
+                duration: 2500,
+                position: 'bottom'
+              });
+              toast.present();
+              return;
+            }
+            this.shopList.UpdateItemQty(data.qty,index);
+          }
+        }
+      ]
+    });
   }
 
 }
