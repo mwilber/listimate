@@ -29,7 +29,7 @@
         [navParams]="{list:list,index:i}"
         ion-item>
         <h2>{{ list.name }}</h2>
-        <p>$0.00</p>
+        <p>{{ list.estimate | currency:"$":0 }}</p>
       </button>
       <ion-item-options>
         <button ion-button color="danger" (click)="onRemoveFromLists(list)">
