@@ -13,14 +13,14 @@ export class ListService implements OnInit{
 
     //this.lists = [new ShopList('Grocery',0,0),new ShopList('Costco',0,0)];
     this.lists = [];
-    this.AddList('Grocery');
-    this.AddList('Costco');
-    this.lists[0].AddItems([
-      new Item('Bread', 1, 0),
-      new Item('Eggs',4,0),
-      new Item('Milk',2,0),
-      new Item('Beef',1,0)
-    ]);
+    // this.AddList('Grocery');
+    // this.AddList('Costco');
+    // this.lists[0].AddItems([
+    //   new Item('Bread', 1, 0),
+    //   new Item('Eggs',4,0),
+    //   new Item('Milk',2,0),
+    //   new Item('Beef',1,0)
+    // ]);
 
     console.log(this.lists);
   }

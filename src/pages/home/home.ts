@@ -25,6 +25,17 @@ export class HomePage implements OnInit {
   }
 
   ngOnInit(){
+
+    //Pull saved lists from local storage
+    this.storage.get('lists').then((val) => {
+      if( val ){
+        JSON.parse(val).forEach((list, idx)=>{
+          this.listSrv.UpdateList(JSON.stringify(list), idx)
+        });
+        this.RefreshLists();
+      }
+    });
+
     this.InitAddListForm();
     this.RefreshLists();
 
