@@ -5,6 +5,7 @@ import { OnInit } from '@angular/core/src/metadata/lifecycle_hooks';
 import { ListService } from '../../services/list.service';
 import { ShopList } from '../../models/shop-list.model';
 import { ListPage } from '../list/list';
+import { Storage } from '@ionic/storage';
 
 @Component({
   selector: 'page-home',
@@ -18,13 +19,18 @@ export class HomePage implements OnInit {
 
   constructor(
     public navCtrl: NavController,
-    private listSrv: ListService) {
-
+    private listSrv: ListService,
+    private storage: Storage
+  ) {
   }
 
   ngOnInit(){
     this.InitAddListForm();
     this.RefreshLists();
+
+    this.listSrv.listSave.subscribe((data)=>{
+      this.storage.set('lists', JSON.stringify(this.listSrv.GetLists()))
+    });
   }
 
   ionViewDidEnter(){

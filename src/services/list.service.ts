@@ -1,10 +1,16 @@
+import { OnInit } from '@angular/core';
 import { Item } from './../models/item.model';
 import { ShopList } from "../models/shop-list.model";
+import { Subject } from 'rxjs/Subject';
 
-export class ListService{
+export class ListService implements OnInit{
   private lists: ShopList[];
+  public listSave: Subject<boolean>;
 
   constructor(){
+
+    this.listSave = new Subject<boolean>();
+
     //this.lists = [new ShopList('Grocery',0,0),new ShopList('Costco',0,0)];
     this.lists = [];
     this.AddList('Grocery');
@@ -15,7 +21,12 @@ export class ListService{
       new Item('Milk',2,0),
       new Item('Beef',1,0)
     ]);
+
     console.log(this.lists);
+  }
+
+  ngOnInit(){
+
   }
 
   AddList(name: string){
@@ -62,7 +73,9 @@ export class ListService{
   }
 
   SaveLists(){
-    console.log('all lists saved', this.lists);
+    this.listSave.next(true);
+    //console.log('all lists saved', this.lists);
+    //this.storage.set('lists',JSON.stringify(this.lists));
   }
 
 }
