@@ -1,3 +1,4 @@
+import { AuthService } from './../services/auth.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -9,12 +10,14 @@ import { HomePage } from '../pages/home/home';
 import { ListService } from '../services/list.service';
 import { ListPage } from '../pages/list/list';
 import { IonicStorageModule } from '@ionic/storage';
+import { OptionsPage } from '../pages/home/options';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    OptionsPage
   ],
   imports: [
     BrowserModule,
@@ -28,13 +31,15 @@ import { IonicStorageModule } from '@ionic/storage';
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    OptionsPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    ListService
+    ListService,
+    AuthService
   ]
 })
 export class AppModule {}

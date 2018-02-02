@@ -1,3 +1,4 @@
+import { OptionsPage } from './options';
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
@@ -6,6 +7,8 @@ import { ListService } from '../../services/list.service';
 import { ShopList } from '../../models/shop-list.model';
 import { ListPage } from '../list/list';
 import { Storage } from '@ionic/storage';
+import { PopoverController } from 'ionic-angular/components/popover/popover-controller';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'page-home',
@@ -20,7 +23,9 @@ export class HomePage implements OnInit {
   constructor(
     public navCtrl: NavController,
     private listSrv: ListService,
-    private storage: Storage
+    private storage: Storage,
+    private popoverCtrl: PopoverController,
+    private authService: AuthService
   ) {
   }
 
@@ -79,6 +84,29 @@ export class HomePage implements OnInit {
   onRemoveFromLists(list: ShopList){
     this.listSrv.RemoveListFromLists(list);
     this.RefreshLists();
+  }
+
+  onShowOptions(event: MouseEvent){
+    const popover = this.popoverCtrl.create(OptionsPage);
+    popover.present({ev: event});
+    popover.onDidDismiss(
+      data => {
+        if(data.action == 'load'){
+
+        }else{
+          this.authService.GetActiveUser().getToken()
+            .then((token: string)=>{
+              // this.slService.storeList(token)
+              // .subscribe(
+              //   () => console.log('Success!'),
+              //   error => {
+              //     console.log(error);
+              //   }
+              // );
+            });
+        }
+      }
+    )
   }
 
 }
