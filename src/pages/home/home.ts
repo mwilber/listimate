@@ -9,6 +9,8 @@ import { ListPage } from '../list/list';
 import { Storage } from '@ionic/storage';
 import { PopoverController } from 'ionic-angular/components/popover/popover-controller';
 import { AuthService } from '../../services/auth.service';
+import { AlertController } from 'ionic-angular/components/alert/alert-controller';
+import { LoadingController } from 'ionic-angular/components/loading/loading-controller';
 
 @Component({
   selector: 'page-home',
@@ -25,7 +27,9 @@ export class HomePage implements OnInit {
     private listSrv: ListService,
     private storage: Storage,
     private popoverCtrl: PopoverController,
-    private authService: AuthService
+    private authService: AuthService,
+    private alertCtrl: AlertController,
+    private loadingCtrl: LoadingController
   ) {
   }
 
@@ -87,26 +91,61 @@ export class HomePage implements OnInit {
   }
 
   onShowOptions(event: MouseEvent){
+    const loading = this.loadingCtrl.create({
+      content: 'Please wait...'
+    });
     const popover = this.popoverCtrl.create(OptionsPage);
     popover.present({ev: event});
     popover.onDidDismiss(
       data => {
+        if(!data){
+          return;
+        }
         if(data.action == 'load'){
-
-        }else{
-          this.authService.GetActiveUser().getToken()
-            .then((token: string)=>{
-              // this.slService.storeList(token)
-              // .subscribe(
-              //   () => console.log('Success!'),
-              //   error => {
-              //     console.log(error);
-              //   }
-              // );
-            });
+          // loading.present();
+          // this.authService.GetActiveUser().getToken()
+          //   .then((token: string)=>{
+          //     this.slService.fetchList(token)
+          //     .subscribe(
+          //       (list: Ingredient[]) => {
+          //         loading.dismiss();
+          //         if(list){
+          //           this.listItems = list;
+          //         }else{
+          //           this.listItems = [];
+          //         }
+          //       },
+          //       error => {
+          //         loading.dismiss();
+          //         this.HandleError(error.json().error);
+          //       }
+          //     );
+          //   });
+        }else if(data.action == 'store'){
+          // loading.present();
+          // this.authService.GetActiveUser().getToken()
+          //   .then((token: string)=>{
+          //     this.slService.storeList(token)
+          //     .subscribe(
+          //       () => loading.dismiss(),
+          //       error => {
+          //         loading.dismiss();
+          //         this.HandleError(error.json().error);
+          //       }
+          //     );
+          //   });
         }
       }
     )
+  }
+
+  private HandleError(errorMsg: string){
+    const alert = this.alertCtrl.create({
+      title: 'An error occurred!',
+      message: errorMsg,
+      buttons: ['Ok']
+    });
+    alert.present();
   }
 
 }

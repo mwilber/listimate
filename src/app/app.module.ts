@@ -1,3 +1,5 @@
+import { SignupPage } from './../pages/signup/signup';
+import { SigninPage } from './../pages/signin/signin';
 import { AuthService } from './../services/auth.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
@@ -17,7 +19,9 @@ import { OptionsPage } from '../pages/home/options';
     MyApp,
     HomePage,
     ListPage,
-    OptionsPage
+    OptionsPage,
+    SigninPage,
+    SignupPage
   ],
   imports: [
     BrowserModule,
@@ -32,7 +36,9 @@ import { OptionsPage } from '../pages/home/options';
     MyApp,
     HomePage,
     ListPage,
-    OptionsPage
+    OptionsPage,
+    SigninPage,
+    SignupPage
   ],
   providers: [
     StatusBar,

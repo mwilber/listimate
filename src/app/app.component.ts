@@ -1,3 +1,4 @@
+import { SignupPage } from './../pages/signup/signup';
 import { Component, ViewChild } from '@angular/core';
 import { Platform, NavController } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
@@ -7,13 +8,14 @@ import firebase from 'firebase';
 import { HomePage } from '../pages/home/home';
 import { MenuController } from 'ionic-angular/components/app/menu-controller';
 import { AuthService } from '../services/auth.service';
+import { SigninPage } from '../pages/signin/signin';
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
   rootPage:any = HomePage;
-  //signinPage:any = SigninPage;
-  //signupPage:any = SignupPage;
+  signinPage:any = SigninPage;
+  signupPage:any = SignupPage;
   isAuthenticated = false;
   @ViewChild('nav') nav: NavController;
 
@@ -38,7 +40,7 @@ export class MyApp {
         this.rootPage = HomePage;
       }else{
         this.isAuthenticated = false;
-        //this.rootPage = SignupPage;
+        this.rootPage = SignupPage;
       }
     });
   }
@@ -51,7 +53,7 @@ export class MyApp {
   onLogout(){
     this.authService.LogOut();
     this.menuCtrl.close();
-    //this.nav.setRoot(SignupPage);
+    this.nav.setRoot(SignupPage);
   }
 }
 
