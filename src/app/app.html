@@ -1,1 +1,42 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-menu [content]="nav">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <button
+          ion-item
+          icon-left
+          *ngIf="isAuthenticated"
+          (click)="onLoad(tabsPage)">Recipe Book</button>
+        <button
+          ion-item
+          icon-left
+          *ngIf="!isAuthenticated"
+          (click)="onLoad(signinPage)">
+            <ion-icon name="log-in"></ion-icon>
+            SignIn
+        </button>
+        <button
+          ion-item
+          icon-left
+          *ngIf="!isAuthenticated"
+          (click)="onLoad(signupPage)">
+            <ion-icon name="person"></ion-icon>
+            SignUp
+        </button>
+        <button
+          ion-item
+          icon-left
+          *ngIf="isAuthenticated"
+          (click)="onLogout()">
+            <ion-icon name="log-out"></ion-icon>
+            Logout
+        </button>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <ion-nav [root]="rootPage" #nav></ion-nav>
