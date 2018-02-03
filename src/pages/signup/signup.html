@@ -24,7 +24,12 @@
           <ion-input type="password" ngModel name="password" required [minlength]="6"></ion-input>
         </ion-item>
     </ion-row>
-    <button ion-button block type="submit" [disabled]="!f.valid">Signup</button>
+    <button ion-button block type="submit" [disabled]="!f.valid">Sign Up</button>
   </form>
-  <h4 ion-text color="primary" [navPush]="signinPage">Sign In</h4>
 </ion-content>
+
+<ion-footer padding>
+  <ion-buttons>
+    <button ion-button full color="secondary" [navPush]="signinPage">Sign In</button>
+  </ion-buttons>
+</ion-footer>
