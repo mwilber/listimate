@@ -1,13 +1,18 @@
-import { OnInit } from '@angular/core';
+import { OnInit, Injectable } from '@angular/core';
 import { Item } from './../models/item.model';
 import { ShopList } from "../models/shop-list.model";
 import { Subject } from 'rxjs/Subject';
+import { Http } from "@angular/http";
+import 'rxjs/Rx';
+import { AuthService } from './auth.service';
+import { Response } from '@angular/http/src/static_response';
 
+@Injectable()
 export class ListService implements OnInit{
   private lists: ShopList[];
   public listSave: Subject<boolean>;
 
-  constructor(){
+  constructor(private http: Http, private authService: AuthService) {
 
     this.listSave = new Subject<boolean>();
 
@@ -77,6 +82,35 @@ export class ListService implements OnInit{
     this.listSave.next(true);
     //console.log('all lists saved', this.lists);
     //this.storage.set('lists',JSON.stringify(this.lists));
+  }
+
+
+
+  RemoteStore(token: string){
+    const userId = this.authService.GetActiveUser().uid;
+    return this.http
+      .put('https://listimate.firebaseio.com/'+userId+'/lists.json?auth='+token, this.lists)
+      .map((response: Response)=>{
+        return response.json();
+      });
+  }
+
+  RemoteFetch(token: string){
+    const userId = this.authService.GetActiveUser().uid;
+    return this.http
+      .get('https://listimate.firebaseio.com/'+userId+'/lists.json?auth='+token)
+      .map((response: Response)=>{
+        const ingredients: ShopList[] = response.json() ? response.json() : [];
+        for(let ingredient of ingredients){
+          if(!ingredient.hasOwnProperty('name')){
+            ingredient.name = "unnamed";
+          }
+        }
+        return ingredients;
+      })
+      .do((data)=>{
+        //this.ingredients = data;
+      });
   }
 
 }

@@ -13,6 +13,7 @@ import { ListService } from '../services/list.service';
 import { ListPage } from '../pages/list/list';
 import { IonicStorageModule } from '@ionic/storage';
 import { OptionsPage } from '../pages/home/options';
+import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { OptionsPage } from '../pages/home/options';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    HttpModule,
     IonicStorageModule.forRoot({
       name: 'listimate',
       driverOrder: ['indexeddb', 'sqlite', 'websql']

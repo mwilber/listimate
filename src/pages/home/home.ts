@@ -11,6 +11,7 @@ import { PopoverController } from 'ionic-angular/components/popover/popover-cont
 import { AuthService } from '../../services/auth.service';
 import { AlertController } from 'ionic-angular/components/alert/alert-controller';
 import { LoadingController } from 'ionic-angular/components/loading/loading-controller';
+import 'rxjs/Rx';
 
 @Component({
   selector: 'page-home',
@@ -102,38 +103,41 @@ export class HomePage implements OnInit {
           return;
         }
         if(data.action == 'load'){
-          // loading.present();
-          // this.authService.GetActiveUser().getToken()
-          //   .then((token: string)=>{
-          //     this.slService.fetchList(token)
-          //     .subscribe(
-          //       (list: Ingredient[]) => {
-          //         loading.dismiss();
-          //         if(list){
-          //           this.listItems = list;
-          //         }else{
-          //           this.listItems = [];
-          //         }
-          //       },
-          //       error => {
-          //         loading.dismiss();
-          //         this.HandleError(error.json().error);
-          //       }
-          //     );
-          //   });
+          loading.present();
+          this.authService.GetActiveUser().getToken()
+            .then((token: string)=>{
+              this.listSrv.RemoteFetch(token)
+              .subscribe(
+                (lists: ShopList[]) => {
+                  loading.dismiss();
+                  if(lists){
+                    lists.forEach((list, idx)=>{
+                      this.listSrv.UpdateList(JSON.stringify(list), idx)
+                    });
+                    this.RefreshLists();
+                  }else{
+                    this.lists = [];
+                  }
+                },
+                error => {
+                  loading.dismiss();
+                  this.HandleError(error.json().error);
+                }
+              );
+            });
         }else if(data.action == 'store'){
-          // loading.present();
-          // this.authService.GetActiveUser().getToken()
-          //   .then((token: string)=>{
-          //     this.slService.storeList(token)
-          //     .subscribe(
-          //       () => loading.dismiss(),
-          //       error => {
-          //         loading.dismiss();
-          //         this.HandleError(error.json().error);
-          //       }
-          //     );
-          //   });
+          loading.present();
+          this.authService.GetActiveUser().getToken()
+            .then((token: string)=>{
+              this.listSrv.RemoteStore(token)
+              .subscribe(
+                () => loading.dismiss(),
+                error => {
+                  loading.dismiss();
+                  this.HandleError(error.json().error);
+                }
+              );
+            });
         }
       }
     )
