@@ -51,17 +51,7 @@ export class HomePage implements OnInit {
 
     this.listSrv.listSave.subscribe((data)=>{
       let cache = [];
-      this.storage.set('lists', JSON.stringify(this.listSrv.GetLists(), function(key, value) {
-          if (typeof value === 'object' && value !== null) {
-              if (cache.indexOf(value) !== -1) {
-                  // Circular reference found, discard key
-                  return;
-              }
-              // Store value in our collection
-              cache.push(value);
-          }
-          return value;
-      }));
+      this.storage.set('lists', JSON.stringify(this.listSrv.GetLists()));
       cache = null;
     });
   }
@@ -129,15 +119,16 @@ export class HomePage implements OnInit {
           loading.present();
           this.authService.GetActiveUser().getToken()
             .then((token: string)=>{
-              this.listSrv.RemoteStore(token)
-              .subscribe(
-                () => loading.dismiss(),
-                error => {
-                  loading.dismiss();
-                  this.HandleError(error.json().error);
-                }
-              );
+              this.listSrv.RemoteStore(token);
+              // .subscribe(
+              //   () => loading.dismiss(),
+              //   error => {
+              //     loading.dismiss();
+              //     this.HandleError(error.json().error);
+              //   }
+              // );
             });
+            loading.dismiss();
         }
       }
     )

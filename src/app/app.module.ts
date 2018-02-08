@@ -15,6 +15,19 @@ import { IonicStorageModule } from '@ionic/storage';
 import { OptionsPage } from '../pages/home/options';
 import { HttpModule } from '@angular/http';
 
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule, AngularFireDatabase } from 'angularfire2/database';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+
+export const firebaseConfig = {
+  apiKey: "AIzaSyDMTmZp8ApiHFQRNwnHV_LlvQcPGKUFAb0",
+  authDomain: "listimate.firebaseapp.com",
+  databaseURL: "https://listimate.firebaseio.com",
+  projectId: "listimate",
+  storageBucket: "listimate.appspot.com",
+  messagingSenderId: "564163854220"
+};
+
 @NgModule({
   declarations: [
     MyApp,
@@ -27,6 +40,9 @@ import { HttpModule } from '@angular/http';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule,
+    AngularFireAuthModule,
     HttpModule,
     IonicStorageModule.forRoot({
       name: 'listimate',
@@ -45,6 +61,7 @@ import { HttpModule } from '@angular/http';
   providers: [
     StatusBar,
     SplashScreen,
+    AngularFireDatabase,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     ListService,
     AuthService

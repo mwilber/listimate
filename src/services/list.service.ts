@@ -6,15 +6,29 @@ import { Http } from "@angular/http";
 import 'rxjs/Rx';
 import { AuthService } from './auth.service';
 import { Response } from '@angular/http/src/static_response';
+import { Observable } from 'rxjs/Observable';
+import { AngularFireDatabase } from 'angularfire2/database';
 
 @Injectable()
 export class ListService implements OnInit{
   private lists: ShopList[];
   public listSave: Subject<boolean>;
 
-  constructor(private http: Http, private authService: AuthService) {
+  items: Observable<any[]>;
+
+  constructor(private http: Http, private authService: AuthService, private afDB: AngularFireDatabase) {
 
     this.listSave = new Subject<boolean>();
+
+    //const userId = this.authService.GetActiveUser().uid;
+    const userId = 'sX8LXM6MIaas4DjmH2RtKZ75Vin2';
+    this.items = afDB.list(userId).valueChanges();
+
+    this.items.subscribe((data)=>{
+      console.log('firebase callback', data);
+    });
+
+
 
     //this.lists = [new ShopList('Grocery',0,0),new ShopList('Costco',0,0)];
     this.lists = [];
@@ -46,7 +60,8 @@ export class ListService implements OnInit{
   }
 
   AddItemToList(listIdx: number, item: Item){
-    this.lists[listIdx].AddItem(item.name, item.qty);
+    //this.lists[listIdx].AddItem(item.name, item.qty);
+    this.lists[listIdx].items.push(new Item(item.name, item.qty, 0));
     this.SaveLists();
   }
 
@@ -74,8 +89,20 @@ export class ListService implements OnInit{
   UpdateList(listJSON:string, listIdx:number){
 
     this.lists[listIdx] = new ShopList('',0,0);
-    this.lists[listIdx].LoadJson(listJSON);
+    this.LoadJson(listJSON,this.lists[listIdx]);
     this.SaveLists();
+  }
+
+  LoadJson(jsonData: string, shopList: ShopList){
+    let rawData = JSON.parse(jsonData);
+
+    shopList.name = rawData.name;
+    shopList.total = rawData.total;
+    shopList.estimate = rawData.estimate;
+
+    rawData.items.forEach((item)=>{
+      shopList.items.push(new Item(item.name, item.qty, item.price, item.complete));
+    });
   }
 
   SaveLists(){
@@ -87,15 +114,18 @@ export class ListService implements OnInit{
 
 
   RemoteStore(token: string){
+
     const userId = this.authService.GetActiveUser().uid;
-    return this.http
-      .put('https://listimate.firebaseio.com/'+userId+'/lists.json?auth='+token, this.lists)
-      .map((response: Response)=>{
-        return response.json();
-      });
+    this.afDB.list(userId).update('lists',this.lists);
+    // return this.http
+    //   .put('https://listimate.firebaseio.com/'+userId+'/lists.json?auth='+token, this.lists)
+    //   .map((response: Response)=>{
+    //     return response.json();
+    //   });
   }
 
   RemoteFetch(token: string){
+
     const userId = this.authService.GetActiveUser().uid;
     return this.http
       .get('https://listimate.firebaseio.com/'+userId+'/lists.json?auth='+token)
@@ -111,6 +141,9 @@ export class ListService implements OnInit{
       .do((data)=>{
         //this.ingredients = data;
       });
+
+
+
   }
 
 }

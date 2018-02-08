@@ -22,7 +22,11 @@ export class MyApp {
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, private menuCtrl: MenuController, private authService:AuthService) {
     firebase.initializeApp({
       apiKey: "AIzaSyDMTmZp8ApiHFQRNwnHV_LlvQcPGKUFAb0",
-      authDomain: "listimate.firebaseapp.com"
+      authDomain: "listimate.firebaseapp.com",
+      databaseURL: "https://listimate.firebaseio.com",
+      projectId: "listimate",
+      storageBucket: "listimate.appspot.com",
+      messagingSenderId: "564163854220"
     });
 
     platform.ready().then(() => {
