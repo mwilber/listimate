@@ -17,11 +17,13 @@ export class ListService implements OnInit{
 
   lists: Observable<any[]>;
 
+  listMeta: {key:string, name:string}[];
+
   constructor(private http: Http, private authService: AuthService, private afDB: AngularFireDatabase) {
 
-    this.listSave = new Subject<boolean>();
+    //this.listSave = new Subject<boolean>();
 
-    this.listChanged = new Subject<ShopList[]>();
+    //this.listChanged = new Subject<ShopList[]>();
 
 
 
@@ -37,6 +39,9 @@ export class ListService implements OnInit{
     // ]);
 
     //console.log(this.lists);
+
+
+    this.listMeta = [];
   }
 
   ngOnInit(){
@@ -50,6 +55,14 @@ export class ListService implements OnInit{
 
       this.lists = this.listsDb.snapshotChanges().map(actions => {
         return actions.map(action => ({ key: action.key, ...action.payload.val() }));
+      });
+
+      this.lists.subscribe((data)=>{
+        this.listMeta = [];
+        for(let idx=0; idx<data.length; idx++){
+          this.listMeta.push({key: data[idx].key, name: data[idx].name});
+        }
+        console.log('listmeta', this.listMeta);
       });
     }
 
@@ -78,11 +91,12 @@ export class ListService implements OnInit{
   }
 
   GetLists(){
-    return this.lists;
+    return this.listMeta;
   }
 
-  GetList(idx: number){
-    return this.lists[idx];
+  GetList(idx: string){
+    let listIdx = this.listMeta.findIndex((item=>item.key===idx));
+    return this.listMeta[listIdx];
   }
 
   // RemoveList(index: number){

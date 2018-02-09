@@ -84,44 +84,7 @@ export class HomePage implements OnInit {
         if(!data){
           return;
         }
-        if(data.action == 'load'){
-          loading.present();
-          this.authService.GetActiveUser().getToken()
-            .then((token: string)=>{
-              this.listSrv.RemoteFetch(token)
-              .subscribe(
-                (lists: ShopList[]) => {
-                  loading.dismiss();
-                  if(lists){
-                    lists.forEach((list, idx)=>{
-                      this.listSrv.UpdateList(JSON.stringify(list), idx)
-                    });
-                    //this.RefreshLists();
-                  }else{
-                    //this.lists = [];
-                  }
-                },
-                error => {
-                  loading.dismiss();
-                  this.HandleError(error.json().error);
-                }
-              );
-            });
-        }else if(data.action == 'store'){
-          loading.present();
-          this.authService.GetActiveUser().getToken()
-            .then((token: string)=>{
-              this.listSrv.RemoteStore(token);
-              // .subscribe(
-              //   () => loading.dismiss(),
-              //   error => {
-              //     loading.dismiss();
-              //     this.HandleError(error.json().error);
-              //   }
-              // );
-            });
-            loading.dismiss();
-        }else if(data.action == 'connect'){
+        if(data.action == 'connect'){
           this.lists = this.listSrv.FirebaseConnect();
         }
       }

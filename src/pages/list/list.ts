@@ -52,13 +52,6 @@ export class ListPage implements OnInit {
         this.listTotal += item.price*item.qty;
         this.listEstimate += Math.ceil(item.price)*item.qty;
       }
-      // Move completed to bottom of the list
-
-      // if(index > -1){
-      //   if(this.items[index].complete) this.items.push(this.items.splice(index, 1)[0]);
-      // }
-      //this.listChanged.next(true);
-      //this.listSrv.UpdateList(JSON.stringify(this.shopList), this.shopListIdx);
     });
 
   }
@@ -86,54 +79,54 @@ export class ListPage implements OnInit {
     this.itemSrv.RemoveItem(item);
   }
 
-  onMoveToList(item: string){
-    //this.CreateMoveListAlert(item).present();
+  onMoveToList(item: Item){
+    this.CreateMoveListAlert(item).present();
   }
 
-  // private CreateMoveListAlert(item: string){
+  private CreateMoveListAlert(item: Item){
 
-  //   let listlist = [];
+    let listlist = [];
 
-  //   // this.listSrv.GetLists().forEach((list, idx)=>{
-  //   //   listlist.push({
-  //   //     type: 'radio',
-  //   //     label: list.name,
-  //   //     value: idx,
-  //   //     checked: false
-  //   //   });
-  //   // });
+    this.listSrv.GetLists().forEach((list: any)=>{
+      listlist.push({
+        type: 'radio',
+        label: list.name,
+        value: list.key,
+        checked: false
+      });
+    });
 
-  //   return this.alertCtrl.create({
-  //     'title': 'Move To List',
-  //     inputs: listlist,
-  //     buttons: [
-  //       {
-  //         text: 'Move',
-  //         handler: data => {
-  //           console.log('move '+item.name+' to', data);
-  //           this.listSrv.AddItemToList(data, item);
-  //           this.itemSrv.RemoveItem(item);
-  //           const toast = this.toastCtrl.create({
-  //             message: item.name+' moved to '+this.listSrv.GetList(data).name,
-  //             duration: 2000,
-  //             position: 'bottom'
-  //           });
-  //           toast.present();
-  //         }
-  //       },
-  //       {
-  //         text: 'New List',
-  //         handler: data => {
-  //           //this.CreateNewListAlert(item).present();
-  //         }
-  //       },
-  //       {
-  //         text: 'Cancel',
-  //         role: 'cancel'
-  //       }
-  //     ]
-  //   });
-  // }
+    return this.alertCtrl.create({
+      'title': 'Move To List',
+      inputs: listlist,
+      buttons: [
+        {
+          text: 'Move',
+          handler: data => {
+            console.log('move '+item.name+' to', data);
+            this.listSrv.AddItemToList(data, new Item(item.name, item.qty, item.price));
+            this.itemSrv.RemoveItem(item.key);
+            const toast = this.toastCtrl.create({
+              message: item.name+' moved to '+this.listSrv.GetList(data).name,
+              duration: 2000,
+              position: 'bottom'
+            });
+            toast.present();
+          }
+        },
+        {
+          text: 'New List',
+          handler: data => {
+            //this.CreateNewListAlert(item).present();
+          }
+        },
+        {
+          text: 'Cancel',
+          role: 'cancel'
+        }
+      ]
+    });
+  }
 
   // private CreateNewListAlert(item: Item){
   //   return this.alertCtrl.create({
