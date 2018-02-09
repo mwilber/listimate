@@ -48,7 +48,6 @@ export class HomePage implements OnInit {
     // });
 
     this.InitAddListForm();
-    this.RefreshLists();
 
     // this.listSrv.listSave.subscribe((data)=>{
     //   let cache = [];
@@ -57,10 +56,11 @@ export class HomePage implements OnInit {
     // });
 
     //this.lists = this.listSrv.lists;
+    //this.listSrv.FirebaseConnect();
   }
 
   ionViewDidEnter(){
-    this.RefreshLists();
+
   }
 
   InitAddListForm(){
@@ -72,16 +72,12 @@ export class HomePage implements OnInit {
   onAddList(){
     this.listSrv.AddList(this.addListForm.get('title').value);
     this.addListForm.reset();
-    this.RefreshLists();
   }
 
-  RefreshLists(){
-    //this.lists = this.listSrv.GetLists();
-  }
+
 
   onRemoveFromLists(list: any){
     this.listSrv.RemoveListFromLists(list);
-    this.RefreshLists();
   }
 
   onShowOptions(event: MouseEvent){
@@ -107,9 +103,9 @@ export class HomePage implements OnInit {
                     lists.forEach((list, idx)=>{
                       this.listSrv.UpdateList(JSON.stringify(list), idx)
                     });
-                    this.RefreshLists();
+                    //this.RefreshLists();
                   }else{
-                    this.lists = [];
+                    //this.lists = [];
                   }
                 },
                 error => {

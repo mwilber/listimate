@@ -1,6 +1,6 @@
 <ion-header>
   <ion-navbar color="primary">
-    <ion-title>{{shopList.name}}</ion-title>
+    <ion-title>{{listName}}</ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -21,25 +21,25 @@
       </ion-item>
   </form>
   <ion-item color="dark" (touchstart)="onTotalPress()" (touchend)="onTotalRelease()">
-    <h1 *ngIf="showTotal">{{ shopList.total | currency:"$":0 }}</h1>
-    <h1 *ngIf="!showTotal">{{ shopList.estimate | currency:"$":0 }}</h1>
+    <h1 *ngIf="showTotal">{{ listTotal | currency:"$":0 }}</h1>
+    <h1 *ngIf="!showTotal">{{ listEstimate | currency:"$":0 }}</h1>
   </ion-item>
   <ion-list>
-    <ion-item-sliding *ngFor="let item of shopList.items; let i=index">
+    <ion-item-sliding *ngFor="let item of items | async | itemsort">
       <ion-item>
         <h2 [ngClass]="{'checked':item.complete === true}">{{ item.name }}</h2>
         <ion-buttons item-end>
-          <button ion-button outline (tap)="onQtyUpdate(i)" (press)="onQtyClear(i)">{{ item.qty }}</button>
+          <button ion-button outline (tap)="onQtyUpdate(item)" (press)="onQtyClear(item)">{{ item.qty }}</button>
           <ion-icon name="close"></ion-icon>
-          <button ion-button outline (click)="onPriceSelect(i)">{{ item.price | currency:"$":0 }}</button>
+          <button ion-button outline (click)="onPriceSelect(item)">{{ item.price | currency:"$":0 }}</button>
         </ion-buttons>
       </ion-item>
       <ion-item-options>
-        <button ion-button color="danger" (click)="onRemoveFromList(item)">
+        <button ion-button color="danger" (click)="onRemoveFromList(item.key)">
           <ion-icon name="trash"></ion-icon>
           Delete
         </button>
-        <button ion-button color="light" (click)="onMoveToList(item)">
+        <button ion-button color="light" (click)="onMoveToList(item.key)">
             <ion-icon name="folder"></ion-icon>
             Move
           </button>

@@ -1,7 +1,6 @@
 import { ShopList } from './../models/shop-list.model';
 import { OnInit, Injectable } from '@angular/core';
 import { Item } from './../models/item.model';
-import { ShopList } from "../models/shop-list.model";
 import { Subject } from 'rxjs/Subject';
 import { Http } from "@angular/http";
 import 'rxjs/Rx';
@@ -37,7 +36,7 @@ export class ListService implements OnInit{
     //   new Item('Beef',1,0)
     // ]);
 
-    console.log(this.lists);
+    //console.log(this.lists);
   }
 
   ngOnInit(){
@@ -87,7 +86,7 @@ export class ListService implements OnInit{
     //this.lists[listIdx].AddItem(item.name, item.qty);
     //this.lists[listIdx].items.push(new Item(item.name, item.qty, 0));
     //this.SaveLists();
-    this.afDB.list<Item>(userId+'/lists/'+listIdx+'/items').push(item);
+    //this.afDB.list<Item>(userId+'/lists/'+listIdx+'/items').push(item);
   }
 
   GetLists(){

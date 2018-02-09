@@ -1,5 +1,6 @@
 export class Item{
   public complete: boolean;
+  public key: string;
 
   constructor(
     public name: string,

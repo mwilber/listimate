@@ -1,3 +1,5 @@
+import { ItemsortPipe } from './sort.pipe';
+import { ItemService } from './../services/item.service';
 import { SignupPage } from './../pages/signup/signup';
 import { SigninPage } from './../pages/signin/signin';
 import { AuthService } from './../services/auth.service';
@@ -35,7 +37,8 @@ export const firebaseConfig = {
     ListPage,
     OptionsPage,
     SigninPage,
-    SignupPage
+    SignupPage,
+    ItemsortPipe
   ],
   imports: [
     BrowserModule,
@@ -64,6 +67,7 @@ export const firebaseConfig = {
     AngularFireDatabase,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     ListService,
+    ItemService,
     AuthService
   ]
 })
