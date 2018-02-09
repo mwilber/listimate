@@ -1,6 +1,9 @@
 import firebase from 'firebase';
 
 export class AuthService{
+
+  public uid = null;
+
   SignUp(email: string, password: string){
     return firebase.auth().createUserWithEmailAndPassword(email, password);
   }
@@ -14,6 +17,7 @@ export class AuthService{
   }
 
   GetActiveUser(){
-    return firebase.auth().currentUser;
+      return firebase.auth().currentUser;
+
   }
 }

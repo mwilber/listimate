@@ -49,17 +49,10 @@ export class HomePage implements OnInit {
 
     this.InitAddListForm();
 
-    // this.listSrv.listSave.subscribe((data)=>{
-    //   let cache = [];
-    //   this.storage.set('lists', JSON.stringify(this.listSrv.GetLists()));
-    //   cache = null;
-    // });
-
-    //this.lists = this.listSrv.lists;
-    //this.listSrv.FirebaseConnect();
   }
 
   ionViewDidEnter(){
+    this.lists = this.listSrv.FirebaseConnect();
 
   }
 

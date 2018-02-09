@@ -45,25 +45,13 @@ export class ListService implements OnInit{
 
   FirebaseConnect(){
     const userId = this.authService.GetActiveUser().uid;
-    console.log('uid',userId);
-    //const userId = 'sX8LXM6MIaas4DjmH2RtKZ75Vin2';
-    this.listsDb = this.afDB.list<ShopList>(userId+'/lists');
+    if(userId){
+      this.listsDb = this.afDB.list<ShopList>(userId+'/lists');
 
-    // this.lists = this.listsDb.valueChanges().map((data)=>{
-    //   console.log(data);
-    //   return data;
-    // });
-    //this.lists = this.listsDb.valueChanges();
-
-    this.lists = this.listsDb.snapshotChanges().map(actions => {
-      return actions.map(action => ({ key: action.key, ...action.payload.val() }));
-    });
-
-    // this.lists.subscribe((data)=>{
-    //   console.log('firebase callback', data);
-    //   //this.lists = data;
-    //   this.listChanged.next(data);
-    // });
+      this.lists = this.listsDb.snapshotChanges().map(actions => {
+        return actions.map(action => ({ key: action.key, ...action.payload.val() }));
+      });
+    }
 
     return this.lists;
   }
@@ -75,9 +63,9 @@ export class ListService implements OnInit{
     //   this.SaveLists();
     // });
     console.log(this.lists);
-    this.SaveLists();
+    //this.SaveLists();
     //return this.lists.length-1;
-    return -1;
+    //return -1;
     //this.lists.map();
   }
 
@@ -86,7 +74,7 @@ export class ListService implements OnInit{
     //this.lists[listIdx].AddItem(item.name, item.qty);
     //this.lists[listIdx].items.push(new Item(item.name, item.qty, 0));
     //this.SaveLists();
-    //this.afDB.list<Item>(userId+'/lists/'+listIdx+'/items').push(item);
+    this.afDB.list<Item>(userId+'/lists/'+listIdx+'/items').push(item);
   }
 
   GetLists(){
@@ -111,12 +99,12 @@ export class ListService implements OnInit{
     // this.SaveLists();
   }
 
-  UpdateList(listJSON:string, listIdx:number){
+  // UpdateList(listJSON:string, listIdx:number){
 
-    this.lists[listIdx] = new ShopList('',0,0);
-    this.LoadJson(listJSON,this.lists[listIdx]);
-    this.SaveLists();
-  }
+  //   this.lists[listIdx] = new ShopList('',0,0);
+  //   this.LoadJson(listJSON,this.lists[listIdx]);
+  //   this.SaveLists();
+  // }
 
   LoadJson(jsonData: string, shopList: ShopList){
     let rawData = JSON.parse(jsonData);
@@ -130,11 +118,11 @@ export class ListService implements OnInit{
     });
   }
 
-  SaveLists(){
-    this.listSave.next(true);
-    //console.log('all lists saved', this.lists);
-    //this.storage.set('lists',JSON.stringify(this.lists));
-  }
+  // SaveLists(){
+  //   this.listSave.next(true);
+  //   //console.log('all lists saved', this.lists);
+  //   //this.storage.set('lists',JSON.stringify(this.lists));
+  // }
 
 
 

@@ -14,7 +14,7 @@ import { ItemService } from '../../services/item.service';
 @Component({
   selector: 'page-list',
   templateUrl: 'list.html',
-  pipes: [ ItemsortPipe ]
+  //pipes: [ ItemsortPipe ]
 })
 export class ListPage implements OnInit {
 
