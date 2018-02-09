@@ -13,6 +13,11 @@ import { ViewController } from "ionic-angular/navigation/view-controller";
       </ion-row>
       <ion-row>
         <ion-col>
+          <button ion-button outline (click)="onAction('connect')">Open Connection</button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
           <button ion-button outline (click)="onAction('load')">Load List</button>
         </ion-col>
       </ion-row>

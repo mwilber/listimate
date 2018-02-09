@@ -1,3 +1,4 @@
+import { Observable } from 'rxjs/Observable';
 import { OptionsPage } from './options';
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
@@ -21,7 +22,7 @@ export class HomePage implements OnInit {
 
   listPage = ListPage;
   addListForm: FormGroup;
-  lists: ShopList[];
+  lists: Observable<any[]>;
 
   constructor(
     public navCtrl: NavController,
@@ -36,24 +37,26 @@ export class HomePage implements OnInit {
 
   ngOnInit(){
 
-    //Pull saved lists from local storage
-    this.storage.get('lists').then((val) => {
-      if( val ){
-        JSON.parse(val).forEach((list, idx)=>{
-          this.listSrv.UpdateList(JSON.stringify(list), idx)
-        });
-        this.RefreshLists();
-      }
-    });
+    // //Pull saved lists from local storage
+    // this.storage.get('lists').then((val) => {
+    //   if( val ){
+    //     JSON.parse(val).forEach((list, idx)=>{
+    //       this.listSrv.UpdateList(JSON.stringify(list), idx)
+    //     });
+    //     this.RefreshLists();
+    //   }
+    // });
 
     this.InitAddListForm();
     this.RefreshLists();
 
-    this.listSrv.listSave.subscribe((data)=>{
-      let cache = [];
-      this.storage.set('lists', JSON.stringify(this.listSrv.GetLists()));
-      cache = null;
-    });
+    // this.listSrv.listSave.subscribe((data)=>{
+    //   let cache = [];
+    //   this.storage.set('lists', JSON.stringify(this.listSrv.GetLists()));
+    //   cache = null;
+    // });
+
+    //this.lists = this.listSrv.lists;
   }
 
   ionViewDidEnter(){
@@ -73,10 +76,10 @@ export class HomePage implements OnInit {
   }
 
   RefreshLists(){
-    this.lists = this.listSrv.GetLists();
+    //this.lists = this.listSrv.GetLists();
   }
 
-  onRemoveFromLists(list: ShopList){
+  onRemoveFromLists(list: any){
     this.listSrv.RemoveListFromLists(list);
     this.RefreshLists();
   }
@@ -129,6 +132,8 @@ export class HomePage implements OnInit {
               // );
             });
             loading.dismiss();
+        }else if(data.action == 'connect'){
+          this.lists = this.listSrv.FirebaseConnect();
         }
       }
     )

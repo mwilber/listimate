@@ -278,9 +278,11 @@ export class ListPage implements OnInit {
   // }
 
   AddItem(name: string, amount: number){
-    this.shopList.items.push( new Item(name, amount, 0) );
-    console.log(this.shopList.items);
+    //if( !this.shopList.items ) this.shopList.items = [];
+    //this.shopList.items.push( new Item(name, amount, 0) );
+    //console.log(this.shopList.items);
     //this.RefreshList();
+    this.listSrv.AddItemToList(this.shopList.key, new Item(name, amount, 0) );
   }
 
   // AddItems(items: Item[]){
@@ -302,22 +304,22 @@ export class ListPage implements OnInit {
       return itemEl.name === pItem.name;
     });
     shopList.items.splice(position, 1);
-    //this.RefreshList();
+    this.RefreshList();
   }
 
   UpdateItemPrice(price:number, index:number, shopList:ShopList){
     shopList.items[index].price = price;
-    //this.RefreshList(index);
+    this.RefreshList(index);
   }
 
   UpdateItemQty(qty:number, index:number, shopList:ShopList){
     shopList.items[index].qty = qty;
-    //shopList.RefreshList(index);
+    this.RefreshList(index);
   }
 
   BumpItemQty(index:number, shopList:ShopList){
     shopList.items[index].qty++;
-    //this.RefreshList();
+    this.RefreshList();
   }
 
   RefreshList(index:number=-1){
@@ -340,7 +342,7 @@ export class ListPage implements OnInit {
     //   if(this.items[index].complete) this.items.push(this.items.splice(index, 1)[0]);
     // }
     //this.listChanged.next(true);
-    this.listSrv.UpdateList(JSON.stringify(this.shopList), this.shopListIdx);
+    //this.listSrv.UpdateList(JSON.stringify(this.shopList), this.shopListIdx);
   }
 
 

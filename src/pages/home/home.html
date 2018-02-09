@@ -34,16 +34,16 @@
       </ion-item>
   </form>
   <ion-list>
-    <ion-item-sliding *ngFor="let list of lists; let i=index">
+    <ion-item-sliding *ngFor="let list of lists | async">
       <button
         [navPush]="listPage"
-        [navParams]="{list:list,index:i}"
+        [navParams]="{list:list,index:list.key}"
         ion-item>
         <h2>{{ list.name }}</h2>
         <p>{{ list.estimate | currency:"$":0 }}</p>
       </button>
       <ion-item-options>
-        <button ion-button color="danger" (click)="onRemoveFromLists(list)">
+        <button ion-button color="danger" (click)="onRemoveFromLists(list.key)">
           <ion-icon name="trash"></ion-icon>
           Delete
         </button>

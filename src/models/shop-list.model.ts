@@ -3,7 +3,7 @@ import { Subject } from "rxjs/Subject";
 
 export class ShopList{
 
-  public items: Item[];
+  public items: Item[] = [];
   //public listChanged: Subject<boolean>;
 
   constructor(
