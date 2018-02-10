@@ -52,6 +52,7 @@ export class ListPage implements OnInit {
         this.listTotal += item.price*item.qty;
         this.listEstimate += Math.ceil(item.price)*item.qty;
       }
+      this.listSrv.UpdateListTotals(this.shopListIdx, this.listTotal, this.listEstimate);
     });
 
   }
