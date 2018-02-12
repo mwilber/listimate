@@ -33,6 +33,21 @@ export class ItemService {
     this.itemsDb.remove(itemId);
   }
 
+  DoCheckout(listIdx: string){
+    const userId = this.authService.GetActiveUser().uid;
+    this.items.forEach((data)=>{
+      data.forEach((item)=>{
+        if(item.complete){
+          console.log('archive', item);
+          item.listId = listIdx;
+          item.checkout = new Date().getTime()
+          this.afDB.list(userId+'/archive/').push(item);
+          this.itemsDb.remove(item.key);
+        }
+      });
+    });
+  }
+
   UpdateItem(itemId: string, item: Item){
     //shopList.items[index].qty = qty;
     //this.RefreshList(index);

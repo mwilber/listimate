@@ -80,6 +80,10 @@ export class ListPage implements OnInit {
     this.itemSrv.RemoveItem(item);
   }
 
+  onCheckout(){
+    this.itemSrv.DoCheckout(this.shopListIdx);
+  }
+
   onMoveToList(item: Item){
     this.CreateMoveListAlert(item).present();
   }
