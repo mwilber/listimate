@@ -3,4 +3,11 @@ page-list {
     text-decoration: line-through;
     opacity: 0.5;
   }
+  .list{
+    .label{
+      .icon{
+        line-height: 1;
+      }
+    }
+  }
 }
