@@ -24,7 +24,7 @@ export class ItemService {
   }
 
   AddItem(listIdx: string, item: Item){
-    const userId = this.authService.GetActiveUser().uid;
+    //const userId = this.authService.GetActiveUser().uid;
     //this.afDB.list<Item>(userId+'/lists/'+listIdx+'/items').push(item);
     this.itemsDb.push(item);
   }
@@ -35,16 +35,17 @@ export class ItemService {
 
   DoCheckout(listIdx: string){
     const userId = this.authService.GetActiveUser().uid;
-    this.items.forEach((data)=>{
-      data.forEach((item)=>{
+    let test = this.afDB.list<Item>(userId+'/lists/'+listIdx+'/items').valueChanges().subscribe((items)=>{
+      items.forEach((item)=>{
         if(item.complete){
           console.log('archive', item);
           item.listId = listIdx;
-          item.checkout = new Date().getTime()
+          item.checkout = new Date().getTime();
           this.afDB.list(userId+'/archive/').push(item);
           this.itemsDb.remove(item.key);
         }
       });
+      test.unsubscribe();
     });
   }
 

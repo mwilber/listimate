@@ -81,7 +81,26 @@ export class ListPage implements OnInit {
   }
 
   onCheckout(){
-    this.itemSrv.DoCheckout(this.shopListIdx);
+    this.CreateCheckoutAlert().present();
+  }
+
+  CreateCheckoutAlert(){
+    return this.alertCtrl.create({
+      title:'Checkout',
+      subTitle:'Remove purchased items from this list?',
+      buttons:[
+        {
+          text: 'Ok',
+          handler: data =>{
+            this.itemSrv.DoCheckout(this.shopListIdx);
+          }
+        },
+        {
+          text: 'Cancel',
+          role: 'cancel'
+        }
+      ]
+    });
   }
 
   onMoveToList(item: Item){
