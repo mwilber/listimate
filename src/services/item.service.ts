@@ -8,6 +8,7 @@ import { Observable } from 'rxjs/Observable';
 export class ItemService {
   private itemsDb: AngularFireList<Item>;
   public items: Observable<any[]>;
+  private itemSubject;
 
   constructor(private authService: AuthService, private afDB: AngularFireDatabase) {}
 

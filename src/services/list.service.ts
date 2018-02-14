@@ -12,9 +12,14 @@ export class ListService{
   public listChanged: Subject<ShopList[]>;
   lists: Observable<any[]>;
   listMeta: {key:string, name:string}[];
+  private listSubject;
 
   constructor(private authService: AuthService, private afDB: AngularFireDatabase) {
     this.listMeta = [];
+  }
+
+  Descruct(){
+    this.listSubject.unsubscribe();
   }
 
   FirebaseConnect(){
@@ -26,7 +31,7 @@ export class ListService{
         return actions.map(action => ({ key: action.key, ...action.payload.val() }));
       });
 
-      this.lists.subscribe((data)=>{
+      this.listSubject = this.lists.subscribe((data)=>{
         this.listMeta = [];
         for(let idx=0; idx<data.length; idx++){
           this.listMeta.push({key: data[idx].key, name: data[idx].name});
