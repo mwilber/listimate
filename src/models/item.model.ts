@@ -1,6 +1,8 @@
 export class Item{
   public complete: boolean;
   public key: string;
+  public listId: string;
+  public checkout: number;
 
   constructor(
     public name: string,

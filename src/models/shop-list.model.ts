@@ -1,5 +1,4 @@
 import { Item } from "./item.model";
-import { Subject } from "rxjs/Subject";
 
 export class ShopList{
 
@@ -12,8 +11,6 @@ export class ShopList{
     public estimate: number
   ){
     this.items = [];
-    //this.RefreshList();
-    //this.listChanged = new Subject<boolean>();
   }
 
 

@@ -1,20 +1,16 @@
-import { ItemsortPipe } from './../../app/sort.pipe';
 import { Observable } from 'rxjs/Observable';
 import { ListService } from './../../services/list.service';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 import { NavParams } from 'ionic-angular/navigation/nav-params';
-import { ShopList } from '../../models/shop-list.model';
 import { Item } from '../../models/item.model';
 import { AlertController } from 'ionic-angular/components/alert/alert-controller';
 import { ToastController } from 'ionic-angular/components/toast/toast-controller';
-import { ActionSheetController } from 'ionic-angular/components/action-sheet/action-sheet-controller';
 import { ItemService } from '../../services/item.service';
 
 @Component({
   selector: 'page-list',
   templateUrl: 'list.html',
-  //pipes: [ ItemsortPipe ]
 })
 export class ListPage implements OnInit {
 

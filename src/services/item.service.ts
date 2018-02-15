@@ -24,8 +24,6 @@ export class ItemService {
   }
 
   AddItem(listIdx: string, item: Item){
-    //const userId = this.authService.GetActiveUser().uid;
-    //this.afDB.list<Item>(userId+'/lists/'+listIdx+'/items').push(item);
     this.itemsDb.push(item);
   }
 
@@ -50,8 +48,6 @@ export class ItemService {
   }
 
   UpdateItem(itemId: string, item: Item){
-    //shopList.items[index].qty = qty;
-    //this.RefreshList(index);
     if(item.price > 0 && item.qty > 0){
       item.complete = true;
     }else if(item.complete){

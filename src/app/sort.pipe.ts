@@ -1,5 +1,4 @@
 import { Pipe } from "@angular/core";
-import { Item } from "../models/item.model";
 
 @Pipe({
   name: "itemsort"
