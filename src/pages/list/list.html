@@ -31,8 +31,12 @@
   </ion-item>
   <ion-list>
     <ion-item-sliding *ngFor="let item of items | async | itemsort">
-      <ion-item>
-        <h2 [ngClass]="{'checked':item.complete === true}">{{ item.name }}</h2>
+      <ion-item icon-left>
+
+        <h2 [ngClass]="{'checked':item.complete === true}" icon-left>
+          <ion-icon name="pin" color="primary" *ngIf="item.pinned"></ion-icon>
+          {{ item.name }}
+        </h2>
         <ion-buttons item-end>
           <button ion-button outline (tap)="onQtyUpdate(item)" (press)="onQtyClear(item)">{{ item.qty }}</button>
           <ion-icon name="close"></ion-icon>
@@ -45,9 +49,13 @@
           Delete
         </button>
         <button ion-button color="light" (click)="onMoveToList(item)">
-            <ion-icon name="folder"></ion-icon>
-            Move
-          </button>
+          <ion-icon name="folder"></ion-icon>
+          Move
+        </button>
+        <button ion-button color="light" (click)="onPinToList(item)">
+          <ion-icon name="pin"></ion-icon>
+          Pin
+        </button>
       </ion-item-options>
     </ion-item-sliding>
   </ion-list>

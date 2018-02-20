@@ -8,6 +8,7 @@ import { Observable } from 'rxjs/Observable';
 export class ItemService {
   private itemsDb: AngularFireList<Item>;
   public items: Observable<any[]>;
+  private itemSubject;
 
   constructor(private authService: AuthService, private afDB: AngularFireDatabase) {}
 
@@ -35,11 +36,18 @@ export class ItemService {
     const userId = this.authService.GetActiveUser().uid;
     let test = this.afDB.list<Item>(userId+'/lists/'+listIdx+'/items').valueChanges().subscribe((items)=>{
       items.forEach((item)=>{
-        if(item.complete){
+        if(item.complete && !item.pinned){
           console.log('archive', item);
           item.listId = listIdx;
           item.checkout = new Date().getTime();
           this.afDB.list(userId+'/archive/').push(item);
+          this.itemsDb.remove(item.key);
+        }else if(item.complete && item.pinned){
+          console.log('archive pinned', item);
+          item.listId = listIdx;
+          item.checkout = new Date().getTime();
+          this.afDB.list(userId+'/archive/').push(item);
+          this.itemsDb.push(new Item(item.name, item.qty, 0, false, item.pinned));
           this.itemsDb.remove(item.key);
         }
       });

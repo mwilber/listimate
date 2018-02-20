@@ -99,6 +99,11 @@ export class ListPage implements OnInit {
     });
   }
 
+  onPinToList(item: Item){
+    item.pinned = !item.pinned;
+    this.itemSrv.UpdateItem(item.key, item);
+  }
+
   onMoveToList(item: Item){
     this.CreateMoveListAlert(item).present();
   }
