@@ -29,7 +29,7 @@
     <h1 *ngIf="showTotal">{{ listTotal | currency:"$":0 }}</h1>
     <h1 *ngIf="!showTotal">{{ listEstimate | currency:"$":0 }}</h1>
   </ion-item>
-  <ion-scroll style="height:calc( 100vh - 15em );" scrollY="true">
+  <ion-scroll class="scroller" scrollY="true">
     <ion-list>
       <ion-item-sliding *ngFor="let item of items | async | itemsort">
         <ion-item>
