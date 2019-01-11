@@ -19,7 +19,16 @@ export class ListService {
 
   constructor(private authService: AuthService) {
     this._shopList = {
-      
+      name: 'FoodLion',
+      total: 0.00,
+      estimate: 0.00,
+      items: [
+        {
+          name: 'Cucumber',
+          qty: 0,
+          price: 0.0
+        }
+      ]
     }
   }
 
