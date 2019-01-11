@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Subject, Observable } from 'rxjs';
 import { AuthService } from './auth.service';
+import { ShopList } from '../interfaces/shop-list';
 
 @Injectable({
   providedIn: 'root'
@@ -8,6 +9,8 @@ import { AuthService } from './auth.service';
 export class ListService {
 
   //private listsDb: AngularFireList<ShopList>;
+  private _shopList: ShopList;
+
   public listSave: Subject<boolean>;
   public listChanged: Subject<ShopList[]>;
   lists: Observable<any[]>;
@@ -15,7 +18,9 @@ export class ListService {
   private listSubject;
 
   constructor(private authService: AuthService) {
-    this.listMeta = [];
+    this._shopList = {
+      
+    }
   }
 
   Descruct(){
