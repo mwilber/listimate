@@ -1,0 +1,4805 @@
+{
+  "u3rGG2D9VuWvsxJGpfQhoyD3xTM2": {
+    "lists": [
+      {
+        "items": [
+          {
+            "defer": false,
+            "name": "Frozen ffs ",
+            "pinned": "true",
+            "price": 2.97,
+            "quantity": 2
+          },
+          {
+            "defer": false,
+            "name": "Decaf soda",
+            "pinned": "true",
+            "price": 1.88,
+            "quantity": 2
+          },
+          {
+            "defer": false,
+            "name": "Soup",
+            "pinned": "true",
+            "price": 2.48,
+            "quantity": 2
+          },
+          {
+            "defer": true,
+            "name": "Ranch",
+            "pinned": "true",
+            "price": 0,
+            "quantity": 1
+          },
+          {
+            "defer": true,
+            "name": "Popcorn ",
+            "pinned": "true",
+            "price": 0,
+            "quantity": 1
+          },
+          {
+            "defer": false,
+            "name": "donuts",
+            "pinned": "true",
+            "price": 4.24,
+            "quantity": 1
+          },
+          {
+            "defer": true,
+            "name": "ketchup",
+            "pinned": "true",
+            "price": 0,
+            "quantity": 2
+          },
+          {
+            "defer": false,
+            "name": "Lettuce",
+            "pinned": "true",
+            "price": 3.93,
+            "quantity": 1
+          },
+          {
+            "defer": false,
+            "name": "cucumber",
+            "pinned": "true",
+            "price": 0.98,
+            "quantity": 2
+          },
+          {
+            "defer": false,
+            "name": "pepper",
+            "pinned": "true",
+            "price": 2.97,
+            "quantity": 1
+          },
+          {
+            "defer": false,
+            "name": "carrot",
+            "pinned": "true",
+            "price": 1.32,
+            "quantity": 1
+          },
+          {
+            "defer": true,
+            "name": "sf vanilla creamer",
+            "pinned": "true",
+            "price": 0,
+            "quantity": 2
+          },
+          {
+            "defer": true,
+            "name": "Bananas ",
+            "pinned": "true",
+            "price": 0,
+            "quantity": 3
+          },
+          {
+            "defer": false,
+            "name": "Roma tomatoes ",
+            "pinned": "true",
+            "price": 1.27,
+            "quantity": 2
+          },
+          {
+            "defer": true,
+            "name": "Small chicken tender ",
+            "pinned": "true",
+            "price": 0,
+            "quantity": 1
+          },
+          {
+            "defer": true,
+            "name": "Omega trail mix",
+            "pinned": "true",
+            "price": 0,
+            "quantity": 1
+          },
+          {
+            "defer": false,
+            "name": "Ground Beef",
+            "pinned": "true",
+            "price": 5.94,
+            "quantity": 1
+          },
+          {
+            "defer": true,
+            "name": "Zero carb Tortilla ",
+            "pinned": "true",
+            "price": 0,
+            "quantity": 1
+          },
+          {
+            "defer": false,
+            "name": "Life Cereal ",
+            "pinned": "true",
+            "price": 2.94,
+            "quantity": 1
+          },
+          {
+            "defer": false,
+            "name": "tv dinner",
+            "pinned": "true",
+            "price": 1.87,
+            "quantity": 2
+          },
+          {
+            "defer": false,
+            "name": "sloppy joe rolls",
+            "price": 3.97,
+            "quantity": 1
+          },
+          {
+            "defer": true,
+            "name": "mountain dew",
+            "price": 0,
+            "quantity": 1
+          },
+          {
+            "defer": false,
+            "name": "Frozen peas carrot",
+            "price": 0.98,
+            "quantity": 1
+          },
+          {
+            "defer": true,
+            "name": "Gallon bags",
+            "price": 0,
+            "quantity": 1
+          },
+          {
+            "defer": false,
+            "name": "9v battery ",
+            "price": 0,
+            "quantity": 1
+          },
+          {
+            "name": "Sweet Rolls",
+            "price": 3.94,
+            "quantity": 1
+          },
+          {
+            "name": "Baked beans",
+            "price": 2.42,
+            "quantity": 1
+          },
+          {
+            "name": "Frozen corn",
+            "price": 0.98,
+            "quantity": 1
+          },
+          {
+            "name": "Macaroni and cheese",
+            "price": 2.48,
+            "quantity": 1
+          },
+          {
+            "name": "Dishwasher detergent",
+            "price": 6.94,
+            "quantity": 1
+          },
+          {
+            "name": "laundry detergent",
+            "price": 8.94,
+            "quantity": 2
+          },
+          {
+            "defer": true,
+            "name": "paper towel",
+            "price": 0,
+            "quantity": 1
+          },
+          {
+            "name": "bottled water",
+            "price": 5.98,
+            "quantity": 1
+          },
+          {
+            "name": "Rye bread ",
+            "price": 4.34,
+            "quantity": 1
+          },
+          {
+            "name": "Short garden hose",
+            "price": 20,
+            "quantity": 1
+          },
+          {
+            "name": "Peanut oil",
+            "price": 17.16,
+            "quantity": 1
+          },
+          {
+            "name": "Small paper towel ",
+            "price": 3.98,
+            "quantity": 1
+          },
+          {
+            "defer": true,
+            "name": "Toilet paper ",
+            "price": 0,
+            "quantity": 1
+          }
+        ],
+        "name": "WalMart",
+        "number": 0,
+        "stores": {
+          "Aldi": false,
+          "WalMart": true
+        }
+      },
+      {
+        "items": [
+          {
+            "defer": false,
+            "name": "Milk",
+            "pinned": "true",
+            "price": 0,
+            "quantity": 1
+          },
+          {
+            "defer": true,
+            "name": "Tortilla",
+            "pinned": "true",
+            "price": 0,
+            "quantity": 1
+          },
+          {
+            "defer": false,
+            "name": "Eggs",
+            "pinned": "true",
+            "price": 0,
+            "quantity": 1
+          },
+          {
+            "defer": false,
+            "name": "American cheese ",
+            "pinned": "true",
+            "price": 0,
+            "quantity": 1
+          },
+          {
+            "defer": false,
+            "name": "butter",
+            "pinned": "true",
+            "price": 0,
+            "quantity": 2
+          },
+          {
+            "defer": false,
+            "name": "Broccoli ",
+            "pinned": "true",
+            "price": 0,
+            "quantity": 2
+          },
+          {
+            "defer": true,
+            "name": "Honey ",
+            "pinned": "true",
+            "price": 0,
+            "quantity": 1
+          },
+          {
+            "defer": true,
+            "name": "Spray oil",
+            "pinned": "true",
+            "price": 0,
+            "quantity": 1
+          },
+          {
+            "defer": false,
+            "name": "Lettuce",
+            "pinned": "true",
+            "price": 0,
+            "quantity": 1
+          },
+          {
+            "defer": false,
+            "name": "cucumber",
+            "pinned": "true",
+            "price": 0,
+            "quantity": 2
+          },
+          {
+            "defer": false,
+            "name": "cheese sticks",
+            "pinned": "true",
+            "price": 0,
+            "quantity": 1
+          },
+          {
+            "defer": false,
+            "name": "Mayonnaise ",
+            "pinned": "true",
+            "price": 0,
+            "quantity": 1
+          },
+          {
+            "defer": false,
+            "name": "Sharp cheddar ",
+            "pinned": "true",
+            "price": 0,
+            "quantity": 1
+          },
+          {
+            "defer": true,
+            "name": "Parm cheese ",
+            "pinned": "true",
+            "price": 0,
+            "quantity": 1
+          },
+          {
+            "defer": true,
+            "name": "Olive oil ",
+            "pinned": "true",
+            "price": 0,
+            "quantity": 2
+          },
+          {
+            "defer": true,
+            "name": "647 white bread ",
+            "pinned": "true",
+            "price": 0,
+            "quantity": 1
+          },
+          {
+            "defer": true,
+            "name": "Deli turkey ",
+            "pinned": "true",
+            "price": 0,
+            "quantity": 1
+          },
+          {
+            "defer": false,
+            "name": "frozen chicken strips",
+            "pinned": "true",
+            "price": 0,
+            "quantity": 1
+          },
+          {
+            "defer": true,
+            "name": "chex",
+            "pinned": "true",
+            "price": 0,
+            "quantity": 2
+          },
+          {
+            "defer": false,
+            "name": "cheerios",
+            "pinned": "true",
+            "price": 0,
+            "quantity": 1
+          },
+          {
+            "defer": true,
+            "name": "Ground Turkey",
+            "pinned": "true",
+            "price": 0,
+            "quantity": 1
+          },
+          {
+            "defer": false,
+            "name": "Cookies ",
+            "pinned": "true",
+            "price": 0,
+            "quantity": 1
+          },
+          {
+            "defer": false,
+            "name": "Calzone ",
+            "pinned": "true",
+            "price": 0,
+            "quantity": 1
+          },
+          {
+            "defer": true,
+            "name": "frozen chicken",
+            "pinned": "true",
+            "price": 0,
+            "quantity": 1
+          },
+          {
+            "defer": false,
+            "name": "Light Fit Grk Vnla",
+            "pinned": "true",
+            "price": 0,
+            "quantity": 1
+          },
+          {
+            "defer": false,
+            "name": "Swiss cheese block",
+            "pinned": "true",
+            "price": 0,
+            "quantity": 1
+          },
+          {
+            "defer": false,
+            "name": "Swiss cheese ",
+            "pinned": "true",
+            "price": 0,
+            "quantity": 1
+          },
+          {
+            "defer": true,
+            "name": "Roma tomatoes ",
+            "pinned": "true",
+            "price": 0,
+            "quantity": 1
+          },
+          {
+            "defer": false,
+            "name": "Pepper",
+            "pinned": "true",
+            "price": 0,
+            "quantity": 1
+          },
+          {
+            "defer": false,
+            "name": "Wheat thins",
+            "pinned": "true",
+            "price": 0,
+            "quantity": 2
+          },
+          {
+            "defer": true,
+            "name": "Tuna",
+            "pinned": "true",
+            "price": 0,
+            "quantity": 2
+          },
+          {
+            "defer": true,
+            "name": "English muffin ",
+            "pinned": "true",
+            "price": 0,
+            "quantity": 1
+          },
+          {
+            "defer": true,
+            "name": "Turkey burger ",
+            "pinned": "true",
+            "price": 0,
+            "quantity": 1
+          },
+          {
+            "defer": false,
+            "name": "sloppy joe sauce",
+            "price": 0,
+            "quantity": 1
+          },
+          {
+            "defer": false,
+            "name": "fancy rolls",
+            "price": 0,
+            "quantity": 1
+          },
+          {
+            "defer": false,
+            "name": "Sweet Rolls",
+            "price": 0,
+            "quantity": 1
+          },
+          {
+            "defer": false,
+            "name": "fancy pasta",
+            "price": 0,
+            "quantity": 1
+          },
+          {
+            "defer": false,
+            "name": "bacon bits",
+            "price": 0,
+            "quantity": 1
+          },
+          {
+            "defer": false,
+            "name": "Pepperoni",
+            "price": 0,
+            "quantity": 1
+          },
+          {
+            "defer": false,
+            "name": "rice",
+            "price": 0,
+            "quantity": 1
+          },
+          {
+            "name": "Lemon juice ",
+            "price": 0,
+            "quantity": 1
+          }
+        ],
+        "name": "Aldi",
+        "number": 0,
+        "stores": {
+          "Aldi": true,
+          "WalMart": false
+        }
+      },
+      {
+        "items": [
+          {
+            "name": "Evaporated milk",
+            "price": 4.99,
+            "quantity": 1
+          },
+          {
+            "name": "Apple cider ",
+            "price": 7.99,
+            "quantity": 1
+          },
+          {
+            "name": "Holiday cheerwine ",
+            "price": 0,
+            "quantity": 1
+          },
+          {
+            "name": "7up",
+            "price": 0,
+            "quantity": 1
+          },
+          {
+            "name": "Onions",
+            "price": 2.5,
+            "quantity": 1
+          },
+          {
+            "name": "Oranges",
+            "price": 2.79,
+            "quantity": 1
+          }
+        ],
+        "name": "Food Lion",
+        "number": 0,
+        "stores": {
+          "Aldi": false,
+          "WalMart": true
+        }
+      },
+      {
+        "name": "Publix",
+        "number": 0,
+        "stores": {
+          "Aldi": false,
+          "WalMart": true
+        }
+      },
+      {
+        "items": [
+          {
+            "name": "Valspar ultra white tinted",
+            "price": 0,
+            "quantity": 1
+          },
+          {
+            "name": "Sand",
+            "price": 0,
+            "quantity": 1
+          },
+          {
+            "name": "Rollers",
+            "price": 0,
+            "quantity": 1
+          }
+        ],
+        "name": "Lowes",
+        "number": 0,
+        "stores": {
+          "Aldi": false,
+          "WalMart": true
+        }
+      }
+    ],
+    "prices": {
+      "1PTHALFHALF": {
+        "WalMart": 1.79,
+        "x": "x"
+      },
+      "1QTHALFHALF": {
+        "WalMart": 2.74,
+        "x": "x"
+      },
+      "2-CYCLEENGINEOIL": {
+        "WalMart": 1.82,
+        "x": "x"
+      },
+      "25WLIGHTBULB": {
+        "x": "x"
+      },
+      "28OZCANSSANMARZANATOMATOE": {
+        "WalMart": 3.87,
+        "x": "x"
+      },
+      "2BOXSFLEMONPUDDING": {
+        "WalMart": 0.98,
+        "x": "x"
+      },
+      "2CANSEVAPMILK": {
+        "WalMart": 1.39,
+        "x": "x"
+      },
+      "2LBELBOWMACARONI": {
+        "WalMart": 1.79,
+        "x": "x"
+      },
+      "2LITERDIETLEMONSODA": {
+        "WalMart": 2.68,
+        "x": "x"
+      },
+      "2STROKEOIL": {
+        "WalMart": 1.56,
+        "x": "x"
+      },
+      "32OZBLOCKSHARPCHEDDAR": {
+        "WalMart": 10.99,
+        "x": "x"
+      },
+      "50CTCOLORLIGHT": {
+        "WalMart": 2.48,
+        "x": "x"
+      },
+      "5W20OIL": {
+        "Aldi": 26.97,
+        "x": "x"
+      },
+      "6 FOOT 1X8": {
+        "x": "x"
+      },
+      "647BREAD": {
+        "Aldi": 4.29,
+        "x": "x"
+      },
+      "647WHITEBREAD": {
+        "Aldi": 3.65,
+        "WalMart": 4.14,
+        "x": "x"
+      },
+      "6FOOT1X8": {
+        "x": "x"
+      },
+      "7UP": {
+        "WalMart": 7.28,
+        "x": "x"
+      },
+      "7UPSHERLEYTEMPLE": {
+        "x": "x"
+      },
+      "8OZBLKFONTINACHZ": {
+        "x": "x"
+      },
+      "8OZGOUDACHZ": {
+        "WalMart": 4.38,
+        "x": "x"
+      },
+      "9VBATTERY": {
+        "x": "x"
+      },
+      "ACHINIPASTA": {
+        "WalMart": 1.76,
+        "x": "x"
+      },
+      "ADDITIONALSMALLTURKEY": {
+        "Aldi": 13.13,
+        "x": "x"
+      },
+      "ALFOIL": {
+        "Aldi": 3.89,
+        "WalMart": 8.74,
+        "x": "x"
+      },
+      "ALFREDO": {
+        "Aldi": 1.65,
+        "WalMart": 2.72,
+        "x": "x"
+      },
+      "ALFREDOSAUCE": {
+        "Aldi": 1.64,
+        "WalMart": 2.48,
+        "x": "x"
+      },
+      "ALFREEDEODORANT": {
+        "WalMart": 5.97,
+        "x": "x"
+      },
+      "ALMONDEXTRACT": {
+        "WalMart": 3.42,
+        "x": "x"
+      },
+      "ALMONDMILK": {
+        "Aldi": 2.25,
+        "x": "x"
+      },
+      "ALMONDPASTE": {
+        "x": "x"
+      },
+      "ALPHABIT": {
+        "WalMart": 4.78,
+        "x": "x"
+      },
+      "ALUMINIUMFOIL": {
+        "WalMart": 5.64,
+        "x": "x"
+      },
+      "AMERICANCHEESE": {
+        "Aldi": 3.95,
+        "WalMart": 3.84,
+        "x": "x"
+      },
+      "AMORESUNDRIEDTOMATOPASTE": {
+        "WalMart": 3.43,
+        "x": "x"
+      },
+      "ANTACID": {
+        "WalMart": 2.48,
+        "x": "x"
+      },
+      "APPLE": {
+        "Aldi": 2.99,
+        "WalMart": 5.16,
+        "x": "x"
+      },
+      "APPLECHIP": {
+        "Aldi": 1.99,
+        "WalMart": 3.28,
+        "x": "x"
+      },
+      "APPLECIDER": {
+        "Aldi": 5.69,
+        "Food_Lion": 7.99,
+        "WalMart": 3.38,
+        "x": "x"
+      },
+      "APPLECRISPBOX": {
+        "WalMart": 5.48,
+        "x": "x"
+      },
+      "APPLEJUICE": {
+        "Aldi": 1.55,
+        "WalMart": 2.84,
+        "x": "x"
+      },
+      "APPLETEA": {
+        "x": "x"
+      },
+      "ARTIFICIALTEAR": {
+        "WalMart": 6.42,
+        "x": "x"
+      },
+      "ASIANBEEFSEASON": {
+        "WalMart": 1.88,
+        "x": "x"
+      },
+      "ASIANZING": {
+        "Aldi": 3.86,
+        "WalMart": 3.28,
+        "x": "x"
+      },
+      "AUGRATIN": {
+        "x": "x"
+      },
+      "AUGRATINPOTATO": {
+        "Aldi": 1.15,
+        "x": "x"
+      },
+      "AUGRATINPOTATOE": {
+        "Aldi": 1.15,
+        "x": "x"
+      },
+      "AUJU": {
+        "WalMart": 1.56,
+        "x": "x"
+      },
+      "B-DAYCARD": {
+        "x": "x"
+      },
+      "BABYCARROT": {
+        "Aldi": 0.89,
+        "x": "x"
+      },
+      "BACITRACIN": {
+        "WalMart": 4.86,
+        "x": "x"
+      },
+      "BACON": {
+        "Aldi": 4.45,
+        "WalMart": 5.48,
+        "x": "x"
+      },
+      "BACONBIT": {
+        "Aldi": 1.33,
+        "x": "x"
+      },
+      "BAGEL": {
+        "Aldi": 1.55,
+        "WalMart": 1.55,
+        "x": "x"
+      },
+      "BAGELCHIP": {
+        "Aldi": 2.99,
+        "x": "x"
+      },
+      "BAGGEDBABYSPINACHNGREEN": {
+        "Aldi": 2.89,
+        "x": "x"
+      },
+      "BAGHERSHEYMINI": {
+        "WalMart": 11.98,
+        "x": "x"
+      },
+      "BAGOFLEMON": {
+        "WalMart": 3.92,
+        "x": "x"
+      },
+      "BAGUETTE": {
+        "WalMart": 1,
+        "x": "x"
+      },
+      "BAKEDBEAN": {
+        "WalMart": 2.42,
+        "x": "x"
+      },
+      "BAKINGPOWDER": {
+        "Aldi": 1.85,
+        "x": "x"
+      },
+      "BAKINGSODA": {
+        "Aldi": 2.54,
+        "WalMart": 3.24,
+        "x": "x"
+      },
+      "BALM": {
+        "Aldi": 1.24,
+        "x": "x"
+      },
+      "BALSAMICVINAIGRETTE": {
+        "WalMart": 2.67,
+        "x": "x"
+      },
+      "BAMBOOSKEWER": {
+        "WalMart": 0.97,
+        "x": "x"
+      },
+      "BANANA": {
+        "Aldi": 0.35,
+        "WalMart": 0.54,
+        "x": "x"
+      },
+      "BANDAGE": {
+        "WalMart": 3.74,
+        "x": "x"
+      },
+      "BANDAID": {
+        "WalMart": 1.98,
+        "x": "x"
+      },
+      "BANKINGSODA": {
+        "WalMart": 3.24,
+        "x": "x"
+      },
+      "BARSOAP": {
+        "Aldi": 10.97,
+        "WalMart": 12.97,
+        "x": "x"
+      },
+      "BARSSEMI-SWEETBAKINGCHOCOLATE": {
+        "Aldi": 3,
+        "x": "x"
+      },
+      "BASIL": {
+        "WalMart": 1.98,
+        "x": "x"
+      },
+      "BASILPLANT": {
+        "x": "x"
+      },
+      "BBQCORNCHIP": {
+        "WalMart": 4.48,
+        "x": "x"
+      },
+      "BDAYCARD": {
+        "WalMart": 5.69,
+        "x": "x"
+      },
+      "BEANSANDRICE": {
+        "WalMart": 1.48,
+        "x": "x"
+      },
+      "BEANSPROUT": {
+        "x": "x"
+      },
+      "BEDDING": {
+        "WalMart": 11.88,
+        "x": "x"
+      },
+      "BEEFMARINADE": {
+        "WalMart": 1.26,
+        "x": "x"
+      },
+      "BEGEL": {
+        "x": "x"
+      },
+      "BELLPEPPER": {
+        "x": "x"
+      },
+      "BIGBAGPEPPERMINT": {
+        "WalMart": 6.57,
+        "x": "x"
+      },
+      "BINDERFOLDER": {
+        "x": "x"
+      },
+      "BIRRIAMEAT": {
+        "x": "x"
+      },
+      "BIRTHDAYCAKE": {
+        "Publix": 26.99,
+        "x": "x"
+      },
+      "BIRTHDAYCARD": {
+        "WalMart": 4.99,
+        "x": "x"
+      },
+      "BIRTHDAYCARDFORDAD": {
+        "WalMart": 1,
+        "x": "x"
+      },
+      "BISCUIT": {
+        "WalMart": 1.97,
+        "x": "x"
+      },
+      "BLACKBEAN": {
+        "Aldi": 0.85,
+        "WalMart": 0.86,
+        "x": "x"
+      },
+      "BLACKDUCKTAPE": {
+        "x": "x"
+      },
+      "BLACKPEPPER": {
+        "Aldi": 3.15,
+        "x": "x"
+      },
+      "BLAH": {
+        "WalMart": 7
+      },
+      "BLEACH": {
+        "Aldi": 5.85,
+        "WalMart": 5.88,
+        "x": "x"
+      },
+      "BLEACHCLEANER": {
+        "WalMart": 0.98,
+        "x": "x"
+      },
+      "BLEACHSPRAY": {
+        "WalMart": 2.77,
+        "x": "x"
+      },
+      "BLUEBERRY": {
+        "WalMart": 3.76,
+        "x": "x"
+      },
+      "BLUEBERRYPANCAKECEREAL": {
+        "WalMart": 4.78,
+        "x": "x"
+      },
+      "BOLOGNA": {
+        "WalMart": 2.48,
+        "x": "x"
+      },
+      "BONELESSSKINLESSCHICKENBREAST": {
+        "WalMart": 9.74,
+        "x": "x"
+      },
+      "BOOKBAG": {
+        "x": "x"
+      },
+      "BOSSPECIALSAUCE": {
+        "x": "x"
+      },
+      "BOTTLEBRUSH": {
+        "x": "x"
+      },
+      "BOTTLEDWATER": {
+        "WalMart": 5.98,
+        "x": "x"
+      },
+      "BOTTLEWATER": {
+        "WalMart": 3.48,
+        "x": "x"
+      },
+      "BOWL": {
+        "WalMart": 5.96,
+        "x": "x"
+      },
+      "BOXRICE": {
+        "Aldi": 2.09,
+        "x": "x"
+      },
+      "BRANCEREAL": {
+        "Aldi": 2.49,
+        "x": "x"
+      },
+      "BRANDEDTEABAG": {
+        "WalMart": 3.72,
+        "x": "x"
+      },
+      "BREAD": {
+        "Aldi": 1.69,
+        "x": "x"
+      },
+      "BREADCRUMB": {
+        "Aldi": 1.79,
+        "WalMart": 1.22,
+        "x": "x"
+      },
+      "BREADEDCHICKEN": {
+        "x": "x"
+      },
+      "BREADEDCHICKENTENDER": {
+        "x": "x"
+      },
+      "BREADFLOUR": {
+        "WalMart": 4.56,
+        "x": "x"
+      },
+      "BREADPAN": {
+        "WalMart": 7.97,
+        "x": "x"
+      },
+      "BREADYEAST": {
+        "WalMart": 5.48,
+        "x": "x"
+      },
+      "BREAKFASTPASTRIE": {
+        "Aldi": 3.89,
+        "x": "x"
+      },
+      "BREAKFASTSANDWHICH": {
+        "WalMart": 5.78,
+        "x": "x"
+      },
+      "BREAKFASTSAUSAGE": {
+        "Aldi": 7.95,
+        "x": "x"
+      },
+      "BREAKFASTSAUSAGESTICK": {
+        "x": "x"
+      },
+      "BRILLOPAD": {
+        "WalMart": 1.07,
+        "x": "x"
+      },
+      "BROCCOLI": {
+        "Aldi": 1.89,
+        "WalMart": 2.45,
+        "x": "x"
+      },
+      "BROWNIEKIT": {
+        "WalMart": 5.97,
+        "x": "x"
+      },
+      "BROWNIEMIX": {
+        "WalMart": 1.38,
+        "x": "x"
+      },
+      "BROWNRICE": {
+        "Aldi": 3.49,
+        "x": "x"
+      },
+      "BROWNSUGAR": {
+        "Aldi": 1.95,
+        "WalMart": 2.34,
+        "x": "x"
+      },
+      "BRUSHE": {
+        "x": "x"
+      },
+      "BUFFALOCHICKEN": {
+        "WalMart": 4.44,
+        "x": "x"
+      },
+      "BUFFALOSAUCE": {
+        "WalMart": 3.97,
+        "x": "x"
+      },
+      "BUFFALOWING": {
+        "WalMart": 4.44,
+        "x": "x"
+      },
+      "BUFFALOWINGTHING": {
+        "WalMart": 4.44,
+        "x": "x"
+      },
+      "BUGLIGHT": {
+        "WalMart": 4.48,
+        "x": "x"
+      },
+      "BUGSPRAY": {
+        "WalMart": 7.48,
+        "x": "x"
+      },
+      "BULB": {
+        "WalMart": 6.48,
+        "x": "x"
+      },
+      "BUTTER": {
+        "Aldi": 2.89,
+        "WalMart": 3.96,
+        "x": "x"
+      },
+      "BUTTERMILK": {
+        "WalMart": 3.12,
+        "x": "x"
+      },
+      "BUTTERNUTSQUASH": {
+        "Aldi": 0.99,
+        "x": "x"
+      },
+      "CAJUNSEASON": {
+        "Aldi": 2.99,
+        "x": "x"
+      },
+      "CALENDAR": {
+        "WalMart": 5.88,
+        "x": "x"
+      },
+      "CALIFORNIASTYLEVEGETABLEMIX": {
+        "WalMart": 1.16,
+        "x": "x"
+      },
+      "CALZONE": {
+        "Aldi": 2.39,
+        "x": "x"
+      },
+      "CANBEEF": {
+        "WalMart": 3.94,
+        "x": "x"
+      },
+      "CANCHICKEN": {
+        "x": "x"
+      },
+      "CANCRUSHEDTOMATOE": {
+        "WalMart": 1.36,
+        "x": "x"
+      },
+      "CANDLE": {
+        "WalMart": 3.98,
+        "x": "x"
+      },
+      "CANDY": {
+        "Aldi": 4.97,
+        "WalMart": 4.48,
+        "x": "x"
+      },
+      "CANDYAPPLECEREAL": {
+        "x": "x"
+      },
+      "CANDYCORN": {
+        "Aldi": 2.48,
+        "WalMart": 2.68,
+        "x": "x"
+      },
+      "CANNEDBEEF": {
+        "WalMart": 3.94,
+        "x": "x"
+      },
+      "CANNEDCARROT": {
+        "Aldi": 0.58,
+        "WalMart": 0.58,
+        "x": "x"
+      },
+      "CANNEDCHICKEN": {
+        "Aldi": 2.49,
+        "WalMart": 2.62,
+        "x": "x"
+      },
+      "CANNEDCORN": {
+        "Aldi": 0.71,
+        "x": "x"
+      },
+      "CANNEDCRUSHEDTOMATOE": {
+        "Aldi": 0.98,
+        "x": "x"
+      },
+      "CANNEDGREENBEAN": {
+        "x": "x"
+      },
+      "CANNEDHAM": {
+        "WalMart": 6.28,
+        "x": "x"
+      },
+      "CANNEDNAVYBEAN": {
+        "WalMart": 1.22,
+        "x": "x"
+      },
+      "CANNEDOLIVE": {
+        "Aldi": 1.69,
+        "x": "x"
+      },
+      "CANNEDPUMPKIN": {
+        "Aldi": 0.99,
+        "WalMart": 2.62,
+        "x": "x"
+      },
+      "CANNEDTOMATOSAUCE": {
+        "Aldi": 0.98,
+        "WalMart": 1.36,
+        "x": "x"
+      },
+      "CANNEDTUNA": {
+        "x": "x"
+      },
+      "CANTOMATOSAUCE": {
+        "Aldi": 1.19,
+        "WalMart": 1.36,
+        "x": "x"
+      },
+      "CARAMELAPPLECEREAL": {
+        "WalMart": 2.98,
+        "x": "x"
+      },
+      "CARNEASADASEASON": {
+        "WalMart": 1.98,
+        "x": "x"
+      },
+      "CARNITASSEASON": {
+        "x": "x"
+      },
+      "CARNITASSEASONING": {
+        "WalMart": 2.22,
+        "x": "x"
+      },
+      "CARNITASSESON": {
+        "WalMart": 1.84,
+        "x": "x"
+      },
+      "CARROT": {
+        "Aldi": 0.95,
+        "WalMart": 1.32,
+        "x": "x"
+      },
+      "CARROTPANCAKEMIX": {
+        "Aldi": 3.99,
+        "x": "x"
+      },
+      "CARROTSHRED": {
+        "WalMart": 1.87,
+        "x": "x"
+      },
+      "CARVINGPUMPKIN": {
+        "Aldi": 4.39,
+        "WalMart": 4.5,
+        "x": "x"
+      },
+      "CASHEW": {
+        "Aldi": 4.99,
+        "WalMart": 7.46,
+        "x": "x"
+      },
+      "CAULK": {
+        "Aldi": 7.28,
+        "x": "x"
+      },
+      "CAYNNEPEPPER": {
+        "WalMart": 3.77,
+        "x": "x"
+      },
+      "CCUP": {
+        "WalMart": 3.78,
+        "x": "x"
+      },
+      "CELERY": {
+        "Aldi": 2.29,
+        "WalMart": 0.98,
+        "x": "x"
+      },
+      "CEREAL": {
+        "WalMart": 2.48,
+        "x": "x"
+      },
+      "CHAPSTICK": {
+        "WalMart": 1.38,
+        "x": "x"
+      },
+      "CHEAPALFOIL": {
+        "Aldi": 3.75,
+        "x": "x"
+      },
+      "CHEAPDRILL": {
+        "WalMart": 29.97,
+        "x": "x"
+      },
+      "CHEAPKAISERROLL": {
+        "x": "x"
+      },
+      "CHEAPLAUNDRYDETERGENT": {
+        "WalMart": 7.67,
+        "x": "x"
+      },
+      "CHEAPPAINTBRUSHE": {
+        "WalMart": 6.42,
+        "x": "x"
+      },
+      "CHEAPRANCH": {
+        "Aldi": 1.95,
+        "x": "x"
+      },
+      "CHEAPTOMATOSAUCE": {
+        "Aldi": 1.39,
+        "x": "x"
+      },
+      "CHECKENNUGGET": {
+        "x": "x"
+      },
+      "CHEDDARSLICE": {
+        "Aldi": 1.49,
+        "x": "x"
+      },
+      "CHEERIO": {
+        "Aldi": 1.65,
+        "WalMart": 1.67,
+        "x": "x"
+      },
+      "CHEESE": {
+        "x": "x"
+      },
+      "CHEESEBAGELCHIP": {
+        "Aldi": 2.49,
+        "x": "x"
+      },
+      "CHEESEBALL": {
+        "Aldi": 6.98,
+        "WalMart": 3.18,
+        "x": "x"
+      },
+      "CHEESECAKE": {
+        "Aldi": 6.98,
+        "x": "x"
+      },
+      "CHEESEDOODLE": {
+        "Aldi": 1.75,
+        "WalMart": 2.56,
+        "x": "x"
+      },
+      "CHEESEIT": {
+        "WalMart": 5.87,
+        "x": "x"
+      },
+      "CHEESEPOPCORN": {
+        "Aldi": 1.65,
+        "WalMart": 3.68,
+        "x": "x"
+      },
+      "CHEESESTICK": {
+        "Aldi": 2.89,
+        "WalMart": 2.84,
+        "x": "x"
+      },
+      "CHEESETORTILLAROUND": {
+        "Aldi": 1.89,
+        "x": "x"
+      },
+      "CHEESEWHEATPRETZELSTICK": {
+        "WalMart": 3,
+        "x": "x"
+      },
+      "CHEEZEIT": {
+        "Aldi": 3.59,
+        "x": "x"
+      },
+      "CHEEZIT": {
+        "WalMart": 6.97,
+        "x": "x"
+      },
+      "CHEFBOYARDEE": {
+        "WalMart": 1.37,
+        "x": "x"
+      },
+      "CHERRIE": {
+        "Aldi": 2.29,
+        "WalMart": 4.97,
+        "x": "x"
+      },
+      "CHERRYTOMATO": {
+        "Aldi": 2.89,
+        "x": "x"
+      },
+      "CHEWYTUM": {
+        "WalMart": 5.58,
+        "x": "x"
+      },
+      "CHEX": {
+        "Aldi": 2.85,
+        "WalMart": 2.72,
+        "x": "x"
+      },
+      "CHEXMIX": {
+        "Aldi": 3.96,
+        "WalMart": 3.96,
+        "x": "x"
+      },
+      "CHICFILAALTERNATIVE": {
+        "WalMart": 2.28,
+        "x": "x"
+      },
+      "CHICFILASAUCE": {
+        "Aldi": 2.89,
+        "WalMart": 2.28,
+        "x": "x"
+      },
+      "CHICK-FIL-ASAUCE": {
+        "Aldi": 2.89,
+        "x": "x"
+      },
+      "CHICKENBROTH": {
+        "Aldi": 0.99,
+        "WalMart": 1.27,
+        "x": "x"
+      },
+      "CHICKENBULLION": {
+        "WalMart": 1.88,
+        "x": "x"
+      },
+      "CHICKENDIPPINGSAUCE": {
+        "Aldi": 2.89,
+        "x": "x"
+      },
+      "CHICKENFINGERDIPPINGSAUCE": {
+        "WalMart": 2.28,
+        "x": "x"
+      },
+      "CHICKENNUGGET": {
+        "x": "x"
+      },
+      "CHICKENRANCHSEASON": {
+        "WalMart": 1.98,
+        "x": "x"
+      },
+      "CHICKENSKEWER": {
+        "Aldi": 7.99,
+        "x": "x"
+      },
+      "CHICKENSTOCK": {
+        "Aldi": 1.26,
+        "WalMart": 0.82,
+        "x": "x"
+      },
+      "CHICKENTENDER": {
+        "Aldi": 6.65,
+        "WalMart": 7.86,
+        "x": "x"
+      },
+      "CHICKENTODICE": {
+        "x": "x"
+      },
+      "CHICKPEAZITI": {
+        "Aldi": 2.69,
+        "x": "x"
+      },
+      "CHICPEA": {
+        "Aldi": 0.78,
+        "x": "x"
+      },
+      "CHILIDOGBUN": {
+        "x": "x"
+      },
+      "CHILIPOWDER": {
+        "Aldi": 0.78,
+        "x": "x"
+      },
+      "CHIP": {
+        "Aldi": 1.89,
+        "x": "x"
+      },
+      "CHOCOLATECHIP": {
+        "Aldi": 3.65,
+        "x": "x"
+      },
+      "CHOCOLATECOVEREDCRANBERRIE": {
+        "Aldi": 5.99,
+        "x": "x"
+      },
+      "CHOCOLATEPUDDING": {
+        "WalMart": 1.48,
+        "x": "x"
+      },
+      "CHOCOLATETOPPING": {
+        "Aldi": 1.79,
+        "x": "x"
+      },
+      "CHRISTMASCOOKIE": {
+        "Aldi": 9.99,
+        "WalMart": 4.86,
+        "x": "x"
+      },
+      "CHUCKROAST": {
+        "Aldi": 29.51,
+        "x": "x"
+      },
+      "CILANTRO": {
+        "x": "x"
+      },
+      "CINNAMON": {
+        "Aldi": 0.98,
+        "x": "x"
+      },
+      "CINNAMONANDSUGAR": {
+        "WalMart": 2.77,
+        "x": "x"
+      },
+      "CINNAMONTOASTCRUNCH": {
+        "WalMart": 6.77,
+        "x": "x"
+      },
+      "CIVICWIPERBLADE": {
+        "WalMart": 11.97,
+        "x": "x"
+      },
+      "CLEARDISHSOAP": {
+        "WalMart": 3.12,
+        "x": "x"
+      },
+      "CLOCKWORK": {
+        "WalMart": 6.26,
+        "x": "x"
+      },
+      "CLUBCRACKER": {
+        "Aldi": 2.95,
+        "WalMart": 2.98,
+        "x": "x"
+      },
+      "COALPOPPER": {
+        "WalMart": 2,
+        "x": "x"
+      },
+      "COCA-COLAHOLIDAY": {
+        "x": "x"
+      },
+      "COCACOLA": {
+        "WalMart": 6.88,
+        "x": "x"
+      },
+      "COCACOLADREAMWORLD": {
+        "x": "x"
+      },
+      "COCKTAILWEENIE": {
+        "Aldi": 3.29,
+        "x": "x"
+      },
+      "COCONUTMILK": {
+        "Aldi": 1.99,
+        "WalMart": 2.12,
+        "x": "x"
+      },
+      "COD": {
+        "x": "x"
+      },
+      "COFFEECREAMER": {
+        "WalMart": 3.24,
+        "x": "x"
+      },
+      "COMMANDSTRIP": {
+        "WalMart": 4.12,
+        "x": "x"
+      },
+      "CONDENSEDMILK": {
+        "Aldi": 1.39,
+        "WalMart": 1.32,
+        "x": "x"
+      },
+      "CONDOMENTCUP": {
+        "WalMart": 3.87,
+        "x": "x"
+      },
+      "COOKIE": {
+        "Aldi": 3.25,
+        "WalMart": 6.47,
+        "x": "x"
+      },
+      "COOLWHIP": {
+        "Aldi": 0.99,
+        "x": "x"
+      },
+      "COOLWHITELEDXMASLIGHTS50CT": {
+        "WalMart": 2.76,
+        "x": "x"
+      },
+      "CORMFLAKE": {
+        "x": "x"
+      },
+      "CORN": {
+        "Aldi": 0.63,
+        "x": "x"
+      },
+      "CORNCHEX": {
+        "Aldi": 2.39,
+        "WalMart": 2.67,
+        "x": "x"
+      },
+      "CORNEDBEEF": {
+        "Aldi": 8.22,
+        "x": "x"
+      },
+      "CORNFLAKE": {
+        "Aldi": 1.43,
+        "WalMart": 1.84,
+        "x": "x"
+      },
+      "CORNFLAKES": {
+        "x": "x"
+      },
+      "CORNPOP": {
+        "WalMart": 6.96,
+        "x": "x"
+      },
+      "CORNSQUARE": {
+        "Aldi": 2.59,
+        "x": "x"
+      },
+      "CORNSTARCH": {
+        "Aldi": 1.45,
+        "x": "x"
+      },
+      "COTTONPAD": {
+        "WalMart": 2.14,
+        "x": "x"
+      },
+      "COUNTCHOCULA": {
+        "Aldi": 4.93,
+        "WalMart": 4.93,
+        "x": "x"
+      },
+      "COUSCOU": {
+        "WalMart": 2.62,
+        "x": "x"
+      },
+      "CRABCAKE": {
+        "Aldi": 4.99,
+        "x": "x"
+      },
+      "CRACKER": {
+        "Aldi": 2.95,
+        "x": "x"
+      },
+      "CRANBERRIE": {
+        "Aldi": 0.99,
+        "WalMart": 1.78,
+        "x": "x"
+      },
+      "CRANBERRY": {
+        "WalMart": 0.97,
+        "x": "x"
+      },
+      "CRANBERRYGINGERALE": {
+        "x": "x"
+      },
+      "CRANBERRYJUICE": {
+        "Aldi": 2.59,
+        "x": "x"
+      },
+      "CRANBERRYSAUCE": {
+        "Aldi": 1.55,
+        "WalMart": 1.98,
+        "x": "x"
+      },
+      "CRANBERRYSODA": {
+        "x": "x"
+      },
+      "CRANBERRYSPRITE": {
+        "WalMart": 6.68,
+        "x": "x"
+      },
+      "CRANBERRYTRAILMIX": {
+        "WalMart": 7.98,
+        "x": "x"
+      },
+      "CREAMCHEESEFROSTING": {
+        "Aldi": 1.55,
+        "WalMart": 1.96,
+        "x": "x"
+      },
+      "CREAMER": {
+        "Aldi": 3.97,
+        "WalMart": 2.36,
+        "x": "x"
+      },
+      "CRESCENTROLL": {
+        "WalMart": 1.98,
+        "x": "x"
+      },
+      "CRICUTROLLHOLDER": {
+        "x": "x"
+      },
+      "CRICUTSTUFFLIGHTDARK": {
+        "WalMart": 9.98,
+        "x": "x"
+      },
+      "CRISCO": {
+        "x": "x"
+      },
+      "CRISPYDILLPICKLE": {
+        "Aldi": 4.98,
+        "x": "x"
+      },
+      "CROISSANT": {
+        "Aldi": 4.49,
+        "WalMart": 5.97,
+        "x": "x"
+      },
+      "CROWNREPAIRKIT": {
+        "WalMart": 3.18,
+        "x": "x"
+      },
+      "CRUMBLEDFETACHEESE": {
+        "WalMart": 4.42,
+        "x": "x"
+      },
+      "CRUNCHYCHEESEDOODLE": {
+        "Aldi": 1.75,
+        "x": "x"
+      },
+      "CRUSHEDTOMATO": {
+        "WalMart": 0.87,
+        "x": "x"
+      },
+      "CRUSHEDTOMATOE": {
+        "Aldi": 1.49,
+        "WalMart": 1.52,
+        "x": "x"
+      },
+      "CUCUMBER": {
+        "Aldi": 0.89,
+        "WalMart": 0.98,
+        "x": "x"
+      },
+      "CUMIN": {
+        "Aldi": 0.79,
+        "x": "x"
+      },
+      "CUPOFNOODLE": {
+        "WalMart": 1.18,
+        "x": "x"
+      },
+      "DANDRUFFSHAMPOO": {
+        "Aldi": 5.94,
+        "WalMart": 4.74,
+        "x": "x"
+      },
+      "DAYNYQUIL": {
+        "x": "x"
+      },
+      "DECAFHOLIDAYSODA": {
+        "WalMart": 1.48,
+        "x": "x"
+      },
+      "DECAFSODA": {
+        "WalMart": 1.88,
+        "x": "x"
+      },
+      "DECAFTEA": {
+        "WalMart": 3.32,
+        "x": "x"
+      },
+      "DECAFTEABAG": {
+        "WalMart": 6.12,
+        "x": "x"
+      },
+      "DELICHICKEN": {
+        "Aldi": 5.49,
+        "WalMart": 3.97,
+        "x": "x"
+      },
+      "DELICKN": {
+        "x": "x"
+      },
+      "DELIFRIE": {
+        "x": "x"
+      },
+      "DELITKY": {
+        "Aldi": 5.39,
+        "WalMart": 4.5,
+        "x": "x"
+      },
+      "DELITURKEY": {
+        "Aldi": 5.49,
+        "WalMart": 4.54,
+        "x": "x"
+      },
+      "DELUXEMACNCHEESE": {
+        "WalMart": 2.98,
+        "x": "x"
+      },
+      "DENTALCHEW": {
+        "WalMart": 5.48,
+        "x": "x"
+      },
+      "DENTURECLEANER": {
+        "Aldi": 2.12,
+        "x": "x"
+      },
+      "DEODORANT": {
+        "WalMart": 7.98,
+        "x": "x"
+      },
+      "DESSERT": {
+        "x": "x"
+      },
+      "DICEDTOMATO": {
+        "Aldi": 0.71,
+        "x": "x"
+      },
+      "DICEDTOMATOE": {
+        "Aldi": 0.71,
+        "WalMart": 0.64,
+        "x": "x"
+      },
+      "DICEDTOMATOESWCHILI": {
+        "Aldi": 0.89,
+        "x": "x"
+      },
+      "DICEDTOMATOESWITHCHILE": {
+        "Aldi": 0.85,
+        "x": "x"
+      },
+      "DICEDTOMATOESWITHCHILI": {
+        "Aldi": 0.72,
+        "WalMart": 0.72,
+        "x": "x"
+      },
+      "DICEDTOMATOWITHCHILIE": {
+        "Aldi": 0.85,
+        "x": "x"
+      },
+      "DIPPINGSAUCE": {
+        "WalMart": 2.28,
+        "x": "x"
+      },
+      "DISHSOAP": {
+        "Aldi": 1.55,
+        "WalMart": 5.97,
+        "x": "x"
+      },
+      "DISHWASHERDETERGENT": {
+        "Aldi": 4.45,
+        "WalMart": 6.94,
+        "x": "x"
+      },
+      "DISPOSABLECOFFEECUP": {
+        "x": "x"
+      },
+      "DOGCOOKIE": {
+        "WalMart": 3.98,
+        "x": "x"
+      },
+      "DONUT": {
+        "Aldi": 3.15,
+        "WalMart": 4.24,
+        "x": "x"
+      },
+      "DORITO": {
+        "Aldi": 1.79,
+        "WalMart": 2.24,
+        "x": "x"
+      },
+      "DOUBLESIDEDTAPEAISLEF31": {
+        "WalMart": 1.18,
+        "x": "x"
+      },
+      "DRIEDCRANBERRIE": {
+        "Aldi": 1.69,
+        "x": "x"
+      },
+      "DRIEDCRANBERRYORANGE": {
+        "WalMart": 3.28,
+        "x": "x"
+      },
+      "DRPEPPER": {
+        "WalMart": 6.48,
+        "x": "x"
+      },
+      "DRPEPPERPEEP": {
+        "WalMart": 1.97,
+        "x": "x"
+      },
+      "DRYMUSTARD": {
+        "WalMart": 2.24,
+        "x": "x"
+      },
+      "EASTERCANDY": {
+        "WalMart": 13.24,
+        "x": "x"
+      },
+      "EASTEREGGCANDY": {
+        "x": "x"
+      },
+      "EASTERGRAS": {
+        "WalMart": 0.5,
+        "x": "x"
+      },
+      "EGG": {
+        "Aldi": 1.46,
+        "WalMart": 5.82,
+        "x": "x"
+      },
+      "EGGHUNTCANDY": {
+        "WalMart": 4.97,
+        "x": "x"
+      },
+      "EGGNOG": {
+        "WalMart": 3.56,
+        "x": "x"
+      },
+      "EGGNOODLE": {
+        "Aldi": 1.69,
+        "WalMart": 1.72,
+        "x": "x"
+      },
+      "EGGNOODLES": {
+        "x": "x"
+      },
+      "EGGOWAFFLE": {
+        "x": "x"
+      },
+      "EGGS": {
+        "WalMart": 1,
+        "x": "x"
+      },
+      "ELBOWMACARONI": {
+        "Aldi": 1.65,
+        "WalMart": 0.98,
+        "x": "x"
+      },
+      "EMMAYO": {
+        "Aldi": 1.89,
+        "WalMart": 2.98,
+        "x": "x"
+      },
+      "EMRANCH": {
+        "Aldi": 1.95,
+        "x": "x"
+      },
+      "ENCHILADASAUCE": {
+        "WalMart": 1,
+        "x": "x"
+      },
+      "ENGLISHMUFFIN": {
+        "Aldi": 1.25,
+        "WalMart": 3.48,
+        "x": "x"
+      },
+      "EQUATESINUSCONJESTIONANDPAIN": {
+        "WalMart": 4.42,
+        "x": "x"
+      },
+      "EVAPORATEDMILK": {
+        "Aldi": 1.09,
+        "Food_Lion": 4.99,
+        "WalMart": 1.34,
+        "x": "x"
+      },
+      "EVERYTHINGBAGELSEASON": {
+        "Aldi": 1.85,
+        "x": "x"
+      },
+      "EXPLODINGCOAL": {
+        "WalMart": 2.27,
+        "x": "x"
+      },
+      "EXTRAGROUNDTURKEY": {
+        "x": "x"
+      },
+      "EXTRALETTUCE": {
+        "x": "x"
+      },
+      "EXTRAVIRGINOLIVEOIL": {
+        "WalMart": 17.52,
+        "x": "x"
+      },
+      "EYEDROP": {
+        "Aldi": 1.07,
+        "x": "x"
+      },
+      "EYELINER": {
+        "x": "x"
+      },
+      "FABRICSOFTENER": {
+        "x": "x"
+      },
+      "FANCYCRACKER": {
+        "WalMart": 2.95,
+        "x": "x"
+      },
+      "FANCYPASTA": {
+        "x": "x"
+      },
+      "FANCYROLL": {
+        "Aldi": 3.69,
+        "WalMart": 3.98,
+        "x": "x"
+      },
+      "FATHER'SDAYCARD": {
+        "WalMart": 5.99,
+        "x": "x"
+      },
+      "FATHERSDAYANDANNIVERSARYCARD": {
+        "WalMart": 11,
+        "x": "x"
+      },
+      "FETTUCCINE": {
+        "WalMart": 0.98,
+        "x": "x"
+      },
+      "FETTUCCINI": {
+        "WalMart": 0.98,
+        "x": "x"
+      },
+      "FISH": {
+        "Aldi": 4.25,
+        "x": "x"
+      },
+      "FISHFILET": {
+        "WalMart": 4.48,
+        "x": "x"
+      },
+      "FISHFILLET": {
+        "Aldi": 5.99,
+        "x": "x"
+      },
+      "FLATBREADPIZZA": {
+        "Aldi": 4.49,
+        "x": "x"
+      },
+      "FLOUR": {
+        "Aldi": 2.29,
+        "x": "x"
+      },
+      "FOAMBRUSH": {
+        "WalMart": 0.97,
+        "x": "x"
+      },
+      "FOODCOLOR": {
+        "WalMart": 3.88,
+        "x": "x"
+      },
+      "FOODCOLORING": {
+        "WalMart": 3.67,
+        "x": "x"
+      },
+      "FRENCHTOASTSTICK": {
+        "WalMart": 2.74,
+        "x": "x"
+      },
+      "FRENCHVANILLACREAMER": {
+        "WalMart": 3.98,
+        "x": "x"
+      },
+      "FRESHGARLIC": {
+        "WalMart": 0.72,
+        "x": "x"
+      },
+      "FRESHHAMBURGERROLL": {
+        "WalMart": 3.97,
+        "x": "x"
+      },
+      "FRESHPARMCHEESE": {
+        "WalMart": 2.88,
+        "x": "x"
+      },
+      "FRESHSTRINGBEAN": {
+        "WalMart": 1.78,
+        "x": "x"
+      },
+      "FRESHTHYME": {
+        "WalMart": 1.98,
+        "x": "x"
+      },
+      "FRIDAYCOLA": {
+        "Aldi": 2.99,
+        "x": "x"
+      },
+      "FRIDAYFF": {
+        "x": "x"
+      },
+      "FRIDAYLUNCH": {
+        "WalMart": 4.44,
+        "x": "x"
+      },
+      "FROSTBITE": {
+        "WalMart": 7.28,
+        "x": "x"
+      },
+      "FROSTEDFLAKE": {
+        "WalMart": 5,
+        "x": "x"
+      },
+      "FROSTEDMINIWHEAT": {
+        "Aldi": 2.19,
+        "WalMart": 5.47,
+        "x": "x"
+      },
+      "FROZENBLUEBERRY": {
+        "WalMart": 2.47,
+        "x": "x"
+      },
+      "FROZENBREADEDCHICKEN": {
+        "x": "x"
+      },
+      "FROZENBROCCOLI": {
+        "WalMart": 1.16,
+        "x": "x"
+      },
+      "FROZENCALIFORNIAMIX": {
+        "WalMart": 1.16,
+        "x": "x"
+      },
+      "FROZENCARROT": {
+        "x": "x"
+      },
+      "FROZENCARROTPEA": {
+        "WalMart": 0.88,
+        "x": "x"
+      },
+      "FROZENCAULIFLOWER": {
+        "x": "x"
+      },
+      "FROZENCHICKEN": {
+        "Aldi": 7.99,
+        "WalMart": 8.94,
+        "x": "x"
+      },
+      "FROZENCHICKENBREAST": {
+        "WalMart": 9.26,
+        "x": "x"
+      },
+      "FROZENCHICKENSTRIP": {
+        "Aldi": 7.19,
+        "WalMart": 6.48,
+        "x": "x"
+      },
+      "FROZENCHICKENTENDER": {
+        "x": "x"
+      },
+      "FROZENCORN": {
+        "WalMart": 0.98,
+        "x": "x"
+      },
+      "FROZENFF": {
+        "Aldi": 2.79,
+        "WalMart": 2.97,
+        "x": "x"
+      },
+      "FROZENFFS": {
+        "x": "x"
+      },
+      "FROZENGRILLEDCHICKEN": {
+        "Aldi": 5.95,
+        "x": "x"
+      },
+      "FROZENHAMBURGER": {
+        "Aldi": 8.99,
+        "WalMart": 11.92,
+        "x": "x"
+      },
+      "FROZENJUICE": {
+        "WalMart": 2.42,
+        "x": "x"
+      },
+      "FROZENMASHEDPOTATO": {
+        "WalMart": 3.64,
+        "x": "x"
+      },
+      "FROZENMEATBALL": {
+        "Aldi": 6.19,
+        "WalMart": 7.47,
+        "x": "x"
+      },
+      "FROZENMEATBALLS": {
+        "x": "x"
+      },
+      "FROZENMIXEDVEG": {
+        "x": "x"
+      },
+      "FROZENPEASANDCARROT": {
+        "WalMart": 0.98,
+        "x": "x"
+      },
+      "FROZENPEASCARROT": {
+        "WalMart": 0.98,
+        "x": "x"
+      },
+      "FROZENPEPPERMIX": {
+        "WalMart": 2.84,
+        "x": "x"
+      },
+      "FROZENPIZZA": {
+        "Aldi": 7.85,
+        "WalMart": 1.22,
+        "x": "x"
+      },
+      "FROZENSHRIMP": {
+        "x": "x"
+      },
+      "FROZENSOMETHINGFORSOUP": {
+        "x": "x"
+      },
+      "FROZENSPINACH": {
+        "WalMart": 1.26,
+        "x": "x"
+      },
+      "FROZENSTIRFRY": {
+        "x": "x"
+      },
+      "FROZENSTRAWBERRYMANGO": {
+        "Aldi": 2.68,
+        "x": "x"
+      },
+      "FROZENTURKEY": {
+        "Aldi": 33.82,
+        "x": "x"
+      },
+      "FROZENVEG": {
+        "WalMart": 1.19,
+        "x": "x"
+      },
+      "FROZENVEGETABLE": {
+        "WalMart": 1.16,
+        "x": "x"
+      },
+      "FROZENVEGMIX": {
+        "WalMart": 2.72,
+        "x": "x"
+      },
+      "FRUITPUNCH": {
+        "WalMart": 1.76,
+        "x": "x"
+      },
+      "FRUITYPEBBLE": {
+        "Aldi": 2.49,
+        "x": "x"
+      },
+      "GAINDETERGENTPOD": {
+        "WalMart": 15.94,
+        "x": "x"
+      },
+      "GALLONBAG": {
+        "WalMart": 4.67,
+        "x": "x"
+      },
+      "GALLONZIPLOCBAG": {
+        "WalMart": 4.96,
+        "x": "x"
+      },
+      "GARBAGEBAG": {
+        "WalMart": 16.73,
+        "x": "x"
+      },
+      "GARBAGEBAGSSMALL": {
+        "WalMart": 12.47,
+        "x": "x"
+      },
+      "GARLIC": {
+        "Aldi": 1.45,
+        "WalMart": 4.48,
+        "x": "x"
+      },
+      "GARLICBULB": {
+        "WalMart": 4,
+        "x": "x"
+      },
+      "GARLICPOWDER": {
+        "Aldi": 0.98,
+        "WalMart": 1.12,
+        "x": "x"
+      },
+      "GARLICSALT": {
+        "Aldi": 0.79,
+        "WalMart": 3.32,
+        "x": "x"
+      },
+      "GARNIERSKINACTIVECLEANSINGWATER": {
+        "WalMart": 8.97,
+        "x": "x"
+      },
+      "GAUSE": {
+        "x": "x"
+      },
+      "GAUZE": {
+        "WalMart": 3.24,
+        "x": "x"
+      },
+      "GELINSERT": {
+        "Aldi": 5.14,
+        "x": "x"
+      },
+      "GENERICALTTOTIDE": {
+        "x": "x"
+      },
+      "GENERICMAYO": {
+        "x": "x"
+      },
+      "GENERICRANCH": {
+        "Aldi": 1.89,
+        "WalMart": 1.48,
+        "x": "x"
+      },
+      "GENERICTOMATOSAUCE": {
+        "Aldi": 1.35,
+        "x": "x"
+      },
+      "GENESISGAME": {
+        "x": "x"
+      },
+      "GIFTBOW": {
+        "WalMart": 3.48,
+        "x": "x"
+      },
+      "GIFTBOXE": {
+        "WalMart": 3.48,
+        "x": "x"
+      },
+      "GIFTCARDTIN": {
+        "WalMart": 3.98,
+        "x": "x"
+      },
+      "GIFTSACK": {
+        "WalMart": 1.48,
+        "x": "x"
+      },
+      "GIFTWRAP": {
+        "Aldi": 10,
+        "WalMart": 10,
+        "x": "x"
+      },
+      "GINGERPASTE": {
+        "WalMart": 4.38,
+        "x": "x"
+      },
+      "GLASSCLEANER": {
+        "WalMart": 3.48,
+        "x": "x"
+      },
+      "GNOME": {
+        "Aldi": 9.99,
+        "x": "x"
+      },
+      "GOLDFISH": {
+        "Aldi": 4.79,
+        "WalMart": 4.79,
+        "x": "x"
+      },
+      "GOLDFISHCRACKER": {
+        "Aldi": 3.89,
+        "WalMart": 3.38,
+        "x": "x"
+      },
+      "GOLDPOTATOE": {
+        "Aldi": 2.99,
+        "x": "x"
+      },
+      "GOOBER": {
+        "WalMart": 1.24,
+        "x": "x"
+      },
+      "GOOGONE": {
+        "x": "x"
+      },
+      "GOYAADOBO": {
+        "WalMart": 2.83,
+        "x": "x"
+      },
+      "GRAHAMCRACKER": {
+        "Aldi": 1.89,
+        "x": "x"
+      },
+      "GRAHAMCRACKERCRUMB": {
+        "WalMart": 3.43,
+        "x": "x"
+      },
+      "GRAHAMCRACKERCRUST": {
+        "x": "x"
+      },
+      "GRAHMCRACKERCRUST": {
+        "x": "x"
+      },
+      "GRANDSBISCUIT": {
+        "Aldi": 1.69,
+        "WalMart": 1.48,
+        "x": "x"
+      },
+      "GRAPE": {
+        "WalMart": 2.38,
+        "x": "x"
+      },
+      "GRAPEJELLY": {
+        "Aldi": 2.55,
+        "WalMart": 2.27,
+        "x": "x"
+      },
+      "GRASSWEEDKILLER": {
+        "WalMart": 8.47,
+        "x": "x"
+      },
+      "GRAVY": {
+        "Aldi": 1,
+        "x": "x"
+      },
+      "GREENBEAN": {
+        "Aldi": 0.72,
+        "WalMart": 0.64,
+        "x": "x"
+      },
+      "GREENBEANS": {
+        "x": "x"
+      },
+      "GREENGRAPE": {
+        "x": "x"
+      },
+      "GREENONION": {
+        "WalMart": 0.98,
+        "x": "x"
+      },
+      "GRILLEDCHICKEN": {
+        "Aldi": 7.89,
+        "x": "x"
+      },
+      "GRILLEDCHICKENSTRIP": {
+        "Aldi": 7.09,
+        "x": "x"
+      },
+      "GRILLLIGHTER": {
+        "WalMart": 5.76,
+        "x": "x"
+      },
+      "GROUNDBEEF": {
+        "Aldi": 5.49,
+        "WalMart": 5.94,
+        "x": "x"
+      },
+      "GROUNDPEPPER": {
+        "WalMart": 3.66,
+        "x": "x"
+      },
+      "GROUNDTKY": {
+        "Aldi": 2.75,
+        "WalMart": 3.93,
+        "x": "x"
+      },
+      "GROUNDTURKEY": {
+        "Aldi": 2.19,
+        "WalMart": 1.98,
+        "x": "x"
+      },
+      "GUACAMOLE": {
+        "Aldi": 3.95,
+        "x": "x"
+      },
+      "GUACAMOLECUP": {
+        "Aldi": 3.89,
+        "x": "x"
+      },
+      "GUMMYWORM": {
+        "WalMart": 2.18,
+        "x": "x"
+      },
+      "GVCHICKENFINGERDIPPINGSAUCE": {
+        "WalMart": 2.28,
+        "x": "x"
+      },
+      "HALLOWEENCANDY": {
+        "WalMart": 17.58,
+        "x": "x"
+      },
+      "HALLOWEENCEREAL": {
+        "Aldi": 3.68,
+        "x": "x"
+      },
+      "HALLOWEENPRETZEL": {
+        "x": "x"
+      },
+      "HAM": {
+        "x": "x"
+      },
+      "HAMBURGER": {
+        "Aldi": 13.49,
+        "WalMart": 12.97,
+        "x": "x"
+      },
+      "HAMBURGERBUN": {
+        "Aldi": 2.79,
+        "WalMart": 3.5,
+        "x": "x"
+      },
+      "HAMBURGERBUNS": {
+        "x": "x"
+      },
+      "HAMBURGERHELPER": {
+        "WalMart": 1.28,
+        "x": "x"
+      },
+      "HAMBURGERROLL": {
+        "Aldi": 2.99,
+        "WalMart": 3.5,
+        "x": "x"
+      },
+      "HANDSOAP": {
+        "Aldi": 2.69,
+        "WalMart": 2.97,
+        "x": "x"
+      },
+      "HARDROLL": {
+        "Aldi": 3.99,
+        "x": "x"
+      },
+      "HARDTACOSHELL": {
+        "WalMart": 2,
+        "x": "x"
+      },
+      "HASHBROWNPATTIE": {
+        "x": "x"
+      },
+      "HEATGUN": {
+        "x": "x"
+      },
+      "HEAVYCREAM": {
+        "Aldi": 4.69,
+        "WalMart": 6.87,
+        "x": "x"
+      },
+      "HEAVYWHIPPINGCREAM": {
+        "Aldi": 4.59,
+        "WalMart": 3.5,
+        "x": "x"
+      },
+      "HELLOKITTYBUCKET": {
+        "WalMart": 7.87,
+        "x": "x"
+      },
+      "HELLOKITTYEASTERBASKET": {
+        "WalMart": 16.82,
+        "x": "x"
+      },
+      "HELLOKITTYGIFTBAG": {
+        "x": "x"
+      },
+      "HELLOKITTYINFLATABLE": {
+        "WalMart": 32.99,
+        "x": "x"
+      },
+      "HELLOKITTYSTUFF": {
+        "WalMart": 4,
+        "x": "x"
+      },
+      "HELLOKITTYSUNCATCHER": {
+        "WalMart": 19.96,
+        "x": "x"
+      },
+      "HEMORRHOIDCREAM": {
+        "Aldi": 9.87,
+        "x": "x"
+      },
+      "HERBALTEA": {
+        "WalMart": 3.42,
+        "x": "x"
+      },
+      "HERSHEY": {
+        "x": "x"
+      },
+      "HOAGIEROLL": {
+        "Aldi": 3.49,
+        "WalMart": 0.98,
+        "x": "x"
+      },
+      "HOISINSAUCE": {
+        "x": "x"
+      },
+      "HOLIDAY2LITER": {
+        "WalMart": 2.87,
+        "x": "x"
+      },
+      "HOLIDAYCANDY": {
+        "WalMart": 2.98,
+        "x": "x"
+      },
+      "HOLIDAYCHEERWINE": {
+        "x": "x"
+      },
+      "HOLIDAYSODA": {
+        "WalMart": 1.78,
+        "x": "x"
+      },
+      "HOLIDAYTORTILLACHIP": {
+        "WalMart": 2.24,
+        "x": "x"
+      },
+      "HONDA": {
+        "x": "x"
+      },
+      "HONEY": {
+        "Aldi": 4.99,
+        "WalMart": 6.34,
+        "x": "x"
+      },
+      "HONEYCOMB": {
+        "WalMart": 6.77,
+        "x": "x"
+      },
+      "HONEYCOUGHDROP": {
+        "WalMart": 1.13,
+        "x": "x"
+      },
+      "HONEYMUSTARD": {
+        "Aldi": 1.69,
+        "WalMart": 3.12,
+        "x": "x"
+      },
+      "HONEYNUTCHEERIO": {
+        "Aldi": 2.59,
+        "x": "x"
+      },
+      "HONEYROASTEDPEANUT": {
+        "Aldi": 2.29,
+        "x": "x"
+      },
+      "HONEYROASTEDPECAN": {
+        "x": "x"
+      },
+      "HONEYSMACK": {
+        "Aldi": 1.89,
+        "x": "x"
+      },
+      "HOTDOG": {
+        "Aldi": 4.49,
+        "WalMart": 3.94,
+        "x": "x"
+      },
+      "HOTDOGBUN": {
+        "x": "x"
+      },
+      "HOTGLUESTICK": {
+        "WalMart": 6.63,
+        "x": "x"
+      },
+      "HUMMU": {
+        "Aldi": 2.39,
+        "x": "x"
+      },
+      "HYDROGENPEROXIDE": {
+        "WalMart": 1,
+        "x": "x"
+      },
+      "IBUPROFEN": {
+        "WalMart": 1.98,
+        "x": "x"
+      },
+      "ICECREAM": {
+        "Aldi": 2.75,
+        "WalMart": 3.87,
+        "x": "x"
+      },
+      "ICEDCOFFEE": {
+        "x": "x"
+      },
+      "ICEDTEA": {
+        "Aldi": 2.95,
+        "x": "x"
+      },
+      "ICEMELT": {
+        "WalMart": 7.47,
+        "x": "x"
+      },
+      "IMPOSSIBLEBURGER": {
+        "WalMart": 13.48,
+        "x": "x"
+      },
+      "IMPOSSIBLECHICKEN": {
+        "WalMart": 4.42,
+        "x": "x"
+      },
+      "IMPOSSIBLESAUSAGE": {
+        "WalMart": 4.98,
+        "x": "x"
+      },
+      "INCANDESCENTCOLORMINI-LIGHT": {
+        "x": "x"
+      },
+      "INCANDESCENTXMASLIGHTS50CT": {
+        "x": "x"
+      },
+      "INSTANTBISCUIT": {
+        "Aldi": 1.75,
+        "x": "x"
+      },
+      "INSTANTMASHEDPOTATO": {
+        "Aldi": 1.85,
+        "WalMart": 1.32,
+        "x": "x"
+      },
+      "INSTANTOATMEAL": {
+        "WalMart": 1.57,
+        "x": "x"
+      },
+      "IRONONPATCH": {
+        "WalMart": 2.47,
+        "x": "x"
+      },
+      "ISOPROPYLALCOHOL": {
+        "WalMart": 3.98,
+        "x": "x"
+      },
+      "ISSUEPAPER": {
+        "WalMart": 2.98,
+        "x": "x"
+      },
+      "ITALIANSEASON": {
+        "Aldi": 0.98,
+        "WalMart": 1,
+        "x": "x"
+      },
+      "ITALIANSEASONING": {
+        "Aldi": 0.79,
+        "x": "x"
+      },
+      "ITEM": {
+        "Aldi": 6.99,
+        "WalMart": 5.99,
+        "x": "x"
+      },
+      "JALAPENO": {
+        "x": "x"
+      },
+      "JARTOMATOSAUCE": {
+        "Aldi": 1.39,
+        "x": "x"
+      },
+      "JELL-OSUGARFREEPISTACHIO": {
+        "WalMart": 1.32,
+        "x": "x"
+      },
+      "JELLY": {
+        "WalMart": 4.29,
+        "x": "x"
+      },
+      "JELLYBEAN": {
+        "Aldi": 3.99,
+        "WalMart": 3.97,
+        "x": "x"
+      },
+      "JOINTCOMPOUND": {
+        "WalMart": 6.93,
+        "x": "x"
+      },
+      "JUMBALAYA": {
+        "Aldi": 1.35,
+        "WalMart": 1.74,
+        "x": "x"
+      },
+      "JUMBALAYAALTERNATIVE": {
+        "x": "x"
+      },
+      "JUMBALYA": {
+        "Aldi": 1.39,
+        "WalMart": 1.94,
+        "x": "x"
+      },
+      "JUMBALYASAUSAGE": {
+        "Aldi": 3.45,
+        "x": "x"
+      },
+      "KAISERROLL": {
+        "Aldi": 2.88,
+        "WalMart": 2.96,
+        "x": "x"
+      },
+      "KETCHUP": {
+        "WalMart": 1.47,
+        "x": "x"
+      },
+      "KEYLIMEJUICE": {
+        "WalMart": 2.94,
+        "x": "x"
+      },
+      "KIDNEYBEAN": {
+        "Aldi": 0.75,
+        "x": "x"
+      },
+      "KIELBASA": {
+        "Aldi": 2.89,
+        "WalMart": 13.48,
+        "x": "x"
+      },
+      "KILBASA": {
+        "Aldi": 3.45,
+        "x": "x"
+      },
+      "KITKAT": {
+        "WalMart": 2.12,
+        "x": "x"
+      },
+      "KODIAKCAKESHONEYOATPOUCH": {
+        "WalMart": 5.48,
+        "x": "x"
+      },
+      "KOREANBULGOGIPULLEDPORK": {
+        "Aldi": 5.99,
+        "x": "x"
+      },
+      "KOSHERSALT": {
+        "Aldi": 2.95,
+        "WalMart": 3.67,
+        "x": "x"
+      },
+      "LACTAID": {
+        "x": "x"
+      },
+      "LARGELEAFBAG": {
+        "WalMart": 8.97,
+        "x": "x"
+      },
+      "LASAGNA": {
+        "WalMart": 1.84,
+        "x": "x"
+      },
+      "LASAGNANOODLE": {
+        "WalMart": 1.84,
+        "x": "x"
+      },
+      "LASAGNAPAN": {
+        "WalMart": 4.97,
+        "x": "x"
+      },
+      "LASAGNATRAY": {
+        "WalMart": 3.48,
+        "x": "x"
+      },
+      "LAUNDRYDETERGENT": {
+        "WalMart": 8.94,
+        "x": "x"
+      },
+      "LAUNDRYSANETIZER": {
+        "x": "x"
+      },
+      "LEMON": {
+        "x": "x"
+      },
+      "LEMONADE": {
+        "Aldi": 2.95,
+        "x": "x"
+      },
+      "LEMONJUICE": {
+        "Aldi": 2.19,
+        "WalMart": 2.88,
+        "x": "x"
+      },
+      "LENTILLOOP": {
+        "Aldi": 1.99,
+        "x": "x"
+      },
+      "LETTUCE": {
+        "Aldi": 2.99,
+        "WalMart": 3.93,
+        "x": "x"
+      },
+      "LIFECEREAL": {
+        "Aldi": 2.15,
+        "WalMart": 2.94,
+        "x": "x"
+      },
+      "LIGHTBULB": {
+        "WalMart": 4.97,
+        "x": "x"
+      },
+      "LIGHTCORNSYRUP": {
+        "Aldi": 3.99,
+        "x": "x"
+      },
+      "LIGHTER": {
+        "WalMart": 3.96,
+        "x": "x"
+      },
+      "LIGHTFITGREEKYOGURT": {
+        "x": "x"
+      },
+      "LIGHTFITGRKVNLA": {
+        "Aldi": 2.65,
+        "WalMart": 0.72,
+        "x": "x"
+      },
+      "LIME": {
+        "x": "x"
+      },
+      "LIMEJUICE": {
+        "x": "x"
+      },
+      "LINGUINE": {
+        "WalMart": 0.98,
+        "x": "x"
+      },
+      "LINGUINI": {
+        "Aldi": 1.89,
+        "WalMart": 0.98,
+        "x": "x"
+      },
+      "LIQUIDNAILSHEAVYDUTYADHESIVE": {
+        "x": "x"
+      },
+      "LISTERINE": {
+        "WalMart": 6.98,
+        "x": "x"
+      },
+      "LUCKYCHARM": {
+        "Aldi": 4.99,
+        "x": "x"
+      },
+      "LUDEN": {
+        "WalMart": 4.54,
+        "x": "x"
+      },
+      "LUDENSCANDY": {
+        "x": "x"
+      },
+      "MACANDCHEESE": {
+        "Aldi": 1.44,
+        "x": "x"
+      },
+      "MACARONI": {
+        "Aldi": 1.29,
+        "WalMart": 0.98,
+        "x": "x"
+      },
+      "MACARONIANDCHEESE": {
+        "Aldi": 0.56,
+        "WalMart": 2.48,
+        "x": "x"
+      },
+      "MACNCHEESE": {
+        "Aldi": 1.44,
+        "x": "x"
+      },
+      "MAILBOXBOLT": {
+        "x": "x"
+      },
+      "MAKEUPPAD": {
+        "WalMart": 2.14,
+        "x": "x"
+      },
+      "MARINADE": {
+        "WalMart": 2.58,
+        "x": "x"
+      },
+      "MARIOOREO": {
+        "WalMart": 4.58,
+        "x": "x"
+      },
+      "MATCHE": {
+        "WalMart": 3.84,
+        "x": "x"
+      },
+      "MAYONAISE": {
+        "WalMart": 4.48,
+        "x": "x"
+      },
+      "MAYONNAISE": {
+        "Aldi": 2.89,
+        "WalMart": 4.88,
+        "x": "x"
+      },
+      "MDFWALLBOARD": {
+        "x": "x"
+      },
+      "MEATBALL": {
+        "WalMart": 6.96,
+        "x": "x"
+      },
+      "MECHANICALPENCIL": {
+        "x": "x"
+      },
+      "MEDITERRANEANSPICEBLEND": {
+        "WalMart": 1.36,
+        "x": "x"
+      },
+      "METALTRAY": {
+        "x": "x"
+      },
+      "MICROWAVEPOPCORN": {
+        "WalMart": 4.5,
+        "x": "x"
+      },
+      "MILK": {
+        "Aldi": 1.78,
+        "WalMart": 1.81,
+        "x": "x"
+      },
+      "MINCEDGARLIC": {
+        "Aldi": 1.89,
+        "WalMart": 5.42,
+        "x": "x"
+      },
+      "MINICUCUMBER": {
+        "x": "x"
+      },
+      "MINISALTINE": {
+        "WalMart": 3.58,
+        "x": "x"
+      },
+      "MINISKELETON": {
+        "WalMart": 2.98,
+        "x": "x"
+      },
+      "MINITORTILLAROUND": {
+        "Aldi": 1.95,
+        "x": "x"
+      },
+      "MINITORTILLAROUNDSCHEESE": {
+        "x": "x"
+      },
+      "MINT": {
+        "WalMart": 6.88,
+        "x": "x"
+      },
+      "MINTTEA": {
+        "WalMart": 2.92,
+        "x": "x"
+      },
+      "MM": {
+        "WalMart": 3.96,
+        "x": "x"
+      },
+      "MOENCLEAR1-HANDLEKNOBSHOWERFAUCETHANDLEAISLE31": {
+        "Lowes": 13.48,
+        "x": "x"
+      },
+      "MONGOLIANBEEFMIX": {
+        "WalMart": 1.26,
+        "x": "x"
+      },
+      "MONGOLIANBEEFSEASON": {
+        "WalMart": 1.26,
+        "x": "x"
+      },
+      "MONGOLIANSEASONING": {
+        "WalMart": 1.26,
+        "x": "x"
+      },
+      "MONSTERCEREAL": {
+        "WalMart": 4.93,
+        "x": "x"
+      },
+      "MORNINGPASTERY": {
+        "WalMart": 3.98,
+        "x": "x"
+      },
+      "MOTHER'SDAYCARD": {
+        "WalMart": 6.99,
+        "x": "x"
+      },
+      "MOTHERSDAYSTUFF": {
+        "x": "x"
+      },
+      "MOTOROIL": {
+        "WalMart": 27.97,
+        "x": "x"
+      },
+      "MOTOROIL0W20": {
+        "WalMart": 29.47,
+        "x": "x"
+      },
+      "MOUNTAINDEW": {
+        "WalMart": 6,
+        "x": "x"
+      },
+      "MOZZARELLACHEESE": {
+        "x": "x"
+      },
+      "MOZZARELLASTICK": {
+        "Aldi": 3.49,
+        "x": "x"
+      },
+      "MOZZCHEESESTICK": {
+        "x": "x"
+      },
+      "MOZZSTICK": {
+        "Aldi": 3.49,
+        "x": "x"
+      },
+      "MUFFIN": {
+        "Aldi": 3.99,
+        "WalMart": 4.98,
+        "x": "x"
+      },
+      "MUSHROOM": {
+        "WalMart": 0.99,
+        "x": "x"
+      },
+      "MUSTARD": {
+        "Aldi": 1,
+        "WalMart": 0.68,
+        "x": "x"
+      },
+      "NAPKIN": {
+        "Aldi": 1.99,
+        "x": "x"
+      },
+      "NEWITEM": {
+        "Aldi": 2.35,
+        "WalMart": 2.39,
+        "x": "x"
+      },
+      "NIGHTGUARD": {
+        "Aldi": 16.78,
+        "x": "x"
+      },
+      "NINJATURTLE": {
+        "Aldi": 7.89,
+        "WalMart": 19.89,
+        "x": "x"
+      },
+      "NOTEBOOKPEN": {
+        "WalMart": 14,
+        "x": "x"
+      },
+      "NOTEPAD": {
+        "x": "x"
+      },
+      "NOVELTYCHIP": {
+        "Aldi": 1.69,
+        "x": "x"
+      },
+      "NOVELTYPOTATOCHIP": {
+        "Aldi": 1.89,
+        "x": "x"
+      },
+      "NUT": {
+        "Aldi": 4.79,
+        "x": "x"
+      },
+      "NUTMEG": {
+        "Aldi": 0.99,
+        "x": "x"
+      },
+      "NYLONCORD": {
+        "WalMart": 4.97,
+        "x": "x"
+      },
+      "NYQUIL": {
+        "WalMart": 5.98,
+        "x": "x"
+      },
+      "OATMEAL ": {
+        "x": "x"
+      },
+      "OILFILTER": {
+        "WalMart": 11.97,
+        "x": "x"
+      },
+      "OLDBAY": {
+        "WalMart": 3.24,
+        "x": "x"
+      },
+      "OLIVE": {
+        "Aldi": 1.75,
+        "x": "x"
+      },
+      "OLIVEGARDENITALIANDRESSING": {
+        "WalMart": 5.68,
+        "x": "x"
+      },
+      "OLIVEOIL": {
+        "Aldi": 5.59,
+        "WalMart": 4.88,
+        "x": "x"
+      },
+      "OMEGATRAILMIX": {
+        "WalMart": 9.17,
+        "x": "x"
+      },
+      "ONEINCHRINGBINDER": {
+        "x": "x"
+      },
+      "ONION": {
+        "Aldi": 1.89,
+        "Food_Lion": 2.5,
+        "WalMart": 2.94,
+        "x": "x"
+      },
+      "ONIONPOWDER": {
+        "Aldi": 0.98,
+        "WalMart": 1.12,
+        "x": "x"
+      },
+      "ORANGE": {
+        "Aldi": 3.39,
+        "Food_Lion": 2.79,
+        "WalMart": 0.88,
+        "x": "x"
+      },
+      "ORANGECREAMSICLE": {
+        "x": "x"
+      },
+      "ORANGEJUICE": {
+        "WalMart": 5.28,
+        "x": "x"
+      },
+      "ORANGESODA": {
+        "WalMart": 1.42,
+        "x": "x"
+      },
+      "OREO": {
+        "Aldi": 4.58,
+        "WalMart": 4.97,
+        "x": "x"
+      },
+      "ORGANICHOTDOG": {
+        "Aldi": 5.49,
+        "x": "x"
+      },
+      "ORGANICJUICE": {
+        "x": "x"
+      },
+      "ORNAMENT": {
+        "WalMart": 4.97,
+        "x": "x"
+      },
+      "ORZO": {
+        "WalMart": 0.98,
+        "x": "x"
+      },
+      "OYSTERCRACKER": {
+        "Aldi": 0.99,
+        "x": "x"
+      },
+      "PANCAKEMIX": {
+        "Aldi": 1.95,
+        "WalMart": 1.75,
+        "x": "x"
+      },
+      "PAPERBOWL": {
+        "Aldi": 2.85,
+        "x": "x"
+      },
+      "PAPERPLATE": {
+        "Aldi": 3.39,
+        "WalMart": 9.97,
+        "x": "x"
+      },
+      "PAPERPLATESBOWL": {
+        "WalMart": 2.72,
+        "x": "x"
+      },
+      "PAPERTOWEL": {
+        "Aldi": 14.36,
+        "WalMart": 9.92,
+        "x": "x"
+      },
+      "PAPRIKA": {
+        "WalMart": 1.12,
+        "x": "x"
+      },
+      "PARCHMENTPAPER": {
+        "Aldi": 1.65,
+        "WalMart": 2.98,
+        "x": "x"
+      },
+      "PARMCHEESE": {
+        "Aldi": 2.95,
+        "x": "x"
+      },
+      "PARMESANCHEESE": {
+        "Aldi": 2.65,
+        "x": "x"
+      },
+      "PARMESEANCHEESE": {
+        "Aldi": 2.75,
+        "WalMart": 2.79,
+        "x": "x"
+      },
+      "PARMIGIANAREGGIANRIND": {
+        "x": "x"
+      },
+      "PARSLEY": {
+        "x": "x"
+      },
+      "PASTA": {
+        "Aldi": 1.89,
+        "WalMart": 1.84,
+        "x": "x"
+      },
+      "PASTERIE": {
+        "WalMart": 6.94,
+        "x": "x"
+      },
+      "PASTERY": {
+        "Aldi": 3.19,
+        "x": "x"
+      },
+      "PEACHTEA": {
+        "WalMart": 2.92,
+        "x": "x"
+      },
+      "PEANUT": {
+        "Aldi": 2.29,
+        "WalMart": 2.58,
+        "x": "x"
+      },
+      "PEANUTBUTTER": {
+        "Aldi": 3.95,
+        "x": "x"
+      },
+      "PEANUTBUTTERCUP": {
+        "Aldi": 1.89,
+        "x": "x"
+      },
+      "PEANUTOIL": {
+        "WalMart": 17.16,
+        "x": "x"
+      },
+      "PEANUTS": {
+        "x": "x"
+      },
+      "PECAN": {
+        "Aldi": 3.79,
+        "x": "x"
+      },
+      "PECANHALVE": {
+        "Aldi": 4.99,
+        "x": "x"
+      },
+      "PEMENTOSTUFFEDGREENOLIVE": {
+        "Aldi": 0.99,
+        "x": "x"
+      },
+      "PEPPER": {
+        "Aldi": 2.19,
+        "WalMart": 2.97,
+        "x": "x"
+      },
+      "PEPPERMINT": {
+        "Aldi": 4.99,
+        "x": "x"
+      },
+      "PEPPERMINTPATTIE": {
+        "Aldi": 4.97,
+        "WalMart": 4.48,
+        "x": "x"
+      },
+      "PEPPERONI": {
+        "Aldi": 2.79,
+        "WalMart": 2.88,
+        "x": "x"
+      },
+      "PEPSI": {
+        "WalMart": 7.48,
+        "x": "x"
+      },
+      "PEPSIPEEP": {
+        "WalMart": 4.88,
+        "x": "x"
+      },
+      "PEROXIDE": {
+        "WalMart": 1.42,
+        "x": "x"
+      },
+      "PESTICIDE": {
+        "WalMart": 6.96,
+        "x": "x"
+      },
+      "PESTO": {
+        "Aldi": 1.99,
+        "x": "x"
+      },
+      "PICKLEFLAVOREDCRISPYDILLIE": {
+        "WalMart": 2.28,
+        "x": "x"
+      },
+      "PICO": {
+        "Aldi": 3.19,
+        "x": "x"
+      },
+      "PIECRUST": {
+        "Aldi": 1.95,
+        "WalMart": 2.97,
+        "x": "x"
+      },
+      "PIEPAN": {
+        "x": "x"
+      },
+      "PIEROGI": {
+        "Aldi": 2.49,
+        "WalMart": 5.97,
+        "x": "x"
+      },
+      "PILLSBURYCOOKIE": {
+        "Aldi": 3.86,
+        "x": "x"
+      },
+      "PINEAPPLE": {
+        "Aldi": 1.87,
+        "x": "x"
+      },
+      "PINEAPPLEOLANTERN": {
+        "x": "x"
+      },
+      "PINEAPPLESODA": {
+        "Aldi": 1.42,
+        "x": "x"
+      },
+      "PINKBOW": {
+        "WalMart": 1.48,
+        "x": "x"
+      },
+      "PINKLADYAPPLE": {
+        "Aldi": 4.99,
+        "x": "x"
+      },
+      "PINTO": {
+        "x": "x"
+      },
+      "PINTOBEAN": {
+        "WalMart": 0.92,
+        "x": "x"
+      },
+      "PISTACHIO": {
+        "Aldi": 6.29,
+        "x": "x"
+      },
+      "PISTACHIOLATTE": {
+        "WalMart": 3.77,
+        "x": "x"
+      },
+      "PISTACHIOLATTECREAMER": {
+        "WalMart": 3.77,
+        "x": "x"
+      },
+      "PITABREAD": {
+        "Aldi": 3.59,
+        "x": "x"
+      },
+      "PIZZA": {
+        "x": "x"
+      },
+      "PLAINOATMEAL": {
+        "WalMart": 4.98,
+        "x": "x"
+      },
+      "PLANTAINSTRIP": {
+        "WalMart": 7.48,
+        "x": "x"
+      },
+      "PLASTICPAPERCOVER": {
+        "x": "x"
+      },
+      "PLASTICSHEET": {
+        "WalMart": 1.86,
+        "x": "x"
+      },
+      "PLASTICWRAP": {
+        "WalMart": 2.14,
+        "x": "x"
+      },
+      "PLAYDOUGH": {
+        "WalMart": 3.99,
+        "x": "x"
+      },
+      "PLAYSTATIONPLUSCARD": {
+        "x": "x"
+      },
+      "POLANER": {
+        "Aldi": 2.85,
+        "WalMart": 4.98,
+        "x": "x"
+      },
+      "POLLYOSTRINGCHEESE": {
+        "WalMart": 6.46,
+        "x": "x"
+      },
+      "POPCORN": {
+        "WalMart": 3.48,
+        "x": "x"
+      },
+      "POPCORNTIN": {
+        "WalMart": 6.86,
+        "x": "x"
+      },
+      "POPSICLESTICK": {
+        "WalMart": 1.97,
+        "x": "x"
+      },
+      "PORKBBQ": {
+        "x": "x"
+      },
+      "PORKROLL": {
+        "Aldi": 2.29,
+        "x": "x"
+      },
+      "PORKTENDERLOIN": {
+        "Aldi": 5.69,
+        "x": "x"
+      },
+      "POTATOCHIP": {
+        "Aldi": 1.69,
+        "WalMart": 1.99,
+        "x": "x"
+      },
+      "POTATOSKIN": {
+        "x": "x"
+      },
+      "POTATOWEDGE": {
+        "x": "x"
+      },
+      "POTROAST": {
+        "x": "x"
+      },
+      "POWDEREDONIONSOUP": {
+        "WalMart": 0.98,
+        "x": "x"
+      },
+      "POWDEREDSUGAR": {
+        "WalMart": 2.22,
+        "x": "x"
+      },
+      "PREPAREDCHICKEN": {
+        "Aldi": 6.85,
+        "x": "x"
+      },
+      "PRETZEL": {
+        "Aldi": 1.79,
+        "WalMart": 1.78,
+        "x": "x"
+      },
+      "PRETZELROLL": {
+        "Aldi": 2.99,
+        "WalMart": 3.87,
+        "x": "x"
+      },
+      "PRIMER": {
+        "Lowes": 24.98,
+        "x": "x"
+      },
+      "PRINGLE": {
+        "WalMart": 2,
+        "x": "x"
+      },
+      "PROTEINPASTA": {
+        "Aldi": 2.69,
+        "x": "x"
+      },
+      "PROTRACTOR": {
+        "x": "x"
+      },
+      "PROVOLONE": {
+        "Aldi": 1.85,
+        "x": "x"
+      },
+      "PROVOLONECHEESE": {
+        "Aldi": 1.49,
+        "WalMart": 2.24,
+        "x": "x"
+      },
+      "PUMPKIN": {
+        "Aldi": 1.15,
+        "x": "x"
+      },
+      "PUMPKINMINIWHEAT": {
+        "WalMart": 4.98,
+        "x": "x"
+      },
+      "PUMPKINSEED": {
+        "Aldi": 2.35,
+        "x": "x"
+      },
+      "PUREETOMATO": {
+        "WalMart": 1.52,
+        "x": "x"
+      },
+      "QTIP": {
+        "WalMart": 2.98,
+        "x": "x"
+      },
+      "QUARTBAG": {
+        "WalMart": 4.96,
+        "x": "x"
+      },
+      "QUESO": {
+        "x": "x"
+      },
+      "RAGU": {
+        "WalMart": 2.38,
+        "x": "x"
+      },
+      "RANCH": {
+        "WalMart": 3.97,
+        "x": "x"
+      },
+      "RANCHSEASON": {
+        "WalMart": 1.98,
+        "x": "x"
+      },
+      "RASIN": {
+        "WalMart": 2.08,
+        "x": "x"
+      },
+      "RASINBRAN": {
+        "Aldi": 2.85,
+        "WalMart": 2.34,
+        "x": "x"
+      },
+      "RAVIOLI": {
+        "x": "x"
+      },
+      "READYPOPCORN": {
+        "WalMart": 3.76,
+        "x": "x"
+      },
+      "REDBEAN": {
+        "Aldi": 0.85,
+        "WalMart": 0.82,
+        "x": "x"
+      },
+      "REDBEANS": {
+        "x": "x"
+      },
+      "REDONION": {
+        "Aldi": 1.99,
+        "x": "x"
+      },
+      "REDPEPPERFLAKE": {
+        "WalMart": 4.62,
+        "x": "x"
+      },
+      "REDRIBBON": {
+        "WalMart": 1.97,
+        "x": "x"
+      },
+      "REESE'SPEANUTBUTTEREGG": {
+        "WalMart": 4.97,
+        "x": "x"
+      },
+      "REFRIEDBEAN": {
+        "Aldi": 0.89,
+        "x": "x"
+      },
+      "REFRIGERATEDPIZZADOUGH": {
+        "x": "x"
+      },
+      "RESEARCHBACKINGBOARD": {
+        "x": "x"
+      },
+      "RESEARCHCAKE": {
+        "x": "x"
+      },
+      "RICE": {
+        "Aldi": 2.09,
+        "WalMart": 2.88,
+        "x": "x"
+      },
+      "RICEPILAF": {
+        "Aldi": 2.09,
+        "x": "x"
+      },
+      "RICOTTA": {
+        "WalMart": 4.76,
+        "x": "x"
+      },
+      "RICOTTACHEESE": {
+        "Aldi": 2.19,
+        "WalMart": 5.78,
+        "x": "x"
+      },
+      "ROLLER": {
+        "x": "x"
+      },
+      "ROMAINEHEART": {
+        "WalMart": 3.49,
+        "x": "x"
+      },
+      "ROMATOMATOE": {
+        "Aldi": 0.85,
+        "WalMart": 1.27,
+        "x": "x"
+      },
+      "ROOTBEER": {
+        "x": "x"
+      },
+      "ROSEMARY": {
+        "WalMart": 1.98,
+        "x": "x"
+      },
+      "ROTELTOMATOE": {
+        "Aldi": 0.95,
+        "WalMart": 0.96,
+        "x": "x"
+      },
+      "ROTINI": {
+        "Aldi": 0.98,
+        "WalMart": 0.92,
+        "x": "x"
+      },
+      "RUSSETPOTATO": {
+        "Aldi": 5.69,
+        "WalMart": 3.74,
+        "x": "x"
+      },
+      "RUSSETPOTATOE": {
+        "Aldi": 3.19,
+        "WalMart": 2.47,
+        "x": "x"
+      },
+      "RYEBREAD": {
+        "WalMart": 4.34,
+        "x": "x"
+      },
+      "SALINENASALSPRAY": {
+        "WalMart": 2.12,
+        "x": "x"
+      },
+      "SALMON": {
+        "Aldi": 10.88,
+        "x": "x"
+      },
+      "SALMONBURGER": {
+        "Aldi": 4.99,
+        "x": "x"
+      },
+      "SALT": {
+        "Aldi": 0.59,
+        "WalMart": 0.67,
+        "x": "x"
+      },
+      "SALTEDBUTTER": {
+        "x": "x"
+      },
+      "SALTINE": {
+        "Aldi": 1.65,
+        "x": "x"
+      },
+      "SALTKITTYLITTER": {
+        "x": "x"
+      },
+      "SALTSHAKER": {
+        "WalMart": 2.22,
+        "x": "x"
+      },
+      "SAND": {
+        "x": "x"
+      },
+      "SANDWHICHBAG": {
+        "WalMart": 5.78,
+        "x": "x"
+      },
+      "SANDWICHBAG": {
+        "WalMart": 5.78,
+        "x": "x"
+      },
+      "SANDWICHCHICKEN": {
+        "Aldi": 5.49,
+        "x": "x"
+      },
+      "SANTAHAT": {
+        "WalMart": 14.95,
+        "x": "x"
+      },
+      "SATINPAINT": {
+        "x": "x"
+      },
+      "SAUSAGE": {
+        "Aldi": 2.99,
+        "x": "x"
+      },
+      "SAUSAGECRUMBLE": {
+        "x": "x"
+      },
+      "SAUSAGEPANCAKESTICK": {
+        "Aldi": 5.19,
+        "WalMart": 5.26,
+        "x": "x"
+      },
+      "SAUSAGEPATTIE": {
+        "x": "x"
+      },
+      "SAUSAGEROLL": {
+        "Aldi": 2.89,
+        "WalMart": 2.98,
+        "x": "x"
+      },
+      "SCHNITZEL": {
+        "Aldi": 5.49,
+        "x": "x"
+      },
+      "SCHOOLSUPPLIE": {
+        "WalMart": 18,
+        "x": "x"
+      },
+      "SCOTCHTAPE": {
+        "x": "x"
+      },
+      "SCOTCHTAPEROLL": {
+        "x": "x"
+      },
+      "SEASONEDRICE": {
+        "Aldi": 1.59,
+        "x": "x"
+      },
+      "SEASONEDSALT": {
+        "Aldi": 2.25,
+        "x": "x"
+      },
+      "SEEDLESSRASPBERRYJAM": {
+        "WalMart": 4.96,
+        "x": "x"
+      },
+      "SFCOOLWHIP": {
+        "WalMart": 1.98,
+        "x": "x"
+      },
+      "SFFRENCHVANILLA": {
+        "WalMart": 3.98,
+        "x": "x"
+      },
+      "SFFRENCHVANILLACREAMER": {
+        "WalMart": 3.98,
+        "x": "x"
+      },
+      "SFFRUITICEPOP": {
+        "WalMart": 5.92,
+        "x": "x"
+      },
+      "SFVANILLACREAMER": {
+        "WalMart": 5.97,
+        "x": "x"
+      },
+      "SHAMPOO": {
+        "Aldi": 2.69,
+        "WalMart": 2.84,
+        "x": "x"
+      },
+      "SHAPRCHEDDARBLOCK": {
+        "x": "x"
+      },
+      "SHARKBITE": {
+        "WalMart": 6.62,
+        "x": "x"
+      },
+      "SHARPCHEDDAR": {
+        "Aldi": 1.65,
+        "WalMart": 1.97,
+        "x": "x"
+      },
+      "SHELFBRACKET": {
+        "x": "x"
+      },
+      "SHELFCONTACTFILM": {
+        "x": "x"
+      },
+      "SHIRT": {
+        "Aldi": 20.97,
+        "x": "x"
+      },
+      "SHORTENING": {
+        "WalMart": 6.18,
+        "x": "x"
+      },
+      "SHORTGARDENHOSE": {
+        "WalMart": 20,
+        "x": "x"
+      },
+      "SHREDDEDCHEDDAR": {
+        "Aldi": 2.99,
+        "WalMart": 7.48,
+        "x": "x"
+      },
+      "SHREDDEDCHEESE": {
+        "Aldi": 2.79,
+        "WalMart": 6.92,
+        "x": "x"
+      },
+      "SHREDDEDCHEESEFORSTEAKUM": {
+        "Aldi": 2.79,
+        "x": "x"
+      },
+      "SHREDDEDLETTUCE": {
+        "x": "x"
+      },
+      "SHREDDEDMOZZARELLA": {
+        "Aldi": 3.49,
+        "WalMart": 6.96,
+        "x": "x"
+      },
+      "SHREDDEDMOZZARELLACHEESE": {
+        "WalMart": 7.38,
+        "x": "x"
+      },
+      "SHREDDEDMOZZERELLA": {
+        "Aldi": 2.89,
+        "WalMart": 6.92,
+        "x": "x"
+      },
+      "SHREDDEDPARMESAN": {
+        "Aldi": 2.89,
+        "x": "x"
+      },
+      "SHREDDEDPARMESEAN": {
+        "x": "x"
+      },
+      "SHREDDEDTACOCHEESE": {
+        "WalMart": 6.96,
+        "x": "x"
+      },
+      "SHREDDEDWHEAT": {
+        "Aldi": 2.19,
+        "x": "x"
+      },
+      "SHRIMP": {
+        "Aldi": 6.99,
+        "WalMart": 5.92,
+        "x": "x"
+      },
+      "SILICONEADHESIVE": {
+        "x": "x"
+      },
+      "SILVERDUCKTAPE": {
+        "x": "x"
+      },
+      "SILVERDUCTTAPE": {
+        "Lowes": 4.98,
+        "x": "x"
+      },
+      "SIMPSONSTRONG-TIE6-IN18-GAUGEZMAXSTEELRAFTERTIEAISLE21": {
+        "Lowes": 0.98,
+        "x": "x"
+      },
+      "SINGLESUBJECTNOTEBOOK": {
+        "x": "x"
+      },
+      "SLICEDTURKEY": {
+        "x": "x"
+      },
+      "SLOPPYJOEROLL": {
+        "Aldi": 2.99,
+        "WalMart": 3.97,
+        "x": "x"
+      },
+      "SLOPPYJOESAUCE": {
+        "Aldi": 0.79,
+        "WalMart": 0.88,
+        "x": "x"
+      },
+      "SMALLCHICKENTENDER": {
+        "Aldi": 6.49,
+        "WalMart": 13.47,
+        "x": "x"
+      },
+      "SMALLPAPERTOWEL": {
+        "WalMart": 3.98,
+        "x": "x"
+      },
+      "SMALLSHREDDEDMOZZARELLA": {
+        "Aldi": 3.09,
+        "x": "x"
+      },
+      "SMALLTACOCHEESE": {
+        "Aldi": 2.49,
+        "x": "x"
+      },
+      "SMALLTACOSEASONSHAKER": {
+        "x": "x"
+      },
+      "SMALLTOILETPAPER": {
+        "WalMart": 9.98,
+        "x": "x"
+      },
+      "SNACK": {
+        "Aldi": 2.49,
+        "WalMart": 2.49,
+        "x": "x"
+      },
+      "SNAPPEASEED": {
+        "WalMart": 1.64,
+        "x": "x"
+      },
+      "SNAX": {
+        "WalMart": 3.98,
+        "x": "x"
+      },
+      "SNOWBALL": {
+        "WalMart": 6.98,
+        "x": "x"
+      },
+      "SNOWSHOVEL": {
+        "x": "x"
+      },
+      "SODA": {
+        "WalMart": 5.98,
+        "x": "x"
+      },
+      "SOFTPRETZEL": {
+        "Aldi": 4.79,
+        "WalMart": 2.98,
+        "x": "x"
+      },
+      "SOMETHINGFORBREAKFAST": {
+        "Aldi": 3.39,
+        "x": "x"
+      },
+      "SOMETHINGFORFRIDAY": {
+        "Aldi": 10,
+        "WalMart": 9.75,
+        "x": "x"
+      },
+      "SOMETHINGFORMONDAY": {
+        "Aldi": 10,
+        "WalMart": 5.98,
+        "x": "x"
+      },
+      "SOMETHINGFORMORNING": {
+        "x": "x"
+      },
+      "SOMETHINGFORNEXTTHURSDAY": {
+        "x": "x"
+      },
+      "SOMETHINGFORTACOTUESDAY": {
+        "Aldi": 4.39,
+        "x": "x"
+      },
+      "SOMETHINGFORTHURSDAY": {
+        "WalMart": 3.74,
+        "x": "x"
+      },
+      "SOMETHINGFORTHURSDAYLUNCH": {
+        "x": "x"
+      },
+      "SOMETHINGFORWEDNESDAY": {
+        "Aldi": 11,
+        "x": "x"
+      },
+      "SOMETHINGTOGOWITHCHICKENSKEWER": {
+        "WalMart": 1.64,
+        "x": "x"
+      },
+      "SOMOASCOOKIE": {
+        "Aldi": 2.29,
+        "x": "x"
+      },
+      "SOUP": {
+        "Aldi": 2.26,
+        "WalMart": 2.48,
+        "x": "x"
+      },
+      "SOURCREAM": {
+        "Aldi": 2.35,
+        "WalMart": 2.74,
+        "x": "x"
+      },
+      "SOURCREAMANDONIONPOTATOCHIP": {
+        "WalMart": 4,
+        "x": "x"
+      },
+      "SOURCREAMONIONCHIP": {
+        "Aldi": 1.67,
+        "WalMart": 2.94,
+        "x": "x"
+      },
+      "SOURPATCH": {
+        "x": "x"
+      },
+      "SOURRAINBOWAIRHEAD": {
+        "WalMart": 3,
+        "x": "x"
+      },
+      "SOYSAUCE": {
+        "Aldi": 1.49,
+        "WalMart": 1.58,
+        "x": "x"
+      },
+      "SPACKLE": {
+        "WalMart": 5.47,
+        "x": "x"
+      },
+      "SPACLE": {
+        "Lowes": 8.48,
+        "x": "x"
+      },
+      "SPAGHETTI": {
+        "Aldi": 1.89,
+        "WalMart": 3.76,
+        "x": "x"
+      },
+      "SPICYITALIANSAUSAGE": {
+        "WalMart": 3.97,
+        "x": "x"
+      },
+      "SPIDERWEB": {
+        "WalMart": 0.5,
+        "x": "x"
+      },
+      "SPINACH": {
+        "Aldi": 1.29,
+        "WalMart": 1.42,
+        "x": "x"
+      },
+      "SPINACHRAVIOLI": {
+        "WalMart": 6.77,
+        "x": "x"
+      },
+      "SPONGE": {
+        "WalMart": 4.97,
+        "x": "x"
+      },
+      "SPOOKYNUGG": {
+        "Aldi": 5.99,
+        "x": "x"
+      },
+      "SPRAYOIL": {
+        "Aldi": 4.49,
+        "x": "x"
+      },
+      "SPRITEVANILLAFROST": {
+        "x": "x"
+      },
+      "SPRITZBOTTLE": {
+        "Aldi": 3.99,
+        "x": "x"
+      },
+      "SRIRACHA": {
+        "WalMart": 1.98,
+        "x": "x"
+      },
+      "STARRYCRANBERRY": {
+        "x": "x"
+      },
+      "STEAK": {
+        "Aldi": 14.83,
+        "x": "x"
+      },
+      "STEAKFRIE": {
+        "Aldi": 2.39,
+        "WalMart": 2.82,
+        "x": "x"
+      },
+      "STEAKUM": {
+        "Aldi": 5.99,
+        "WalMart": 5.98,
+        "x": "x"
+      },
+      "STEVIA": {
+        "Aldi": 4.49,
+        "WalMart": 4.65,
+        "x": "x"
+      },
+      "STEWMEAT": {
+        "Aldi": 14.46,
+        "WalMart": 12.25,
+        "x": "x"
+      },
+      "STOKCOLDBREW": {
+        "WalMart": 4.78,
+        "x": "x"
+      },
+      "STOKUNSWEETCOLDBREW": {
+        "x": "x"
+      },
+      "STOVETOP": {
+        "x": "x"
+      },
+      "STOVETOPSTUFFING": {
+        "WalMart": 1.98,
+        "x": "x"
+      },
+      "STRAWBERRY": {
+        "WalMart": 2.17,
+        "x": "x"
+      },
+      "STRAWBERRY ": {
+        "WalMart": 2.48,
+        "x": "x"
+      },
+      "STRINGCHEESE": {
+        "WalMart": 5.98,
+        "x": "x"
+      },
+      "STUFFING": {
+        "Aldi": 1.98,
+        "x": "x"
+      },
+      "SUBROLL": {
+        "Aldi": 2.49,
+        "x": "x"
+      },
+      "SUDOPHED": {
+        "WalMart": 2.97,
+        "x": "x"
+      },
+      "SUDOPHEDRINE": {
+        "WalMart": 3.98,
+        "x": "x"
+      },
+      "SUGAR": {
+        "Aldi": 2.79,
+        "WalMart": 3.46,
+        "x": "x"
+      },
+      "SUGARFREEYELLOWCAKEMIX": {
+        "WalMart": 2.67,
+        "x": "x"
+      },
+      "SUNCHIP": {
+        "WalMart": 3.98,
+        "x": "x"
+      },
+      "SUPERGLUE": {
+        "x": "x"
+      },
+      "SWEETCHILISAUCE": {
+        "WalMart": 2.66,
+        "x": "x"
+      },
+      "SWEETENEDCONDENSEDMILK": {
+        "WalMart": 2.46,
+        "x": "x"
+      },
+      "SWEETMARANAIDE": {
+        "x": "x"
+      },
+      "SWEETMARINADE": {
+        "Aldi": 2.19,
+        "WalMart": 1.98,
+        "x": "x"
+      },
+      "SWEETPOTATO": {
+        "WalMart": 3.44,
+        "x": "x"
+      },
+      "SWEETROLL": {
+        "WalMart": 3.94,
+        "x": "x"
+      },
+      "SWEETSAUCE": {
+        "Aldi": 2.19,
+        "x": "x"
+      },
+      "SWEETSOYSAUCE": {
+        "Aldi": 2.99,
+        "WalMart": 3.74,
+        "x": "x"
+      },
+      "SWISSCHEESE": {
+        "Aldi": 1.39,
+        "WalMart": 4.22,
+        "x": "x"
+      },
+      "SWISSCHEESEBLOCK": {
+        "Aldi": 1.65,
+        "WalMart": 1.77,
+        "x": "x"
+      },
+      "SYRUP": {
+        "Aldi": 1.45,
+        "WalMart": 1.48,
+        "x": "x"
+      },
+      "T-SHIRT": {
+        "Aldi": 18.98,
+        "x": "x"
+      },
+      "TACOBELLSAUCE": {
+        "WalMart": 1.83,
+        "x": "x"
+      },
+      "TACOCHEESE": {
+        "Aldi": 2.79,
+        "WalMart": 7.27,
+        "x": "x"
+      },
+      "TACOSAUCE": {
+        "Aldi": 1.75,
+        "x": "x"
+      },
+      "TACOSEASON": {
+        "WalMart": 11.34,
+        "x": "x"
+      },
+      "TAQUITO": {
+        "Aldi": 4.29,
+        "WalMart": 4.98,
+        "x": "x"
+      },
+      "TATERTOT": {
+        "Aldi": 2.59,
+        "WalMart": 2.97,
+        "x": "x"
+      },
+      "TAZOPASSIONFRUIT": {
+        "x": "x"
+      },
+      "TAZOPASSIONFRUITTEABAG": {
+        "WalMart": 3.78,
+        "x": "x"
+      },
+      "TEA": {
+        "x": "x"
+      },
+      "TERIYAKIMARINADE": {
+        "Aldi": 2.39,
+        "x": "x"
+      },
+      "TERIYAKISAUCE": {
+        "x": "x"
+      },
+      "TEST": {
+        "WalMart": 0.5
+      },
+      "THICKCUTTURKEY": {
+        "WalMart": 7.74,
+        "x": "x"
+      },
+      "THICKCUTTURKEYSLICE": {
+        "WalMart": 4,
+        "x": "x"
+      },
+      "THICKSLICEDTURKEY": {
+        "WalMart": 7.74,
+        "x": "x"
+      },
+      "THICKTURKEY": {
+        "WalMart": 4,
+        "x": "x"
+      },
+      "THREEITEM": {
+        "Aldi": 0.01,
+        "x": "x"
+      },
+      "THREEITEMS": {
+        "x": "x"
+      },
+      "TKYBURGER": {
+        "x": "x"
+      },
+      "TOFU": {
+        "WalMart": 3.36,
+        "x": "x"
+      },
+      "TOILETPAPER": {
+        "Aldi": 99.99,
+        "WalMart": 22.96,
+        "x": "x"
+      },
+      "TOMATOPASTE": {
+        "Aldi": 0.86,
+        "x": "x"
+      },
+      "TOMATOPUREE": {
+        "WalMart": 1.84,
+        "x": "x"
+      },
+      "TOMATOSAUCE": {
+        "Aldi": 1.39,
+        "x": "x"
+      },
+      "TOMATOSOUP": {
+        "WalMart": 0.68,
+        "x": "x"
+      },
+      "TOMATOWITHCHILI": {
+        "Aldi": 0.85,
+        "x": "x"
+      },
+      "TOOTHBRUSH": {
+        "Aldi": 2.97,
+        "WalMart": 2.96,
+        "x": "x"
+      },
+      "TOOTHPASTE": {
+        "WalMart": 1.97,
+        "x": "x"
+      },
+      "TOOTHPICK": {
+        "WalMart": 0.94,
+        "x": "x"
+      },
+      "TORTALINNI": {
+        "x": "x"
+      },
+      "TORTALLINI": {
+        "x": "x"
+      },
+      "TORTELLINI": {
+        "Aldi": 1.69,
+        "WalMart": 4.27,
+        "x": "x"
+      },
+      "TORTILLA": {
+        "Aldi": 2.09,
+        "WalMart": 3.48,
+        "x": "x"
+      },
+      "TORTILLACHIP": {
+        "Aldi": 1.95,
+        "WalMart": 2.24,
+        "x": "x"
+      },
+      "TORTILLACHIPS": {
+        "x": "x"
+      },
+      "TORTILLINI": {
+        "x": "x"
+      },
+      "TOTINOSPIZZA": {
+        "WalMart": 1.77,
+        "x": "x"
+      },
+      "TRAILMIX": {
+        "Aldi": 5.49,
+        "WalMart": 7.98,
+        "x": "x"
+      },
+      "TRAVELSHAMPOO": {
+        "Aldi": 1.97,
+        "x": "x"
+      },
+      "TRISCUIT": {
+        "Aldi": 2.15,
+        "x": "x"
+      },
+      "TRIX": {
+        "Aldi": 5.98,
+        "WalMart": 4.78,
+        "x": "x"
+      },
+      "TRIXCEREAL": {
+        "WalMart": 5.98,
+        "x": "x"
+      },
+      "TROLLSOURBRIGHTCRAWLIE": {
+        "WalMart": 2.92,
+        "x": "x"
+      },
+      "TUNA": {
+        "Aldi": 0.89,
+        "WalMart": 0.96,
+        "x": "x"
+      },
+      "TURKEY": {
+        "WalMart": 4.5,
+        "x": "x"
+      },
+      "TURKEYBACON": {
+        "Aldi": 3.69,
+        "x": "x"
+      },
+      "TURKEYBREAST": {
+        "Aldi": 10.99,
+        "x": "x"
+      },
+      "TURKEYBURGER": {
+        "Aldi": 6.99,
+        "WalMart": 9.96,
+        "x": "x"
+      },
+      "TURKEYHAM": {
+        "WalMart": 5.72,
+        "x": "x"
+      },
+      "TURKEYKEILBASA": {
+        "Aldi": 2.89,
+        "WalMart": 3.98,
+        "x": "x"
+      },
+      "TURKEYKIELBASA": {
+        "Aldi": 2.89,
+        "WalMart": 3.98,
+        "x": "x"
+      },
+      "TURKEYSAUSAGE": {
+        "Aldi": 2.89,
+        "WalMart": 3.47,
+        "x": "x"
+      },
+      "TURKEYSTUFFING": {
+        "WalMart": 1.88,
+        "x": "x"
+      },
+      "TVDINNER": {
+        "WalMart": 1.87,
+        "x": "x"
+      },
+      "TWONAME": {
+        "x": "x"
+      },
+      "TWONAMES": {
+        "WalMart": 1.23,
+        "x": "x"
+      },
+      "TWOWEEKSAGO": {
+        "Aldi": 1.25,
+        "WalMart": 1.45,
+        "x": "x"
+      },
+      "TYLENOLCOLDANDFLU": {
+        "WalMart": 2.98,
+        "x": "x"
+      },
+      "TYLENOLSINU": {
+        "Aldi": 3.18,
+        "x": "x"
+      },
+      "UNSWEETVANILLAALMONDMILK": {
+        "Aldi": 2.25,
+        "WalMart": 3.38,
+        "x": "x"
+      },
+      "UPHOLSTERYCLEANER": {
+        "x": "x"
+      },
+      "UTZCHEESEBALL": {
+        "WalMart": 2.98,
+        "x": "x"
+      },
+      "VALENTINECARD": {
+        "WalMart": 7.99,
+        "x": "x"
+      },
+      "VALSPARULTRAWHITETINTED": {
+        "x": "x"
+      },
+      "VANILLA": {
+        "Aldi": 4.99,
+        "x": "x"
+      },
+      "VANILLAALMONDMILK": {
+        "WalMart": 2.63,
+        "x": "x"
+      },
+      "VANILLAEXTRACT": {
+        "Aldi": 3.49,
+        "x": "x"
+      },
+      "VANILLAPUDDINGMIX": {
+        "Aldi": 0.77,
+        "x": "x"
+      },
+      "VANILLAYOGURT": {
+        "WalMart": 0.58,
+        "x": "x"
+      },
+      "VEGETABLEBULLION": {
+        "WalMart": 4.28,
+        "x": "x"
+      },
+      "VEGETABLEOIL": {
+        "Aldi": 2.89,
+        "WalMart": 3.97,
+        "x": "x"
+      },
+      "VEGGIESTIRFRY": {
+        "WalMart": 1.16,
+        "x": "x"
+      },
+      "VEGMIX": {
+        "Aldi": 1.09,
+        "x": "x"
+      },
+      "VEGOIL": {
+        "Aldi": 2.89,
+        "x": "x"
+      },
+      "VEGSTIRFRY": {
+        "WalMart": 2.54,
+        "x": "x"
+      },
+      "VEGTOGOWITHBEEFMARINADE": {
+        "Aldi": 3.29,
+        "WalMart": 2.54,
+        "x": "x"
+      },
+      "VELCROCOMMANDSTRIP": {
+        "WalMart": 5.34,
+        "x": "x"
+      },
+      "VELVEETASHELLSANDCHEESE": {
+        "WalMart": 2.48,
+        "x": "x"
+      },
+      "VENTAIRFRESHENER": {
+        "WalMart": 2.88,
+        "x": "x"
+      },
+      "VISAGIFTCARD": {
+        "x": "x"
+      },
+      "VODKASAUCE": {
+        "Aldi": 3.49,
+        "x": "x"
+      },
+      "WAFFLE": {
+        "WalMart": 1,
+        "x": "x"
+      },
+      "WAFFLECONE": {
+        "Aldi": 2.39,
+        "x": "x"
+      },
+      "WASPSPRAY": {
+        "x": "x"
+      },
+      "WAXEDPAPER": {
+        "WalMart": 2.54,
+        "x": "x"
+      },
+      "WAXPAPER": {
+        "WalMart": 3.88,
+        "x": "x"
+      },
+      "WBFUDGESTRIPE": {
+        "x": "x"
+      },
+      "WEDGEFRIE": {
+        "WalMart": 2.97,
+        "x": "x"
+      },
+      "WEEDKILLER": {
+        "Aldi": 99.99,
+        "WalMart": 16.96,
+        "x": "x"
+      },
+      "WEEKENDCEREAL": {
+        "Aldi": 2.19,
+        "WalMart": 6.86,
+        "x": "x"
+      },
+      "WEEKENDSNAX": {
+        "Aldi": 1.95,
+        "WalMart": 3.78,
+        "x": "x"
+      },
+      "WENDY'SBACONATORCHILI": {
+        "WalMart": 4.62,
+        "x": "x"
+      },
+      "WETWIPE": {
+        "Aldi": 1.78,
+        "WalMart": 2.27,
+        "x": "x"
+      },
+      "WHEATIE": {
+        "x": "x"
+      },
+      "WHEATIES": {
+        "x": "x"
+      },
+      "WHEATTHIN": {
+        "Aldi": 2.09,
+        "x": "x"
+      },
+      "WHIPPEDCREAM": {
+        "WalMart": 2.2,
+        "x": "x"
+      },
+      "WHIPPINGCREAM": {
+        "x": "x"
+      },
+      "WHITECHEESEDOODLE": {
+        "Aldi": 2.99,
+        "WalMart": 2.56,
+        "x": "x"
+      },
+      "WHITECRAFTFOAM": {
+        "x": "x"
+      },
+      "WHITETAPE": {
+        "x": "x"
+      },
+      "WHOLECHICKEN": {
+        "Aldi": 8.78,
+        "WalMart": 8.94,
+        "x": "x"
+      },
+      "WHOLEWHEATBREAD": {
+        "Aldi": 1.45,
+        "x": "x"
+      },
+      "WILDRICE": {
+        "Aldi": 1.89,
+        "x": "x"
+      },
+      "WINDSHIELDWIPERFLUID": {
+        "WalMart": 2.66,
+        "x": "x"
+      },
+      "WING": {
+        "x": "x"
+      },
+      "WIPERBLADE": {
+        "WalMart": 10.98,
+        "x": "x"
+      },
+      "WIPERFLUID": {
+        "WalMart": 3.97,
+        "x": "x"
+      },
+      "WOODGLUE": {
+        "x": "x"
+      },
+      "XMA": {
+        "WalMart": 20,
+        "x": "x"
+      },
+      "XMASLIGHT": {
+        "WalMart": 3.68,
+        "x": "x"
+      },
+      "XMASSPRINKLE": {
+        "WalMart": 3.92,
+        "x": "x"
+      },
+      "YELLOWONION": {
+        "Aldi": 1.59,
+        "WalMart": 4.38,
+        "x": "x"
+      },
+      "YELLOWRICE": {
+        "x": "x"
+      },
+      "YOGURT": {
+        "x": "x"
+      },
+      "ZEAXANTHINANDLUTEIN": {
+        "x": "x"
+      },
+      "ZEROCARBTORTILLA": {
+        "Aldi": 3.49,
+        "WalMart": 3.24,
+        "x": "x"
+      },
+      "ZIPLOCBAG": {
+        "WalMart": 4.67,
+        "x": "x"
+      },
+      "ZIPLOCSANDWHICHBAG": {
+        "WalMart": 5.72,
+        "x": "x"
+      },
+      "ZITI": {
+        "Aldi": 0.98,
+        "WalMart": 0.98,
+        "x": "x"
+      },
+      "ZUCCHINI": {
+        "Aldi": 1.45,
+        "x": "x"
+      }
+    },
+    "state": {
+      "activeItem": "",
+      "activeList": "lists[1]",
+      "activeMenu": ""
+    },
+    "var1": "my",
+    "var2": "test",
+    "var3": [
+      "a",
+      "r",
+      "r",
+      "a",
+      "y"
+    ]
+  }
+}

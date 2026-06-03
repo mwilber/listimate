@@ -1,0 +1,78 @@
+:root {
+  --header-background-color: #306e4f;
+  --button-background-color: #e9ecef;
+  --accent-background-color: #568f72;
+  --alert-background-color: #cc6666;
+  --input-background-color: #f8faf4;
+  --input-color: #495057;
+  --button-color: #495057;
+  --logo-height: 50px;
+  --col-background-color: #fff;
+  --border-color: #d0d0d0;
+  --panel-gutter: #edf0f1;
+  --text-color: #1f2428;
+  --muted-color: #c8c8c8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  color: var(--text-color);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.25;
+  background: #143626;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  color: inherit;
+  cursor: pointer;
+}
+
+button:disabled,
+input:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+:focus-visible {
+  outline: 3px solid #1b74d1;
+  outline-offset: -3px;
+}
+
+#app {
+  min-height: 100%;
+}
+
+.boot-message,
+.empty-state,
+.detail-empty {
+  margin: 0;
+  padding: 24px;
+  color: #666;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
