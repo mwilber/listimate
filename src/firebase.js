@@ -2,15 +2,12 @@ const FIREBASE_VERSION = '12.13.0'
 
 export function hasFirebaseConfig(config = window.LISTIMATE_CONFIG) {
   const firebase = config?.firebase || {}
-  const auth = config?.auth || {}
   return Boolean(
     firebase.apiKey &&
     firebase.authDomain &&
     firebase.databaseURL &&
     firebase.projectId &&
-    firebase.appId &&
-    auth.email &&
-    auth.password
+    firebase.appId
   )
 }
 

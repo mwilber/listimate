@@ -10,19 +10,22 @@ export function defaultData() {
 export function normalizeData(value) {
   const data = value && typeof value === 'object' ? value : defaultData()
   return {
-    lists: Array.isArray(data.lists) ? data.lists.map(normalizeList) : [],
-    prices: data.prices && typeof data.prices === 'object' ? structuredClone(data.prices) : {}
+    lists: normalizeListCollection(data.lists),
+    prices: data.prices && typeof data.prices === 'object' ? clonePlainValue(data.prices) : {}
   }
 }
 
 export function normalizeList(list) {
+  const misplacedMetadata = list?.items && typeof list.items === 'object' ? list.items : {}
   return {
-    name: String(list?.name || ''),
-    number: Number(list?.number || 0),
+    name: String(list?.name ?? misplacedMetadata.name ?? ''),
+    number: Number(list?.number ?? misplacedMetadata.number ?? 0),
     stores: list?.stores && typeof list.stores === 'object'
-      ? structuredClone(list.stores)
+      ? clonePlainValue(list.stores)
+      : misplacedMetadata.stores && typeof misplacedMetadata.stores === 'object'
+        ? clonePlainValue(misplacedMetadata.stores)
       : { WalMart: true, Aldi: false },
-    items: Array.isArray(list?.items) ? list.items.map(normalizeItem) : []
+    items: normalizeItemCollection(list?.items)
   }
 }
 
@@ -57,7 +60,53 @@ export function createItem(name) {
 }
 
 export function cloneData(data) {
-  return normalizeData(structuredClone(data))
+  return normalizeData(clonePlainValue(data))
+}
+
+function clonePlainValue(value) {
+  if (Array.isArray(value)) {
+    return value.map(clonePlainValue)
+  }
+  if (value && typeof value === 'object') {
+    return Object.fromEntries(
+      Object.entries(value).map(([key, entry]) => [key, clonePlainValue(entry)])
+    )
+  }
+  return value
+}
+
+function normalizeListCollection(lists) {
+  if (Array.isArray(lists)) {
+    return lists.map(normalizeList)
+  }
+  if (lists && typeof lists === 'object') {
+    return Object.keys(lists)
+      .filter((key) => isArrayIndexKey(key))
+      .sort(compareArrayIndexKeys)
+      .map((key) => normalizeList(lists[key]))
+  }
+  return []
+}
+
+function normalizeItemCollection(items) {
+  if (Array.isArray(items)) {
+    return items.map(normalizeItem)
+  }
+  if (items && typeof items === 'object') {
+    return Object.keys(items)
+      .filter((key) => isArrayIndexKey(key))
+      .sort(compareArrayIndexKeys)
+      .map((key) => normalizeItem(items[key]))
+  }
+  return []
+}
+
+function isArrayIndexKey(key) {
+  return /^(0|[1-9]\d*)$/.test(key)
+}
+
+function compareArrayIndexKeys(left, right) {
+  return Number(left) - Number(right)
 }
 
 export function listNamespace(list) {

@@ -8,6 +8,7 @@ The app uses:
 - Plain ES modules, HTML, and CSS.
 - Firebase Auth and Realtime Database for the production datastore.
 - `localStorage` under the key `listimate` for offline startup cache compatibility.
+- `localStorage` under the key `listimateAuth` for persisted Firebase login credentials.
 - A service worker and web app manifest for installable PWA behavior.
 
 There is no JavaScript build step.
@@ -96,15 +97,13 @@ window.LISTIMATE_CONFIG = {
     databaseURL: "https://YOUR_DATABASE.firebaseio.com",
     projectId: "YOUR_PROJECT",
     appId: "YOUR_APP_ID"
-  },
-  auth: {
-    email: "LISTIMATE_USER_EMAIL",
-    password: "LISTIMATE_USER_PASSWORD"
   }
 }
 ```
 
-The app signs in with the configured email/password credentials and reads/writes data under:
+The app shows a login screen when complete Firebase config is present. Sign in with an Email/Password user from your Firebase project. After a successful sign-in, the email and password are stored in browser `localStorage` under `listimateAuth` so future app launches can sign in automatically.
+
+After sign-in, the app reads/writes data under:
 
 ```text
 /{signedInUser.uid}
@@ -163,13 +162,15 @@ Adjust the rules for your production requirements before deployment.
 
 ## Local-Only Mode
 
-If `config.js` does not contain complete Firebase and auth settings, the app runs in local mode:
+If `config.js` does not contain complete Firebase settings, the app runs in local mode:
 
 - It loads cached data from `localStorage` when available.
 - If no local cache exists, it loads the sample data from `reference/listimate-export.json`.
 - It does not attempt Firebase authentication or remote writes.
 
 This lets the app be tested immediately after cloning.
+
+When Firebase config is present, the login screen also includes a **Cancel and Load Reference Data** button. Use it to bypass Firebase and load the reference export for local testing.
 
 ## PWA Behavior
 
@@ -194,7 +195,7 @@ Deploy the repository as static files. The server must serve:
 - `public/`
 - `vendor/`
 
-For production, provide `config.js` through your private deployment process rather than committing real credentials. Firebase browser config is not a true secret, but the configured email/password credential should be treated carefully. Security must come from Firebase Auth and Realtime Database rules.
+For production, provide `config.js` through your deployment process. Firebase browser config is not a true secret, so security must come from Firebase Auth and Realtime Database rules. User credentials are entered on the login screen and stored in browser `localStorage` for automatic future sign-in; only use this on trusted devices.
 
 ## LAMP MCP Server
 

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'listimate-v1'
+const CACHE_NAME = 'listimate-v4'
 const APP_SHELL = [
   '/',
   '/index.html',
@@ -21,6 +21,7 @@ const APP_SHELL = [
   '/src/render/itemDetail.js',
   '/src/render/items.js',
   '/src/render/lists.js',
+  '/src/render/login.js',
   '/src/render/shell.js',
   '/src/styles/base.css',
   '/src/styles/layout.css',

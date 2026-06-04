@@ -6,9 +6,11 @@ import { state } from '../store.js'
 import { ItemDetailPane } from './itemDetail.js'
 import { ItemsPane } from './items.js'
 import { ListsPane } from './lists.js'
+import { LoginScreen } from './login.js'
 
 export function Shell() {
   return html`
+    ${() => state.auth.status === 'checking' ? StartupScreen() : shouldShowLogin() ? LoginScreen() : html`
     <div class="${() => appClass()}">
       <header class="app-header">
         <button
@@ -39,7 +41,23 @@ export function Shell() {
         <button class="mobile-back" type="button" @click="${backFromItems}">Lists</button>
       ` : ''}
     </div>
+    `}
   `
+}
+
+function StartupScreen() {
+  return html`
+    <main class="login-screen" aria-label="Loading Listimate">
+      <section class="login-panel">
+        <h1>Listimate</h1>
+        <p>Loading...</p>
+      </section>
+    </main>
+  `
+}
+
+function shouldShowLogin() {
+  return state.auth.hasConfig && ['login', 'signing-in'].includes(state.auth.status)
 }
 
 function appClass() {

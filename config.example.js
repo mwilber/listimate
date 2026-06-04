@@ -5,9 +5,5 @@ window.LISTIMATE_CONFIG = {
     databaseURL: "",
     projectId: "",
     appId: ""
-  },
-  auth: {
-    email: "",
-    password: ""
   }
 }
