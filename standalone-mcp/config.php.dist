@@ -1,0 +1,15 @@
+<?php
+
+declare(strict_types=1);
+
+return [
+    // Shared token required by remote AI agents.
+    'user_token' => 'change-me',
+
+    // Human-readable MCP server name returned by initialize and health.
+    'server_name' => 'listimate-mcp',
+
+    // Optional defaults. These can also be passed by the MCP client headers.
+    'firebase_api_key' => '',
+    'firebase_database_url' => '',
+];
