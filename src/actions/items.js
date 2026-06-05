@@ -9,8 +9,6 @@ export function addItem() {
   if (!list || !name) return
   list.items.push(createItem(name))
   state.ui.itemNameInput = ''
-  state.ui.activeItemIndex = list.items.length - 1
-  resetDetailDraft()
   commitData()
 }
 

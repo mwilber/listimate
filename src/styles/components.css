@@ -90,8 +90,16 @@
 }
 
 .total-value {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 10px;
   font-size: 25px;
   font-weight: 700;
+}
+
+.total-currency {
+  color: #a9cbbb;
+  font-size: 18px;
 }
 
 .total-count {
@@ -145,14 +153,13 @@
 }
 
 .price-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px;
+  display: block;
 }
 
-.price-tag,
-.autofill-tag {
-  border: 0;
+.price-tag {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 6px;
   border-radius: 4px;
   padding: 2px 8px;
   color: #fff;
@@ -194,10 +201,6 @@
   overflow-wrap: anywhere;
 }
 
-.autofill-tag {
-  margin: 0 12px 16px;
-}
-
 .field-grid {
   display: grid;
   grid-template-columns: 72px minmax(0, 1fr) 84px;
@@ -219,6 +222,22 @@
 .price-field {
   grid-column: 2;
   grid-row: 1;
+}
+
+.autofill-tag {
+  grid-column: 3;
+  grid-row: 1;
+  width: 100%;
+  height: 80px;
+  border: 0;
+  border-radius: 5px;
+  padding: 0 8px;
+  color: #fff;
+  background: #636363;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
 }
 
 .qty-label {
@@ -384,6 +403,12 @@
   .number-field {
     height: 72px;
     font-size: 38px;
+  }
+
+  .autofill-tag {
+    height: 72px;
+    padding: 0 6px;
+    font-size: 12px;
   }
 }
 

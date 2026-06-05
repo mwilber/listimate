@@ -1,4 +1,4 @@
-const CACHE_NAME = 'listimate-v4'
+const CACHE_NAME = 'listimate-v9'
 const APP_SHELL = [
   '/',
   '/index.html',

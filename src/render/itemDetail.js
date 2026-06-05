@@ -29,22 +29,11 @@ function detailTemplate() {
 
   return html`
     <div class="detail-toolbar">
-      <button class="icon-button" type="button" aria-label="Add item from detail" @click="${closeItem}">+</button>
       <button class="icon-button" type="button" aria-label="Back to items" @click="${closeItem}">‹</button>
     </div>
 
     <div class="detail-body">
       <h2>${() => activeItem(state)?.name}</h2>
-
-      ${() => info.current > 0 ? html`
-        <button
-          class="autofill-tag"
-          type="button"
-          @click="${() => { state.ui.detailDraft.price = String(info.current) }}"
-        >
-          Use ${info.currentLabel}
-        </button>
-      ` : ''}
 
       <div class="field-grid">
         <label class="price-label" for="item-price">$</label>
@@ -57,6 +46,15 @@ function detailTemplate() {
           @blur="${(event) => zeroBlur('price', event)}"
           @input="${(event) => { state.ui.detailDraft.price = event.currentTarget.value }}"
         >
+        ${() => info.current > 0 ? html`
+          <button
+            class="autofill-tag"
+            type="button"
+            @click="${() => { state.ui.detailDraft.price = String(info.current) }}"
+          >
+            Use ${info.currentLabel}
+          </button>
+        ` : ''}
 
         <label class="qty-label" for="item-quantity">qty</label>
         <input

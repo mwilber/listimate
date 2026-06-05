@@ -27,7 +27,10 @@ export function ItemsPane() {
           @click="${() => { state.ui.totalMode = state.ui.totalMode === 'rounded' ? 'actual' : 'rounded' }}"
           aria-label="Toggle estimated and actual totals"
         >
-          <span class="total-value">${() => totalDisplay(state)}</span>
+          <span class="total-value">
+            <span class="total-currency">$</span>
+            <span>${() => totalDisplay(state).replace(/^\$\s*/, '')}</span>
+          </span>
           <span class="total-count">Items: ${() => missingCount(activeList(state))}</span>
         </button>
 
@@ -48,8 +51,12 @@ export function ItemsPane() {
                     ${() => item.name}
                   </span>
                   <span class="price-tags">
-                    ${() => info.currentLabel ? html`<span class="price-tag">${info.currentLabel}</span>` : ''}
-                    ${() => info.bestLabel ? html`<span class="price-tag"> &gt; ${info.bestLabel}</span>` : ''}
+                    ${() => info.currentLabel ? html`
+                      <span class="price-tag">
+                        <span>${info.currentLabel}</span>
+                        ${() => info.bestLabel ? html`<span>&gt; ${info.bestLabel}</span>` : ''}
+                      </span>
+                    ` : ''}
                   </span>
                 </span>
                 <span class="item-math">
