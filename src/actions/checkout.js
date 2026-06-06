@@ -4,7 +4,7 @@ import { commitData, state } from '../store.js'
 export function checkout() {
   const list = activeList(state)
   if (!list) return
-  if (!window.confirm('Are you sure?')) return
+  if (!window.confirm(`Checkout "${list.name}"?`)) return
 
   list.items = list.items
     .filter((item) => Number(item.price || 0) === 0 || item.pinned === 'true')

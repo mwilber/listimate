@@ -4,6 +4,7 @@ import { hasFirebaseConfig } from './firebase.js'
 import { CACHE_KEY, cloneData, defaultData, normalizeData } from './model.js'
 
 const AUTH_CACHE_KEY = 'listimateAuth'
+const UI_CACHE_KEY = 'listimateUi'
 const storedCredentials = loadStoredCredentials()
 
 export const state = reactive({
@@ -256,6 +257,32 @@ function loadStoredCredentials() {
   }
 }
 
+function loadStoredUiState() {
+  try {
+    const stored = localStorage.getItem(UI_CACHE_KEY)
+    if (!stored) return null
+    const uiState = JSON.parse(stored)
+    return {
+      activeListName: typeof uiState.activeListName === 'string' ? uiState.activeListName : null,
+      activeListIndex: Number.isInteger(uiState.activeListIndex) ? uiState.activeListIndex : null
+    }
+  } catch {
+    return null
+  }
+}
+
+export function saveActiveListSelection() {
+  try {
+    const list = state.data.lists[state.ui.activeListIndex] || null
+    localStorage.setItem(UI_CACHE_KEY, JSON.stringify({
+      activeListName: list?.name || null,
+      activeListIndex: list ? state.ui.activeListIndex : null
+    }))
+  } catch {
+    // List selection is a convenience; the app can still work without it.
+  }
+}
+
 function saveStoredCredentials(email, password) {
   try {
     localStorage.setItem(AUTH_CACHE_KEY, JSON.stringify({ email, password }))
@@ -295,6 +322,25 @@ function clampActiveSelection() {
 }
 
 function ensureActiveList() {
+  if (state.ui.activeListIndex !== null && state.data.lists[state.ui.activeListIndex]) {
+    return
+  }
+
+  const storedUiState = loadStoredUiState()
+  if (storedUiState) {
+    if (storedUiState.activeListName) {
+      const namedIndex = state.data.lists.findIndex((list) => list.name === storedUiState.activeListName)
+      if (namedIndex >= 0) {
+        state.ui.activeListIndex = namedIndex
+        return
+      }
+    }
+    if (storedUiState.activeListIndex !== null && state.data.lists[storedUiState.activeListIndex]) {
+      state.ui.activeListIndex = storedUiState.activeListIndex
+      return
+    }
+  }
+
   if (state.ui.activeListIndex === null && state.data.lists.length > 0) {
     state.ui.activeListIndex = 0
   }
