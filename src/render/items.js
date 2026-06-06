@@ -2,6 +2,7 @@ import { html } from '../../vendor/arrow-core.mjs'
 import { addItem, openItem } from '../actions/items.js'
 import { activeList, isChecked, missingCount, priceInfo, totalDisplay, visibleItems } from '../selectors.js'
 import { state } from '../store.js'
+import { MapPinIcon } from './icons.js'
 
 export function ItemsPane() {
   return html`
@@ -47,7 +48,7 @@ export function ItemsPane() {
               >
                 <span class="item-copy">
                   <span class="item-name">
-                    <span class="pin" aria-hidden="true">${() => item.pinned === 'true' ? '⌖' : ''}</span>
+                    <span class="pin" aria-hidden="true">${() => item.pinned === 'true' ? MapPinIcon() : ''}</span>
                     ${() => item.name}
                   </span>
                   <span class="price-tags">

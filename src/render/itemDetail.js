@@ -12,6 +12,7 @@ import {
 } from '../actions/items.js'
 import { activeItem, priceInfo } from '../selectors.js'
 import { state } from '../store.js'
+import { CheckIcon, MapPinIcon, TrashIcon } from './icons.js'
 
 export function ItemDetailPane() {
   return html`
@@ -28,10 +29,6 @@ function detailTemplate() {
   const info = priceInfo(state, item)
 
   return html`
-    <div class="detail-toolbar">
-      <button class="icon-button" type="button" aria-label="Back to items" @click="${closeItem}">‹</button>
-    </div>
-
     <div class="detail-body">
       <h2>${() => activeItem(state)?.name}</h2>
 
@@ -72,7 +69,7 @@ function detailTemplate() {
         </div>
       </div>
 
-      <button class="primary-action" type="button" @click="${saveItem}" aria-label="Save item">✓</button>
+      <button class="primary-action" type="button" @click="${saveItem}" aria-label="Save item">${CheckIcon()}</button>
 
       <div class="detail-actions">
         <button
@@ -82,7 +79,7 @@ function detailTemplate() {
           aria-pressed="${() => activeItem(state)?.pinned === 'true' ? 'true' : 'false'}"
           aria-label="Toggle pinned"
         >
-          ⌖
+          ${MapPinIcon()}
         </button>
         <button class="secondary-action" type="button" @click="${saveRememberedPriceOnly}" aria-label="Remember price only">$</button>
         <button
@@ -97,7 +94,7 @@ function detailTemplate() {
       </div>
 
       <button class="delete-action" type="button" @click="${deleteItem}" aria-label="Delete item">
-        ${() => state.ui.confirmDeleteItem ? 'CONFIRM DELETE' : '🗑'}
+        ${() => state.ui.confirmDeleteItem ? 'CONFIRM DELETE' : TrashIcon()}
       </button>
     </div>
   `

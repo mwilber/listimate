@@ -1,4 +1,4 @@
-const CACHE_NAME = 'listimate-v9'
+const CACHE_NAME = 'listimate-v16'
 const APP_SHELL = [
   '/',
   '/index.html',
@@ -19,6 +19,7 @@ const APP_SHELL = [
   '/src/actions/lists.js',
   '/src/actions/prices.js',
   '/src/render/itemDetail.js',
+  '/src/render/icons.js',
   '/src/render/items.js',
   '/src/render/lists.js',
   '/src/render/login.js',

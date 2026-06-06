@@ -149,7 +149,19 @@
   display: inline-block;
   min-width: 18px;
   color: #2d3338;
-  font-size: 18px;
+  vertical-align: middle;
+}
+
+.pin .pin-icon {
+  width: 10px;
+  height: 18px;
+  transform: rotate(-20deg);
+}
+
+.secondary-action .pin-icon {
+  width: 18px;
+  height: 32px;
+  transform: rotate(-20deg);
 }
 
 .price-tags {
@@ -174,17 +186,6 @@
   align-items: start;
   justify-content: end;
   white-space: nowrap;
-}
-
-.detail-toolbar {
-  height: 49px;
-  display: flex;
-  gap: 1px;
-  background: var(--button-background-color);
-}
-
-.detail-toolbar .icon-button {
-  width: 48px;
 }
 
 .detail-body {
@@ -291,6 +292,11 @@
   background: var(--accent-background-color);
 }
 
+.primary-action .check-icon {
+  width: 42px;
+  height: 42px;
+}
+
 .detail-actions {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -316,6 +322,16 @@
   height: 107px;
   background: var(--alert-background-color);
   font-size: 28px;
+}
+
+.row-action .trash-icon {
+  width: 16px;
+  height: 18px;
+}
+
+.delete-action .trash-icon {
+  width: 26px;
+  height: 30px;
 }
 
 .login-screen {

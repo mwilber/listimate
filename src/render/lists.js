@@ -1,6 +1,7 @@
 import { html } from '../../vendor/arrow-core.mjs'
 import { addList, deleteList, selectList } from '../actions/lists.js'
 import { state } from '../store.js'
+import { TrashIcon } from './icons.js'
 
 export function ListsPane() {
   return html`
@@ -36,7 +37,7 @@ export function ListsPane() {
                 aria-label="${() => `Delete ${list.name}`}"
                 @click="${() => deleteList(index)}"
               >
-                🗑
+                ${TrashIcon()}
               </button>
             ` : ''}
           </div>
