@@ -1,4 +1,5 @@
 .entry-row {
+  flex: 0 0 49px;
   height: 49px;
   display: grid;
   grid-template-columns: 1fr 48px;
@@ -78,6 +79,7 @@
 }
 
 .total-bar {
+  flex: 0 0 65px;
   height: 65px;
   display: flex;
   align-items: center;

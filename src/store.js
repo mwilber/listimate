@@ -61,13 +61,13 @@ export async function initializeStore() {
   state.auth.hasConfig = true
   state.sync.ready = true
   if (hasStoredCredentials()) {
-    await loginWithFirebase()
+    await loginWithFirebase({ silent: true })
     return
   }
   state.auth.status = 'login'
 }
 
-export async function loginWithFirebase() {
+export async function loginWithFirebase(options = {}) {
   const email = state.ui.loginEmail.trim()
   const password = state.ui.loginPassword
   if (!email || !password) {
@@ -77,7 +77,9 @@ export async function loginWithFirebase() {
 
   try {
     resetRemoteConnection()
-    state.auth.status = 'signing-in'
+    if (!options.silent) {
+      state.auth.status = 'signing-in'
+    }
     state.auth.error = ''
     state.sync.mode = 'firebase'
     const services = await signIn(email, password)
