@@ -35,6 +35,7 @@ export const state = reactive({
     ready: false,
     saving: false,
     error: '',
+    dirty: false,
     uid: ''
   }
 })
@@ -43,6 +44,12 @@ let remoteRef = null
 let remoteSet = null
 let remoteUnsubscribe = null
 let remoteLoaded = false
+
+if (typeof window !== 'undefined' && typeof window.addEventListener === 'function') {
+  window.addEventListener('online', () => {
+    retryRemoteSync()
+  })
+}
 
 export async function initializeStore() {
   if (!hasFirebaseConfig()) {
@@ -90,10 +97,21 @@ export async function loginWithFirebase(options = {}) {
 
     remoteUnsubscribe = services.sdk.onValue(remoteRef, (snapshot) => {
       remoteLoaded = true
+      if (state.sync.dirty) {
+        ensureActiveList()
+        cacheData(state.data)
+        state.auth.status = 'authenticated'
+        state.auth.error = ''
+        state.sync.ready = true
+        retryRemoteSync()
+        return
+      }
       if (!snapshot.exists()) {
         replaceData(defaultData())
         cacheData(state.data)
         state.auth.status = 'authenticated'
+        state.auth.error = ''
+        state.sync.error = ''
         state.sync.ready = true
         return
       }
@@ -101,6 +119,8 @@ export async function loginWithFirebase(options = {}) {
       ensureActiveList()
       cacheData(state.data)
       state.auth.status = 'authenticated'
+      state.auth.error = ''
+      state.sync.error = ''
       state.sync.ready = true
     }, (error) => {
       state.sync.error = error.message
@@ -110,6 +130,15 @@ export async function loginWithFirebase(options = {}) {
     })
   } catch (error) {
     resetRemoteConnection()
+    if (options.silent && isOfflineError(error)) {
+      state.auth.status = 'authenticated'
+      state.auth.error = ''
+      state.sync.mode = 'firebase'
+      state.sync.error = error.message
+      state.sync.ready = true
+      ensureActiveList()
+      return
+    }
     state.auth.status = 'login'
     state.auth.error = error.message
     state.sync.ready = true
@@ -122,6 +151,7 @@ export async function loadReferenceData() {
   state.auth.error = ''
   state.sync.mode = 'reference'
   state.sync.error = ''
+  state.sync.dirty = false
   state.sync.uid = ''
   state.ui.activeListIndex = null
   state.ui.activeItemIndex = null
@@ -143,17 +173,60 @@ export async function commitData() {
   cacheData(state.data)
 
   if (!remoteRef || !remoteSet || !remoteLoaded) {
+    markRemoteDirty()
     return
+  }
+
+  state.sync.dirty = true
+  await flushRemoteSave()
+}
+
+async function flushRemoteSave() {
+  if (!remoteRef || !remoteSet || !remoteLoaded) {
+    markRemoteDirty()
+    return false
   }
 
   try {
     state.sync.saving = true
     await remoteSet(remoteRef, cloneData(state.data))
+    state.sync.dirty = false
+    state.sync.error = ''
+    return true
   } catch (error) {
-    state.sync.error = error.message
+    markRemoteDirty(error.message)
+    return false
   } finally {
     state.sync.saving = false
   }
+}
+
+async function retryRemoteSync() {
+  if (state.sync.mode !== 'firebase' || !hasStoredCredentials() || state.sync.saving) {
+    return
+  }
+  if (!remoteRef || !remoteSet || !remoteLoaded) {
+    await loginWithFirebase({ silent: true })
+    return
+  }
+  if (state.sync.dirty) {
+    await flushRemoteSave()
+  }
+}
+
+function markRemoteDirty(message = 'Offline changes pending sync.') {
+  if (state.sync.mode !== 'firebase') {
+    return
+  }
+  state.sync.dirty = true
+  state.sync.error = message
+}
+
+function isOfflineError(error) {
+  if (typeof navigator !== 'undefined' && navigator.onLine === false) {
+    return true
+  }
+  return /network|offline|unavailable/i.test(String(error?.message || error || ''))
 }
 
 function loadCachedData() {
