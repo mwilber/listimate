@@ -3,16 +3,18 @@ import {
   closeItem,
   deleteItem,
   incrementQuantity,
+  moveItemToList,
   saveItem,
   saveRememberedPriceOnly,
   toggleDeferred,
+  toggleMoveList,
   togglePinned,
   zeroBlur,
   zeroFocus
 } from '../actions/items.js'
 import { activeItem, priceInfo } from '../selectors.js'
 import { state } from '../store.js'
-import { CheckIcon, MapPinIcon, TrashIcon } from './icons.js'
+import { CheckIcon, MapPinIcon, MoveToListIcon, TrashIcon } from './icons.js'
 
 export function ItemDetailPane() {
   return html`
@@ -93,9 +95,48 @@ function detailTemplate() {
         </button>
       </div>
 
-      <button class="delete-action" type="button" @click="${deleteItem}" aria-label="Delete item">
-        ${() => state.ui.confirmDeleteItem ? 'CONFIRM DELETE' : TrashIcon()}
-      </button>
+      <div class="danger-actions">
+        <div class="move-action-wrap">
+          <button
+            class="move-action"
+            type="button"
+            @click="${toggleMoveList}"
+            aria-expanded="${() => state.ui.moveListOpen ? 'true' : 'false'}"
+            aria-label="Move to list"
+          >
+            ${MoveToListIcon()}
+          </button>
+          ${() => state.ui.moveListOpen ? moveListPopup() : ''}
+        </div>
+        <button class="delete-action" type="button" @click="${deleteItem}" aria-label="Delete item">
+          ${() => state.ui.confirmDeleteItem ? 'CONFIRM DELETE' : TrashIcon()}
+        </button>
+      </div>
+    </div>
+  `
+}
+
+function moveListPopup() {
+  const activeIndex = state.ui.activeListIndex
+  const targetLists = state.data.lists
+    .map((list, index) => ({ list, index }))
+    .filter(({ index }) => index !== activeIndex)
+
+  return html`
+    <div class="move-list-popup" role="menu" aria-label="Move item to list">
+      ${targetLists.length ? targetLists.map(({ list, index }) => html`
+        <button
+          class="move-list-option"
+          type="button"
+          role="menuitem"
+          @click="${() => moveItemToList(index)}"
+          key="${index}"
+        >
+          ${list.name}
+        </button>
+      `) : html`
+        <div class="move-list-empty">No other lists</div>
+      `}
     </div>
   `
 }

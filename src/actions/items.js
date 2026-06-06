@@ -1,4 +1,4 @@
-import { createItem, toNumber } from '../model.js'
+import { createItem, normalizeItem, toNumber } from '../model.js'
 import { activeItem, activeList } from '../selectors.js'
 import { commitData, state } from '../store.js'
 import { rememberPrice } from './prices.js'
@@ -15,12 +15,14 @@ export function addItem() {
 export function openItem(index) {
   state.ui.activeItemIndex = index
   state.ui.confirmDeleteItem = false
+  state.ui.moveListOpen = false
   resetDetailDraft()
 }
 
 export function closeItem() {
   state.ui.activeItemIndex = null
   state.ui.confirmDeleteItem = false
+  state.ui.moveListOpen = false
 }
 
 export function resetDetailDraft() {
@@ -66,6 +68,8 @@ export function deleteItem() {
   const item = activeItem(state)
   if (!list || !item) return
 
+  state.ui.moveListOpen = false
+
   if (!state.ui.confirmDeleteItem) {
     state.ui.confirmDeleteItem = true
     return
@@ -74,6 +78,26 @@ export function deleteItem() {
   list.items.splice(state.ui.activeItemIndex, 1)
   state.ui.activeItemIndex = null
   state.ui.confirmDeleteItem = false
+  commitData()
+}
+
+export function toggleMoveList() {
+  if (!activeItem(state)) return
+  state.ui.confirmDeleteItem = false
+  state.ui.moveListOpen = !state.ui.moveListOpen
+}
+
+export function moveItemToList(listIndex) {
+  const sourceList = activeList(state)
+  const item = activeItem(state)
+  const targetList = state.data.lists[listIndex]
+  if (!sourceList || !item || !targetList || listIndex === state.ui.activeListIndex) return
+
+  targetList.items.push(normalizeItem(item))
+  sourceList.items.splice(state.ui.activeItemIndex, 1)
+  state.ui.activeItemIndex = null
+  state.ui.confirmDeleteItem = false
+  state.ui.moveListOpen = false
   commitData()
 }
 

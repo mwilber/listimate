@@ -31,6 +31,16 @@ test('item detail uses inline trash svg for delete action', () => {
   assert.match(icons, /viewBox="0 0 448 512"/)
 })
 
+test('item detail uses inline move-to-list svg for move action', () => {
+  const source = readFileSync(new URL('../src/render/itemDetail.js', import.meta.url), 'utf8')
+  const icons = readFileSync(new URL('../src/render/icons.js', import.meta.url), 'utf8')
+
+  assert.match(source, /MoveToListIcon/)
+  assert.match(source, /aria-label="Move to list"/)
+  assert.match(icons, /data-icon="move-to-list"/)
+  assert.match(icons, /viewBox="0 0 512 512"/)
+})
+
 test('item detail uses inline check svg for save action', () => {
   const source = readFileSync(new URL('../src/render/itemDetail.js', import.meta.url), 'utf8')
   const icons = readFileSync(new URL('../src/render/icons.js', import.meta.url), 'utf8')

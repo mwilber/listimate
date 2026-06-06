@@ -280,7 +280,8 @@
 }
 
 .primary-action,
-.delete-action {
+.delete-action,
+.move-action {
   width: 100%;
   height: 187px;
   border: 0;
@@ -320,8 +321,27 @@
   background: var(--header-background-color);
 }
 
+.danger-actions {
+  position: relative;
+  display: grid;
+  grid-template-columns: 86px minmax(0, 1fr);
+  gap: 8px;
+}
+
+.move-action-wrap {
+  position: relative;
+}
+
+.move-action,
 .delete-action {
   height: 107px;
+}
+
+.move-action {
+  background: var(--button-background-color);
+}
+
+.delete-action {
   background: var(--alert-background-color);
   font-size: 28px;
 }
@@ -334,6 +354,49 @@
 .delete-action .trash-icon {
   width: 26px;
   height: 30px;
+}
+
+.move-action .move-list-icon {
+  width: 34px;
+  height: 34px;
+}
+
+.move-list-popup {
+  position: absolute;
+  left: 0;
+  bottom: calc(100% + 8px);
+  z-index: 3;
+  width: min(260px, calc(100vw - 24px));
+  max-height: 280px;
+  overflow: auto;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
+.move-list-option,
+.move-list-empty {
+  width: 100%;
+  min-height: 46px;
+  border: 0;
+  border-bottom: 1px solid var(--border-color);
+  padding: 0 14px;
+  color: var(--text-color);
+  background: #fff;
+  text-align: left;
+  font-size: 16px;
+  overflow-wrap: anywhere;
+}
+
+.move-list-option:last-child,
+.move-list-empty:last-child {
+  border-bottom: 0;
+}
+
+.move-list-option:active,
+.move-list-option:hover {
+  background: #f3f6f4;
 }
 
 .login-screen {

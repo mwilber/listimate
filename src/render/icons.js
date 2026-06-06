@@ -23,3 +23,9 @@ export function TrashIcon() {
     <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="trash-alt" class="trash-icon svg-inline--fa fa-trash-alt fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M268 416h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12zM432 80h-82.41l-34-56.7A48 48 0 0 0 274.41 0H173.59a48 48 0 0 0-41.16 23.3L98.41 80H16A16 16 0 0 0 0 96v16a16 16 0 0 0 16 16h16v336a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48V128h16a16 16 0 0 0 16-16V96a16 16 0 0 0-16-16zM171.84 50.91A6 6 0 0 1 177 48h94a6 6 0 0 1 5.15 2.91L293.61 80H154.39zM368 464H80V128h288zm-212-48h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12z"></path></svg>
   `
 }
+
+export function MoveToListIcon() {
+  return html`
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="move-to-list" class="move-list-icon svg-inline--fa" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M64 96a32 32 0 1 0 0-64 32 32 0 0 0 0 64zm96-48a24 24 0 0 0 0 48h296a24 24 0 0 0 0-48H160zM64 288a32 32 0 1 0 0-64 32 32 0 0 0 0 64zm96-48a24 24 0 0 0 0 48h136v56c0 21.4 25.9 32.1 41 17l96-96a24 24 0 0 0 0-34l-96-96c-15.1-15.1-41-4.4-41 17v56H160a24 24 0 0 0 0 48zm-96 240a32 32 0 1 0 0-64 32 32 0 0 0 0 64zm96-48a24 24 0 0 0 0 48h296a24 24 0 0 0 0-48H160z"></path></svg>
+  `
+}

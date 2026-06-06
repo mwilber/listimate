@@ -22,6 +22,7 @@ export const state = reactive({
       quantity: '1'
     },
     confirmDeleteItem: false,
+    moveListOpen: false,
     confirmDeleteList: null,
     loginEmail: storedCredentials.email,
     loginPassword: storedCredentials.password
