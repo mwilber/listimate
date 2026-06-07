@@ -2,7 +2,14 @@ import test from 'node:test'
 import assert from 'node:assert/strict'
 import { hasFirebaseConfig } from '../src/firebase.js'
 import { cloneData, listNamespace, normalizeData, normalizeItemName } from '../src/model.js'
-import { exactTotal, missingCount, roundedTotal } from '../src/selectors.js'
+import {
+  DEFAULT_MISSING_ITEM_ESTIMATE,
+  exactTotal,
+  missingCount,
+  missingEstimateDisplay,
+  missingEstimateTotal,
+  roundedTotal
+} from '../src/selectors.js'
 
 test('normalizes legacy firebase list data', () => {
   const data = normalizeData({
@@ -116,6 +123,50 @@ test('calculates totals and missing count with deferred parity', () => {
   assert.equal(exactTotal(list), 6.98)
   assert.equal(roundedTotal(list), 8)
   assert.equal(missingCount(list), 1)
+})
+
+test('estimates remaining unchecked items from active list price history', () => {
+  const state = {
+    data: {
+      lists: [{
+        name: 'WalMart',
+        items: [
+          { name: 'Milk', price: 0, quantity: 2 },
+          { name: 'Bread', price: 0, quantity: 1 },
+          { name: 'Eggs', price: 3.5, quantity: 1 },
+          { name: 'Ranch', price: 0, quantity: 1, defer: true }
+        ]
+      }],
+      prices: {
+        MILK: { WalMart: 3.25, Aldi: 2.5 },
+        RANCH: { WalMart: 7 }
+      }
+    },
+    ui: { activeListIndex: 0 }
+  }
+
+  assert.equal(DEFAULT_MISSING_ITEM_ESTIMATE, 4)
+  assert.equal(missingEstimateTotal(state), 10.5)
+  assert.equal(missingEstimateDisplay(state), '$10.50')
+})
+
+test('remaining estimate treats missing quantity as one item', () => {
+  const state = {
+    data: {
+      lists: [{
+        name: 'WalMart',
+        items: [
+          { name: 'Milk', price: 0, quantity: 0 }
+        ]
+      }],
+      prices: {
+        MILK: { WalMart: 3.25 }
+      }
+    },
+    ui: { activeListIndex: 0 }
+  }
+
+  assert.equal(missingEstimateTotal(state), 3.25)
 })
 
 test('firebase config no longer requires stored auth credentials', () => {

@@ -109,6 +109,23 @@
   font-weight: 700;
 }
 
+.total-summary {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+  line-height: 1.1;
+  white-space: nowrap;
+}
+
+.total-estimate {
+  display: inline-flex;
+  gap: 4px;
+  color: #a9cbbb;
+  font-size: 12px;
+  font-weight: 700;
+}
+
 .item-row {
   width: 100%;
   display: grid;

@@ -16,6 +16,13 @@ test('total currency is styled separately from the amount', () => {
   assert.match(source, /totalDisplay\(state\)\.replace/)
 })
 
+test('total bar shows remaining item estimate under item count', () => {
+  const source = readFileSync(new URL('../src/render/items.js', import.meta.url), 'utf8')
+
+  assert.match(source, /class="total-summary"[\s\S]*Items:[\s\S]*class="total-estimate"[\s\S]*Est:/)
+  assert.match(source, /missingEstimateDisplay\(state\)/)
+})
+
 test('item list uses inline map pin svg for pinned items', () => {
   const source = readFileSync(new URL('../src/render/items.js', import.meta.url), 'utf8')
   const icons = readFileSync(new URL('../src/render/icons.js', import.meta.url), 'utf8')

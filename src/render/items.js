@@ -1,6 +1,6 @@
 import { html } from '../../vendor/arrow-core.mjs'
 import { addItem, openItem } from '../actions/items.js'
-import { activeList, isChecked, missingCount, priceInfo, totalDisplay, visibleItems } from '../selectors.js'
+import { activeList, isChecked, missingCount, missingEstimateDisplay, priceInfo, totalDisplay, visibleItems } from '../selectors.js'
 import { state } from '../store.js'
 import { MapPinIcon } from './icons.js'
 
@@ -32,7 +32,13 @@ export function ItemsPane() {
             <span class="total-currency">$</span>
             <span>${() => totalDisplay(state).replace(/^\$\s*/, '')}</span>
           </span>
-          <span class="total-count">Items: ${() => missingCount(activeList(state))}</span>
+          <span class="total-summary">
+            <span class="total-count">Items: ${() => missingCount(activeList(state))}</span>
+            <span class="total-estimate">
+              <span>Est:</span>
+              <span>${() => missingEstimateDisplay(state)}</span>
+            </span>
+          </span>
         </button>
 
         <div class="rows item-rows">

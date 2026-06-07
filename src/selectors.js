@@ -1,5 +1,7 @@
 import { formatMoney, listNamespace, normalizeItemName, trimMoney } from './model.js'
 
+export const DEFAULT_MISSING_ITEM_ESTIMATE = 4
+
 export function activeList(state) {
   return state.data.lists[state.ui.activeListIndex] || null
 }
@@ -45,6 +47,24 @@ export function totalDisplay(state) {
   return `$ ${Math.trunc(roundedTotal(list))}`
 }
 
+export function missingEstimateTotal(state, defaultItemEstimate = DEFAULT_MISSING_ITEM_ESTIMATE) {
+  const list = activeList(state)
+  const namespace = listNamespace(list)
+  if (!list || !namespace) return 0
+
+  return (list.items || []).reduce((sum, item) => {
+    if (item.defer || isChecked(item)) return sum
+    const prices = state.data.prices[normalizeItemName(item?.name)] || {}
+    const price = numericPrice(prices[namespace]) || defaultItemEstimate
+    const quantity = numericQuantity(item?.quantity)
+    return sum + price * quantity
+  }, 0)
+}
+
+export function missingEstimateDisplay(state) {
+  return `$${formatMoney(missingEstimateTotal(state))}`
+}
+
 export function priceInfo(state, item) {
   const list = activeList(state)
   const namespace = listNamespace(list)
@@ -67,4 +87,9 @@ export function priceInfo(state, item) {
 function numericPrice(value) {
   const number = Number(value)
   return Number.isFinite(number) ? number : 0
+}
+
+function numericQuantity(value) {
+  const number = Number(value)
+  return Number.isFinite(number) && number > 0 ? number : 1
 }
